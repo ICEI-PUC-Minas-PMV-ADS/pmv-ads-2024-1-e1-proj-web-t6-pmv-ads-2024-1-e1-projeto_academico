@@ -1,25 +1,24 @@
-# Título do Projeto
+# Projeto Acadêmico - Sistema de Gestão Escolar
 
-`CURSO`
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
 `DISCIPLINA`
 
-`SEMESTRE`
+`EIXO 1`
 
 Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Brena Aparecida Ferreira
+* Caio de Souza Araujo
+* Fernando Vinicius Sousa Moura
+* Kevin Lucas Andrade dos Santos
+* Marcelly Thais Freitas Neves
 
 ## Orientador
 
-* Nome completo do professor
+* Prof. Simone de Assis Alves da Silva
 
 # Documentação
 
