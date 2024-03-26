@@ -12,10 +12,15 @@ O desenvolvimento da aplicação seguirá o protocolo HTTP como base, empregando
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-- Scrum Master: Nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
-- Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
+- Scrum Master: 
+   Kevin Lucas Andrade dos Santos
+- Product Owner: 
+    Marcelly Thais Freitas Neves
+- Equipe de Desenvolvimento: 
+    Brena Aparecida Ferreira
+    Caio de Souza Araújo
+- Equipe de Design: 
+    Fernando Vinícius Sousa Moura
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu 
