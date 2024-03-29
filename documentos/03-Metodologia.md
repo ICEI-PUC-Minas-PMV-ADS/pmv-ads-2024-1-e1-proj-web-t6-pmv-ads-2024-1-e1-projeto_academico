@@ -10,6 +10,8 @@ O desenvolvimento da aplicação seguirá o protocolo HTTP como base, empregando
 
 ### Divisão de Papéis
 
+Como mencionado anteriormente, a equipe empregará a metodologia Scrum, caracterizada por esforços concentrados e incrementais distribuídos em sprints, os quais, normalmente, terão a duração de duas semanas.
+
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
 - Scrum Master: 
