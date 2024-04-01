@@ -11,10 +11,10 @@ No projeto, foi escolhido o Git como a ferramenta de controle de versão, enquan
 Para nomear os ramos do projeto, adotamos a seguinte convenção: 
 
 <ul>
-  <li>master: refere-se à versão do software que já foi testada e é considerada estável.</li>
-  <li>instável: representa uma versão que passou por testes, mas ainda não é estável devido a problemas identificados.</li>
-  <li>homologação: indica a versão atualmente em fase de teste.</li>
-  <li>dev: corresponde à versão em desenvolvimento do software.</li>
+  <li>Master: refere-se à versão do software que já foi testada e é considerada estável.</li>
+  <li>Instável: representa uma versão que passou por testes, mas ainda não é estável devido a problemas identificados.</li>
+  <li>Homologação: indica a versão atualmente em fase de teste.</li>
+  <li>Dev: corresponde à versão em desenvolvimento do software.</li>
 </ul>
 
 O ramo master é reservado para versões prontas para produção, enquanto o ramo dev contém versões em desenvolvimento que ainda estão sujeitas a testes. O ramo homologação é usado para realizar testes nos códigos antes da produção. Se problemas forem detectados, as correções são aplicadas isoladamente no ramo instável para estabilizar a versão antes de entrar em produção. 
@@ -22,10 +22,10 @@ O ramo master é reservado para versões prontas para produção, enquanto o ram
 Em relação à gestão de problemas, o projeto utiliza as seguintes etiquetas: 
 
 <ul>
-  <li>documentação: para melhorias ou adições à documentação.</li>
-  <li>bug: quando uma funcionalidade apresenta problemas.</li> 
-  <li>aprimoramento: para aprimoramentos em funcionalidades existentes.</li>
-  <li>recurso: para introduzir uma nova funcionalidade.</li>
+  <li>Documentação: para melhorias ou adições à documentação.</li>
+  <li>Bug: quando uma funcionalidade apresenta problemas.</li> 
+  <li>Aprimoramento: para aprimoramentos em funcionalidades existentes.</li>
+  <li>Recurso: para introduzir uma nova funcionalidade.</li>
 </ul>
 
 ## Gerenciamento de Projeto
