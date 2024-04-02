@@ -1,10 +1,14 @@
 
-# Metodologia
+## Metodologia
 
 Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
 
 
-# Controle de Versão 
+### Gerenciamento de Projeto
+
+O desenvolvimento da aplicação seguirá o protocolo HTTP como base, empregando a linguagem de marcação HTML5 para estruturação, juntamente com CSS para estilização. A codificação da aplicação será conduzida em JavaScript, fazendo uso da plataforma Visual Studio Code. O controle de versão do projeto será realizado através do Git, hospedado no repositório GitHub. Quanto à abordagem de gestão, optou-se pela metodologia ágil SCRUM.
+
+### Controle de Versão 
 
 No projeto, foi escolhido o Git como a ferramenta de controle de versão, enquanto o Github foi utilizado para hospedar o repositório. 
 
@@ -28,10 +32,6 @@ Em relação à gestão de problemas, o projeto utiliza as seguintes etiquetas:
   <li>Recurso: para introduzir uma nova funcionalidade.</li>
 </ul>
 
-## Gerenciamento de Projeto
-
-O desenvolvimento da aplicação seguirá o protocolo HTTP como base, empregando a linguagem de marcação HTML5 para estruturação, juntamente com CSS para estilização. A codificação da aplicação será conduzida em JavaScript, fazendo uso da plataforma Visual Studio Code. O controle de versão do projeto será realizado através do Git, hospedado no repositório GitHub. Quanto à abordagem de gestão, optou-se pela metodologia ágil SCRUM.
-
 ### Divisão de Papéis
 
 Como mencionado anteriormente, a equipe empregará a metodologia Scrum, caracterizada por esforços concentrados e incrementais distribuídos em sprints, os quais, normalmente, terão a duração de duas semanas.
@@ -45,13 +45,11 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 - Equipe de Desenvolvimento: 
     Brena Aparecida Ferreira
     Caio de Souza Araújo
+    Fernando Vinícius Sousa Moura
+    Kevin Lucas Andrade dos Santos
+    Marcelly Thais Freitas Neves
 - Equipe de Design: 
     Fernando Vinícius Sousa Moura
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
 
