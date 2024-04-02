@@ -8,6 +8,37 @@ Esta seção descreve a organização da equipe para a execução das tarefas do
 
 O desenvolvimento da aplicação seguirá o protocolo HTTP como base, empregando a linguagem de marcação HTML5 para estruturação, juntamente com CSS para estilização. A codificação da aplicação será conduzida em JavaScript, fazendo uso da plataforma Visual Studio Code. O controle de versão do projeto será realizado através do Git, hospedado no repositório GitHub. Quanto à abordagem de gestão, optou-se pela metodologia ágil SCRUM.
 
+### Lista de Ambientes de Trabalho 
+Os elementos do projeto são gerados em diferentes plataformas, e a relação entre os ambientes e suas respectivas funções é detalhada na tabela abaixo:
+
+<table width="100%">
+  <tr>
+    <th>Ambiente</th>
+    <th>Plataforma</th>
+    <th>Link de Acesso</th>
+  </tr>
+  <tr>
+    <td>Repositório de código fonte</td>
+    <td>GitHub</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Documentos do projeto</td>
+    <td>GitHub</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Projeto de Interface e Wireframes</td>
+    <td>Figma</td>
+    <td></td>
+  </tr>
+    <tr>
+    <td>Gerenciamento do Projeto</td>
+    <td>Trello</td>
+    <td></td>
+  </tr>
+</table>
+
 ### Controle de Versão 
 
 No projeto, foi escolhido o Git como a ferramenta de controle de versão, enquanto o Github foi utilizado para hospedar o repositório. 
