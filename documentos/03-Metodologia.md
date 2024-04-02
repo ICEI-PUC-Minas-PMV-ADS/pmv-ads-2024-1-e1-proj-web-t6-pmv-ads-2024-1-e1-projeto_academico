@@ -4,11 +4,37 @@
 Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
 
 
+# Controle de Versão 
+
+No projeto, foi escolhido o Git como a ferramenta de controle de versão, enquanto o Github foi utilizado para hospedar o repositório. 
+
+Para nomear os ramos do projeto, adotamos a seguinte convenção: 
+
+<ul>
+  <li>Master: refere-se à versão do software que já foi testada e é considerada estável.</li>
+  <li>Instável: representa uma versão que passou por testes, mas ainda não é estável devido a problemas identificados.</li>
+  <li>Homologação: indica a versão atualmente em fase de teste.</li>
+  <li>Dev: corresponde à versão em desenvolvimento do software.</li>
+</ul>
+
+O ramo master é reservado para versões prontas para produção, enquanto o ramo dev contém versões em desenvolvimento que ainda estão sujeitas a testes. O ramo homologação é usado para realizar testes nos códigos antes da produção. Se problemas forem detectados, as correções são aplicadas isoladamente no ramo instável para estabilizar a versão antes de entrar em produção. 
+
+Em relação à gestão de problemas, o projeto utiliza as seguintes etiquetas: 
+
+<ul>
+  <li>Documentação: para melhorias ou adições à documentação.</li>
+  <li>Bug: quando uma funcionalidade apresenta problemas.</li> 
+  <li>Aprimoramento: para aprimoramentos em funcionalidades existentes.</li>
+  <li>Recurso: para introduzir uma nova funcionalidade.</li>
+</ul>
+
 ## Gerenciamento de Projeto
 
 O desenvolvimento da aplicação seguirá o protocolo HTTP como base, empregando a linguagem de marcação HTML5 para estruturação, juntamente com CSS para estilização. A codificação da aplicação será conduzida em JavaScript, fazendo uso da plataforma Visual Studio Code. O controle de versão do projeto será realizado através do Git, hospedado no repositório GitHub. Quanto à abordagem de gestão, optou-se pela metodologia ágil SCRUM.
 
 ### Divisão de Papéis
+
+Como mencionado anteriormente, a equipe empregará a metodologia Scrum, caracterizada por esforços concentrados e incrementais distribuídos em sprints, os quais, normalmente, terão a duração de duas semanas.
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
@@ -29,18 +55,18 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
 
 ### Processo
 
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação. QUALQUER COISA
+A metodologia Scrum foi integrada com o método Kanban para visualizar a distribuição de tarefas, sendo realizada por meio da ferramenta Projects do GitHub. As lanes (faixas) existentes são: 
 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Backlog: inclui as tarefas identificadas e necessárias para a criação do produto; 
 
+To do: engloba as tarefas a serem incorporadas na sprint; 
+
+In progress: abrange as tarefas que foram iniciadas e estão em processo de desenvolvimento; 
+
+Test: engloba as tarefas concluídas e submetidas a testes para garantir a qualidade do desenvolvimento; 
+Locked: nesta etapa, são listadas as tarefas que foram interrompidas devido a algum impedimento que necessita de resolução; 
+
+Done: abriga as tarefas finalizadas e testadas.
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
