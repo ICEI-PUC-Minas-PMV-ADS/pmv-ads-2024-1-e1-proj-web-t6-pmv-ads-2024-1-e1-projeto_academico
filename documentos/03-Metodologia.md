@@ -4,6 +4,30 @@
 Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
 
 
+# Controle de Versão 
+
+No projeto, foi escolhido o Git como a ferramenta de controle de versão, enquanto o Github foi utilizado para hospedar o repositório. 
+
+Para nomear os ramos do projeto, adotamos a seguinte convenção: 
+
+<ul>
+  <li>Master: refere-se à versão do software que já foi testada e é considerada estável.</li>
+  <li>Instável: representa uma versão que passou por testes, mas ainda não é estável devido a problemas identificados.</li>
+  <li>Homologação: indica a versão atualmente em fase de teste.</li>
+  <li>Dev: corresponde à versão em desenvolvimento do software.</li>
+</ul>
+
+O ramo master é reservado para versões prontas para produção, enquanto o ramo dev contém versões em desenvolvimento que ainda estão sujeitas a testes. O ramo homologação é usado para realizar testes nos códigos antes da produção. Se problemas forem detectados, as correções são aplicadas isoladamente no ramo instável para estabilizar a versão antes de entrar em produção. 
+
+Em relação à gestão de problemas, o projeto utiliza as seguintes etiquetas: 
+
+<ul>
+  <li>Documentação: para melhorias ou adições à documentação.</li>
+  <li>Bug: quando uma funcionalidade apresenta problemas.</li> 
+  <li>Aprimoramento: para aprimoramentos em funcionalidades existentes.</li>
+  <li>Recurso: para introduzir uma nova funcionalidade.</li>
+</ul>
+
 ## Gerenciamento de Projeto
 
 O desenvolvimento da aplicação seguirá o protocolo HTTP como base, empregando a linguagem de marcação HTML5 para estruturação, juntamente com CSS para estilização. A codificação da aplicação será conduzida em JavaScript, fazendo uso da plataforma Visual Studio Code. O controle de versão do projeto será realizado através do Git, hospedado no repositório GitHub. Quanto à abordagem de gestão, optou-se pela metodologia ágil SCRUM.
