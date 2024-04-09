@@ -20,22 +20,22 @@ Os elementos do projeto são gerados em diferentes plataformas, e a relação en
   <tr>
     <td>Repositório de código fonte</td>
     <td>GitHub</td>
-    <td></td>
+    <td>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico/tree/main/codigo-fonte</td>
   </tr>
   <tr>
     <td>Documentos do projeto</td>
     <td>GitHub</td>
-    <td></td>
+    <td>https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico/tree/main/documentos</td>
   </tr>
     <tr>
     <td>Projeto de Interface e Wireframes</td>
     <td>Figma</td>
-    <td></td>
+    <td>https://www.figma.com/file/xrGiza6A09orfFahLinKxq/Gest%C3%A3o-Acad%C3%AAmica?type=design&node-id=1%3A359&mode=design&t=VETJNO4vXttPCAZ8-1</td>
   </tr>
     <tr>
     <td>Gerenciamento do Projeto</td>
     <td>Trello</td>
-    <td></td>
+    <td>https://trello.com/b/yVH6ltu6/backlog</td>
   </tr>
 </table>
 
