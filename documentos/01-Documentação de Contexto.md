@@ -1,35 +1,40 @@
 # Introdução
 
-[Aqui a equipe deve criar um texto descritivo com a visão geral do problema abordado, apresentando o ambiente e as situações envolvidas no problema.]
+No contexto educacional atual, a gestão eficiente de alunos e de suas atividades é essencial para garantir o bom funcionamento e o sucesso de uma instituição de ensino. No entanto, muitos professores autônomos e pequenos empreendedores do mundo da educação enfrentam desafios significativos na administração de seus negócios devido ao uso de procedimentos manuais para o controle de dados dos alunos.  
+
+Um exemplo concreto dessa problemática é observado em casos de professores autônomos que ministram cursos em que se apoiam em planilhas para gerenciar matrículas, presenças, notas e questões financeiras dos estudantes. Esse método manual, além de ser propenso a erros, demanda um tempo considerável em atualizações constantes e não oferece a eficiência necessária para atender às demandas de uma instituição em crescimento. 
 
 ## Problema
-[Aqui a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.]
-
-Este link pode ajudar a equipe a entender mais sobre definição do problema: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+Devido a utilização de abordagens ultrapassadas e manuais, pequenos empreendedores da área de ensino enfrentam dificuldades significativas na administração de suas aulas. A ausência de uma gestão eficiente faz com que essas pessoas possam cometer erros na aplicação do conteúdo, controle de notas, realização de matrículas e controle de presença. Tais fatores ocasionam a diminuição da eficácia e da qualidade do manuseio de informações relevantes para o seu negócio. 
 
 
 ## Objetivos
 
-[Aqui a equipe deve realizar uma descrição detalhada dos objetivos do trabalho, ressaltando quais as questões principais do problema a serem resolvidas pelo projeto, não é a hora de apresentar requisitos detalhados.]
- 
-Este link pode ajudar a equipe a entender mais sobre definição dos objetivos: [Objetivos, Problema de pesquisa e Justificativa.](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
+O principal objetivo deste projeto é desenvolver uma solução de gestão educacional que permita aos pequenos empreendedores da educação superarem os desafios encontrados na administração manual. Os objetivos específicos são os seguintes: 
+
+<ol>
+    <li>Otimizar o cadastro de alunos e turmas.</li>
+    <li>Realizar o controle de matrículas.</li>
+    <li>primorar o acompanhamento de presenças.</li>
+    <li>Efetuar o registro de notas por disciplina.</li>
+    <li>Emitir declarações e certificados.</li>
+    <li>Facilitar o uso da aplicação.</li>
+</ol> 
+
+
+Ao atingir esses objetivos, espera-se que o projeto proporcione aos pequenos empreendedores educacionais uma ferramenta robusta e eficiente para a gestão de sua instituição de ensino, contribuindo para a melhoria da qualidade do serviço oferecido aos alunos e para o crescimento sustentável do negócio. 
 
 ## Justificativa
 
-[Aqui a equipe deve descrever a importância ou a motivação para trabalhar com o problema definido. Indique as razões pelas quais a equipe escolheu o problema e definiu os objetivos.
+De acordo com Joab Santos da Silva, professor de História e Geografia - Licenciatura Plena em História - Pós-graduado em História Social e Política do Brasil, o desemprego é um problema enfrentado por diversas profissões em todo o mundo, e os professores não estão imunes a essa realidade. 
 
-Devem ser apresentados dados de fontes relevantes e confiáveis sobre o problema, inserindo-o como alvo de estudo. Sugere-se que a equipe utilize questionários, entrevistas e dados estatísticos, que devem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pela equipe.]
+O desemprego entre os professores reflete, em parte, a falta de valorização da profissão. A sociedade muitas vezes não reconhece adequadamente o papel crucial que os educadores desempenham no desenvolvimento das gerações futuras. A falta de investimento na educação e a redução de vagas disponíveis nas instituições de ensino contribuem para o aumento do desemprego nessa área. 
 
-Este link pode ajudar a equipe a formular a justificativa: [Como montar a justificativa.](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+O desemprego na profissão de professor também acarreta desafios financeiros significativos. A remuneração nem sempre é alta, e períodos de desemprego podem resultar em dificuldades financeiras, afetando o sustento pessoal e familiar. Além disso, a instabilidade profissional pode dificultar o planejamento a longo prazo e a busca por estabilidade financeira. Tendo em vista tal problema, muitos desses profissionais veem como solução imediata a iniciativa de fornecerem o seu conhecimento através de aulas particulares, com o objetivo de resguardar a sua estabilidade financeira. 
+
+Desse modo, se faz necessário a criação de resoluções administrativas através de aplicações para atender a demanda desses profissionais autônomos, visando não só o aumento da eficácia, como a melhoria da organização das informações a serem trabalhadas. 
 
 ## Público-Alvo
 
-[Aqui é necessário descrever os atores envolvidos no problema, destacando os diferentes perfis de usuários. O propósito é apresentar as características, necessidades, conhecimentos prévios e experiência com a tecnologia do público-alvo.
-
-Sugere-se que a equipe utilize questionários e/ou entrevistas a fim de conhecer os atores que compõem o público alvo.]
-
-Os links abaixo podem ajudar a equipe a conhecer um pouco mais sobre o público-alvo. 
-
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
+Nosso público-alvo é constituído por pequenos empreendedores da educação como por exemplo professores autônomos que buscam um sistema de gerenciamento eficiente e prático para suas atividades educacionais. Este sistema é direcionado tanto para professores que ministram aulas particulares de forma independente quanto para instituições de reforço escolar que necessitam de uma plataforma robusta para organizar suas atividades pedagógicas. 
 
