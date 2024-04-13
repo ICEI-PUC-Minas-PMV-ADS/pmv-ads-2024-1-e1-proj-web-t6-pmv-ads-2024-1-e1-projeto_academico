@@ -5,7 +5,7 @@ Dentre as preocupações para a montagem da interface do sistema, estamos estabe
 
 ## User Flow
 
-
+![User Flow](img/userFlowSistemaGestaoAcademica.png)
 
 
 ## Wireframes
@@ -27,8 +27,108 @@ Caso o usuário perca ou esqueça a sua senha, o mesmo pode recuperar através d
 
 ![Tela de Recuperação de Senha](img/recuperacaoDeSenha.png)
 
-### Tela de Login
- 
+### Tela de Home - Visão Aluno
 
+Após o login bem sucedido o usuário deverá ter seu perfil identificado e caso seja do perfil aluno exibirá a home page abaixo:
+
+![Tela Home Aluno](img/visaoAlunoHome.png)
+ 
+### Tela de Home - Visão Professor
+
+Após o login bem sucedido o usuário deverá ter seu perfil identificado e caso seja do perfil professor exibirá a home page abaixo:
+
+![Tela Home Professor](img/visaoProfessorHome.png)
+
+### Tela para Cadastro de um Novo Aluno
+
+O perfil de professor terá a funcionalidade para cadastrar novos alunos conformes a tela abaixo:
+
+![Tela Cadastro de Alunos](img/cadastrarAluno.png)
+
+### Tela para Cancelamento de Matrícula
+
+O perfil de professor poderá também realizar o cancelamento de matrículas:
+
+![Tela Cancelamento de Matrícula](img/cancelamentoMatricula.png)
+
+### Tela para Lista de Formandos
+
+O perfil de professor poderá também visualizar todos os alunos que concluíram as turmas ministradas por ele, bem como os respectivos coeficientes de rendimento de cada aluno:
+
+![Tela Lista de Formandos](img/listaFormandos.png)
+
+### Tela para Cadastrar Turmas
+
+O perfil de professor poderá também realizar o cadastramento de novas turmas:
+
+![Tela Cadastro de Turmas](img/cadastrarTurmas.png)
+
+### Tela para Matricular Aluno
+
+O perfil de professor poderá também realizar a matrícula de alunos nas turmas ativas em que ele estiver ministrando:
+
+![Tela Matricular Aluno](img/matricularAluno.png)
+
+### Tela para Visualizar Turmas
+
+Os perfis de professor e aluno poderão também visualizar as turmas ativas. bem como os detalhes de cada uma. Será possível também ao perfil de professor realizar a edição das turmas ativas cadastradas por ele:
+
+![Tela Visualizar Turmas](img/visualizarTurma.png)
+
+![Tela Visualizar Detalhes das Turmas](img/visualizarTurmaDetalhe.png)
+
+![Tela Editar Turmas](img/editarTurma.png)
+
+### Tela para Ativar ou Inativar Turmas
+
+O perfil de professor poderá também inativar as turmas cadastradas, bem como reativar uma turma que outrora foi inativada:
+
+![Tela Ativar ou Inativar Turmas](img/ativarOuInativarTurmas.png)
+
+### Tela para Lançar Frequência
+
+O perfil de professor poderá também realizar o lançamento de frequência dos alunos nas turmas em que ele estiver ministrando:
+
+![Tela Lançar Frequencia](img/lancarFrequencia.png)
+
+![Tela Lançar Frequencia Preenchido](img/lancarFrequenciaPreenchido.png)
+
+### Tela para Lançar Notas
+
+O perfil de professor poderá também realizar o lançamento das notas, referentes às provas e atividades realizadas pelos alunos, nas turmas em que ele estiver ministrando:
+
+![Tela Lançar Notas](img/lancarNotas.png)
+
+![Tela Lançar Notas Preenchido](img/lancarNotasPreenchido.png)
+
+### Tela para Consultar Cadastro
+
+Os perfis de professor e aluno poderão realizar consultas de cadastro de alunos:
+
+![Tela Consultar Cadastro](img/consultarCadastroAluno.png)
+
+### Tela para Consultar Frequência
+
+Os perfis de professor e aluno poderão realizar consultas das frequências de alunos nas turmas ministradas:
+
+![Tela Consultar Cadastro](img/consultarFrequenciaAluno.png)
+
+### Tela para Emitir Declaração de Matrícula
+
+Os perfis de professor e aluno poderão realizar emissão de declarações de matrícula para os alunos ativos:
+
+![Tela Consultar Cadastro](img/emitirDeclaracaoMatricula.png)
+
+### Tela para Consultar Boletim
+
+Os perfis de professor e aluno poderão realizar consultas das notas dos alunos nas turmas ministradas:
+
+![Tela Consultar Cadastro](img/consultarBoletim.png)
+
+### Tela para Emitir Certificado de Conclusão
+
+Os perfis de professor e aluno poderão realizar emissão de certificados de conclusão para os alunos que já obtiveram aprovação nas turmas em que estão matriculados:
+
+![Tela Consultar Cadastro](img/certificadoConclusao.png)
 
 
