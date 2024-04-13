@@ -5,6 +5,10 @@ Dentre as preocupações para a montagem da interface do sistema, estamos estabe
 
 ## User Flow
 
+O fluxo do usuário terá início com a tela de login, onde após a devida autenticação (com e-mail e senha), o mesmo poderá acessar a home page de acordo com o seu perfil, seja ele de aluno ou professor. A home page para ambos os perfis permite a visualização partir de uma barra lateral das opções/funcionalidades disponíveis para cada um. A partir delas o usuário será redirecionado para as telas em que irá realizar as atividades desejadas.
+
+Segue abaixo uma visualização o User Flow baseada no relacionamento da home page e das telas referentes à cada funcionalidade:
+
 ![User Flow](img/userFlowSistemaGestaoAcademica.png)
 
 
@@ -71,11 +75,13 @@ O perfil de professor poderá também realizar a matrícula de alunos nas turmas
 
 ### Tela para Visualizar Turmas
 
-Os perfis de professor e aluno poderão também visualizar as turmas ativas. bem como os detalhes de cada uma. Será possível também ao perfil de professor realizar a edição das turmas ativas cadastradas por ele:
+Os perfis de professor e aluno poderão também visualizar as turmas ativas, bem como os detalhes de cada uma:
 
 ![Tela Visualizar Turmas](img/visualizarTurma.png)
 
 ![Tela Visualizar Detalhes das Turmas](img/visualizarTurmaDetalhe.png)
+
+Será possível também ao perfil de professor realizar a edição das turmas ativas cadastradas por ele:
 
 ![Tela Editar Turmas](img/editarTurma.png)
 
@@ -131,4 +137,8 @@ Os perfis de professor e aluno poderão realizar emissão de certificados de con
 
 ![Tela Consultar Cadastro](img/certificadoConclusao.png)
 
+## Protótipo
+
+É possível ver com mais detalhes e interagir com o protótipo clicando 
+[aqui.](https://www.figma.com/file/xrGiza6A09orfFahLinKxq/Gest%C3%A3o-Acad%C3%AAmica?type=design&node-id=1%3A359&mode=design&t=bIghvnT23bCqUjmg-1) 
 
