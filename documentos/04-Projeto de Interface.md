@@ -5,12 +5,14 @@ Dentre as preocupações para a montagem da interface do sistema, estamos estabe
 
 ## User Flow
 
-O fluxo do usuário terá início com a tela de login, onde após a devida autenticação (com e-mail e senha), o mesmo poderá acessar a home page de acordo com o seu perfil, seja ele de aluno ou professor. A home page para ambos os perfis permite a visualização partir de uma barra lateral das opções/funcionalidades disponíveis para cada um. A partir delas o usuário será redirecionado para as telas em que irá realizar as atividades desejadas.
+O fluxo do usuário terá início com a tela de login, onde após a devida autenticação (com e-mail e senha), o mesmo poderá acessar a home page de acordo com o seu perfil, seja ele de aluno ou professor. A home page para ambos os perfis permite a visualização das opções/funcionalidades disponíveis para cada um partir de uma barra lateral . A partir da interação com as opções nesta barra o usuário será redirecionado para as telas em que irá realizar as atividades desejadas.
 
 Segue abaixo uma visualização o User Flow baseada no relacionamento da home page e das telas referentes à cada funcionalidade:
 
 ![User Flow](img/userFlowSistemaGestaoAcademica.png)
 
+É possível ver com mais detalhes e interagir com o wireframe clicando 
+[aqui.](https://www.figma.com/file/xrGiza6A09orfFahLinKxq/Gest%C3%A3o-Acad%C3%AAmica?type=design&node-id=1%3A359&mode=design&t=bIghvnT23bCqUjmg-1) 
 
 ## Wireframes
 
@@ -137,8 +139,4 @@ Os perfis de professor e aluno poderão realizar emissão de certificados de con
 
 ![Tela Consultar Cadastro](img/certificadoConclusao.png)
 
-## Protótipo
-
-É possível ver com mais detalhes e interagir com o protótipo clicando 
-[aqui.](https://www.figma.com/file/xrGiza6A09orfFahLinKxq/Gest%C3%A3o-Acad%C3%AAmica?type=design&node-id=1%3A359&mode=design&t=bIghvnT23bCqUjmg-1) 
 
