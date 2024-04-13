@@ -1,17 +1,17 @@
 
 # Projeto de Interface
 
-Dentre as preocupações para a montagem da interface do sistema, estamos estabelecendo foco em questões como agilidade, acessibilidade e usabilidade. Desta forma, o projeto tem uma identidade visual padronizada em todas as telas que são projetadas para funcionamento em desktops e dispositivos móveis levando em consideração as visões do professor e e do aluno para o Sistema de Gestão Acadêmica.  
+Dentre as preocupações para a montagem da interface do sistema, estabelecemos foco em questões como agilidade, acessibilidade e usabilidade. Desta forma, o projeto tem uma identidade visual padronizada em todas as telas que são projetadas para funcionamento em desktops e dispositivos móveis levando em consideração as visões do professor e do aluno para o Sistema de Gestão Acadêmica.  
 
-## User Flow
+## User Flow (Fluxo do Usuário)
 
-O fluxo do usuário terá início com a tela de login, onde após a devida autenticação (com e-mail e senha), o mesmo poderá acessar a home page de acordo com o seu perfil, seja ele de aluno ou professor. A home page para ambos os perfis permite a visualização das opções/funcionalidades disponíveis para cada um partir de uma barra lateral . A partir da interação com as opções nesta barra o usuário será redirecionado para as telas em que irá realizar as atividades desejadas.
+O fluxo do usuário terá início com a tela de login, onde após a devida autenticação (com e-mail e senha), o mesmo poderá acessar a home page de acordo com o seu perfil, seja ele de aluno ou professor. A home page para ambos os perfis permite a visualização das opções/funcionalidades disponíveis para cada um a partir de uma barra lateral . Conforme o usuário interagir com as opções nesta barra o mesmo será redirecionado para as telas em que irá realizar as atividades desejadas.
 
-Segue abaixo uma visualização o User Flow baseada no relacionamento da home page e das telas referentes à cada funcionalidade:
+Segue abaixo uma visualização do User Flow baseada no relacionamento da home page e das telas referentes à cada funcionalidade:
 
 ![User Flow](img/userFlowSistemaGestaoAcademica.png)
 
-É possível ver com mais detalhes e interagir com o wireframe clicando 
+É possível ver com mais detalhes o fluxo de usuário e interagir com o wireframe clicando 
 [aqui.](https://www.figma.com/file/xrGiza6A09orfFahLinKxq/Gest%C3%A3o-Acad%C3%AAmica?type=design&node-id=1%3A359&mode=design&t=8Z9IoNkadOBJpA3M-1) 
 
 ## Wireframes
@@ -20,16 +20,13 @@ O wireframe pensado leva em consideração as possíveis telas que serão encont
 
 ### Tela de Login
 
-A tela de login contará com campos para informe das credenciais de acesso, são elas: 
-
-- E-mail
-- Senha
+A tela de login contará com campos para informe das credenciais de acesso (e-mail e senha):
 
 ![Tela de Login](img/telaDeLogin.png)
 
 ### Tela de Recuperação de Senha
 
-Caso o usuário perca ou esqueça a sua senha, o mesmo pode recuperar através da tela de recuperação de senha.
+Caso o usuário perca ou esqueça a sua senha, o mesmo pode recuperar através da tela de recuperação de senha, onde o mesmo informará o e-mail e poderá receber um link para redefinição de senha.
 
 ![Tela de Recuperação de Senha](img/recuperacaoDeSenha.png)
 
@@ -47,19 +44,19 @@ Após o login bem sucedido o usuário deverá ter seu perfil identificado e caso
 
 ### Tela para Cadastro de um Novo Aluno
 
-O perfil de professor terá a funcionalidade para cadastrar novos alunos conformes a tela abaixo:
+O perfil de professor terá a funcionalidade para cadastrar novos alunos conforme a tela abaixo:
 
 ![Tela Cadastro de Alunos](img/cadastrarAluno.png)
 
 ### Tela para Cancelamento de Matrícula
 
-O perfil de professor poderá também realizar o cancelamento de matrículas:
+O perfil de professor poderá também realizar o cancelamento de matrículas para determinado aluno:
 
 ![Tela Cancelamento de Matrícula](img/cancelamentoMatricula.png)
 
 ### Tela para Lista de Formandos
 
-O perfil de professor poderá também visualizar todos os alunos que concluíram as turmas ministradas por ele, bem como os respectivos coeficientes de rendimento de cada aluno:
+O perfil de professor poderá também visualizar a lista de todos os alunos que concluíram as turmas ministradas por ele, bem como os respectivos coeficientes de rendimento de cada aluno:
 
 ![Tela Lista de Formandos](img/listaFormandos.png)
 
@@ -71,7 +68,7 @@ O perfil de professor poderá também realizar o cadastramento de novas turmas:
 
 ### Tela para Matricular Aluno
 
-O perfil de professor poderá também realizar a matrícula de alunos nas turmas ativas em que ele estiver ministrando:
+O perfil de professor poderá também realizar a matrícula de alunos nas turmas ativas em que ele ou um de seus colegas professores estiverem ministrando:
 
 ![Tela Matricular Aluno](img/matricularAluno.png)
 
@@ -95,7 +92,7 @@ O perfil de professor poderá também inativar as turmas cadastradas, bem como r
 
 ### Tela para Lançar Frequência
 
-O perfil de professor poderá também realizar o lançamento de frequência dos alunos nas turmas em que ele estiver ministrando:
+O perfil de professor poderá também realizar o lançamento de frequência dos alunos nas turmas em que ele ou um de seus colegas professores estiverem ministrando:
 
 ![Tela Lançar Frequencia](img/lancarFrequencia.png)
 
@@ -103,7 +100,7 @@ O perfil de professor poderá também realizar o lançamento de frequência dos 
 
 ### Tela para Lançar Notas
 
-O perfil de professor poderá também realizar o lançamento das notas, referentes às provas e atividades realizadas pelos alunos, nas turmas em que ele estiver ministrando:
+O perfil de professor poderá também realizar o lançamento das notas, referentes às provas e atividades realizadas pelos alunos, nas turmas em que ele ou um de seus colegas professores estiverem ministrando:
 
 ![Tela Lançar Notas](img/lancarNotas.png)
 
