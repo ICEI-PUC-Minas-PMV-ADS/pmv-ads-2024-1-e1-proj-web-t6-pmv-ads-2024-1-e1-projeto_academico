@@ -73,12 +73,7 @@ A equipe utiliza o Scrum como base para definição do processo de desenvolvimen
    Kevin Lucas Andrade dos Santos
 - Product Owner: 
     Marcelly Thais Freitas Neves
-- Equipe de Desenvolvimento: 
-    Brena Aparecida Ferreira
-    Caio de Souza Araújo
-    Fernando Vinícius Sousa Moura
-    Kevin Lucas Andrade dos Santos
-    Marcelly Thais Freitas Neves
+- Equipe de Desenvolvimento: Brena Aparecida Ferreira, Caio de Souza Araújo, Fernando Vinícius Sousa Moura, Kevin Lucas Andrade dos Santos e Marcelly Thais Freitas Neves
 - Equipe de Design: 
     Fernando Vinícius Sousa Moura
 
@@ -110,8 +105,7 @@ Done: abriga as tarefas finalizadas e testadas.
 </ul>
 
 <figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png">
 </figure> 
   
 ### Ferramentas
@@ -120,30 +114,56 @@ Done: abriga as tarefas finalizadas e testadas.
 
 **Editores de Código:**
 
-**<li>GitHub:** Utilizado tanto como editor de código quanto como ferramenta de organização, servindo como local síncrono de armazenamento e edição do repositório do projeto.</li>
+<table width="100%">
+  <tr>
+    <th>Ferramenta</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>GitHub</td>
+    <td>Utilizado tanto como editor de código quanto como ferramenta de organização, servindo como local síncrono de armazenamento e edição do repositório do projeto.</td>
+  </tr>
+  <tr>
+    <td>Visual Studio Code</td>
+    <td>Empregado em conjunto com o GitHub para a elaboração de códigos mais complexos.</td>
+  </tr>
+</table>
 
 <p>
-<li><b>Visual Studio Code:</b>
-Empregado em conjunto com o GitHub para a elaboração de códigos mais complexos.</li> 
 
-<p>
 <h4><b>Ferramentas de Comunicação e Organização:</h4></b>
 
- 
-<p>
-<li><b>Microsoft Teams:</b> Utilizado para realizar as reuniões de equipe, bem como as reuniões semanais em conjunto com a coordenadora do projeto.</li> 
-
-<p>
-<li><b>Microsoft Office:</b> Utilizado em suas diversas funcionalidades. O Microsoft Word foi empregado para elaborar a documentação do projeto, enquanto o Power Point foi escolhido para a apresentação da proposta de projeto. O sistema Office em si foi utilizado como local de compartilhamento de documentos.</li> 
-
-<p>
-<li><b>Trello:</b> Utilizado para a organização e segmentação de tarefas no projeto.</li>
-
+<table width="100%">
+  <tr>
+    <th>Ferramenta</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>Microsoft Teams</td>
+    <td>Utilizado para realizar as reuniões de equipe, bem como as reuniões semanais em conjunto com a coordenadora do projeto.</td>
+  </tr>
+  <tr>
+    <td>Microsoft Office</td>
+    <td>Utilizado em suas diversas funcionalidades. O Microsoft Word foi empregado para elaborar a documentação do projeto, enquanto o Power Point foi escolhido para a apresentação da proposta de projeto. O sistema Office em si foi utilizado como local de compartilhamento de documentos.</td>
+  </tr>
+    <tr>
+    <td>Trello</td>
+    <td>Utilizado para a organização e segmentação de tarefas no projeto.</td>
+  </tr>
+</table>
 <p>
 <h4><b>Ferramentas de Desenho de Tela (wireframing):</h4></b>
-<p>
-<li><b>Figma:</b> Utilizado na versão final do projeto de interface.</li>     
 
+<table width="100%">
+  <tr>
+    <th>Ferramenta</th>
+    <th>Descrição</th>
+  </tr>
+  <tr>
+    <td>Figma</td>
+    <td>Utilizado na versão final do projeto de interface.</td>
+  </tr>
+</table>
 
 ### Estratégia de Organização de Codificação 
 
