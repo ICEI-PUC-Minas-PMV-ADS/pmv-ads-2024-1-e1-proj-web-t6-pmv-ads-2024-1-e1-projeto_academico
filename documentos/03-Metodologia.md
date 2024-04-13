@@ -69,13 +69,15 @@ Como mencionado anteriormente, a equipe empregará a metodologia Scrum, caracter
 
 A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
 [Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-- Scrum Master: 
-   Kevin Lucas Andrade dos Santos
-- Product Owner: 
-    Marcelly Thais Freitas Neves
-- Equipe de Desenvolvimento: Brena Aparecida Ferreira, Caio de Souza Araújo, Fernando Vinícius Sousa Moura, Kevin Lucas Andrade dos Santos e Marcelly Thais Freitas Neves
-- Equipe de Design: 
-    Fernando Vinícius Sousa Moura
+* _Scrum Master_: Kevin Lucas Andrade dos Santos
+* _Product Owner_: Marcelly Thais Freitas Neves
+* _Equipe de Desenvolvimento_: 
+  * Brena Aparecida Ferreira
+  * Caio de Souza Araújo
+  * Fernando Vinícius Sousa Moura
+  * Kevin Lucas Andrade dos Santos
+  * Marcelly Thais Freitas Neves
+* _Equipe de Design_: Fernando Vinícius Sousa Moura
 
 ### Processo
 
@@ -117,7 +119,7 @@ Done: abriga as tarefas finalizadas e testadas.
 <table width="100%">
   <tr>
     <th>Ferramenta</th>
-    <th>Descrição</th>
+    <th>Descrição da Utilização</th>
   </tr>
   <tr>
     <td>GitHub</td>
@@ -136,7 +138,7 @@ Done: abriga as tarefas finalizadas e testadas.
 <table width="100%">
   <tr>
     <th>Ferramenta</th>
-    <th>Descrição</th>
+    <th>Descrição da Utilização</th>
   </tr>
   <tr>
     <td>Microsoft Teams</td>
@@ -157,7 +159,7 @@ Done: abriga as tarefas finalizadas e testadas.
 <table width="100%">
   <tr>
     <th>Ferramenta</th>
-    <th>Descrição</th>
+    <th>Descrição da Utilização</th>
   </tr>
   <tr>
     <td>Figma</td>
