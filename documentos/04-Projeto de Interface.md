@@ -12,7 +12,7 @@ Segue abaixo uma visualização o User Flow baseada no relacionamento da home pa
 ![User Flow](img/userFlowSistemaGestaoAcademica.png)
 
 É possível ver com mais detalhes e interagir com o wireframe clicando 
-[aqui.](https://www.figma.com/file/xrGiza6A09orfFahLinKxq/Gest%C3%A3o-Acad%C3%AAmica?type=design&node-id=1%3A359&mode=design&t=bIghvnT23bCqUjmg-1) 
+[aqui.](https://www.figma.com/file/xrGiza6A09orfFahLinKxq/Gest%C3%A3o-Acad%C3%AAmica?type=design&node-id=1%3A359&mode=design&t=8Z9IoNkadOBJpA3M-1) 
 
 ## Wireframes
 
