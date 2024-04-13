@@ -19,9 +19,13 @@ A tela de login contará com campos para informe das credenciais de acesso, são
 - E-mail
 - Senha
 
-![Wireframe Tela de Login - Sistema de Gestao Academico](img/Tela de Login.png)
+![Tela de Login](img/telaDeLogin.png)
 
-### Tela de Login
+### Tela de Recuperação de Senha
+
+Caso o usuário perca ou esqueça a sua senha, o mesmo pode recuperar através da tela de recuperação de senha.
+
+![Tela de Recuperação de Senha](img/recuperacaoDeSenha.png)
 
 ### Tela de Login
  
