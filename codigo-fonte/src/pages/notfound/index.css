@@ -1,0 +1,18 @@
+.page-notfound {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-default);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-notfound-wrapper {
+    width: 50%;
+    max-width: 90%;
+    text-align: center;
+}
+
+.page-notfound-wrapper svg {
+    font-size: 4rem;
+}

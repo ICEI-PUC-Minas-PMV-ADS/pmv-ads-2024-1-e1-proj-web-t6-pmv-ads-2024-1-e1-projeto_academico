@@ -1,0 +1,30 @@
+.authentication-page {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.authentication-page-wrapper {
+    width: 300px;
+    max-width: 90%;
+}
+
+
+.authentication-page-wrapper input {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 0 1rem;
+    height: 44px;
+}
+.authentication-page-wrapper button {
+    height: 44px;
+    background-color: var(--bg-primary);
+    cursor: pointer;
+}
+.authentication-page-wrapper button.disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
