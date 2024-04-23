@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"usernamehw.errorlens",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"heybourn.headwind",
+		"chamboug.js-auto-backticks",
+		"ritwickdey.liveserver",
+		"bradlc.vscode-tailwindcss"
+	]
+}
