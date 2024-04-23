@@ -161,9 +161,7 @@ Para tanto siga os passos:
    </li>
    ```
 
-## Consumindo serviços na aplicação
-
-## Serviços no Frontend
+## Consumindo serviços na aplicação Frontend
 
 Em um contexto de frontend, um serviço é uma peça fundamental da arquitetura de uma aplicação web. Um serviço é uma classe ou objeto JavaScript que encapsula uma funcionalidade específica e pode ser utilizado para executar tarefas como comunicação com um servidor, gerenciamento de estado, manipulação de dados, entre outras.
 
