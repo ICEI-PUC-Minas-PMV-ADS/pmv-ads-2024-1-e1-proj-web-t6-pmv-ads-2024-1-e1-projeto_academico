@@ -1,1 +1,7 @@
-console.log('modulo 404');
+import './index.css';
+
+export default {
+    init() {
+        console.log('notfound');
+    }
+}

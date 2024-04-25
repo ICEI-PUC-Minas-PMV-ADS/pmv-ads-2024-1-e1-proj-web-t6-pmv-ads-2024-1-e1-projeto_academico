@@ -1,3 +1,8 @@
+
 import './index.css';
 
-console.log('modulo de formandos');
+export default {
+    init() {
+        console.log('aluno formandos');
+    }
+}

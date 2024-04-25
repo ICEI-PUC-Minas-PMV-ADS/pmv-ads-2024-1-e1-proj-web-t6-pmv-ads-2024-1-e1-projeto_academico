@@ -4,7 +4,9 @@
 
 		<div class="dashboard-layout-sidebar-title">
 			<div class="sidebar-icon-wrapper">
-				<figure class="user-avatar"><img src="https://img.freepik.com/fotos-premium/um-personagem-de-desenho-animado-do-avatar-do-jogo_667286-2738.jpg" alt=""></figure>
+				<figure class="user-avatar">
+					<img class="auth-image" src="" alt="">
+				</figure>
 			</div>
 			
 			<a class="logout sidebar-text-wrapper">
@@ -27,7 +29,7 @@
 				</a>
 				<div class="dashboard-layout-sidebar-menu-children">
 					<ul>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/cadastro')">Cadastrar Aluno</a></li>
+						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/lista')">Lista de Alunos</a></li>
 						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/frequencia')">Consultar frequência</a></li>
 						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/matricula')">Emitir declaração de matrícula</a></li>
 						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/boletim')">Consultar Boletim</a></li>
@@ -79,6 +81,3 @@
 		{{{body}}}
     </div>
 </div>
-
-
-<script data-mode="module" src="/src/modulesJS/dashboard.js"></script>

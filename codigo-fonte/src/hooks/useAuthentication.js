@@ -1,4 +1,4 @@
-import { authenticationService } from "@/services/authentication.service";
+import { authenticationService } from "/src/services/authentication.service.js";
 
 export const useAuthentication = () => {
 	async function sigIn(username, password) {

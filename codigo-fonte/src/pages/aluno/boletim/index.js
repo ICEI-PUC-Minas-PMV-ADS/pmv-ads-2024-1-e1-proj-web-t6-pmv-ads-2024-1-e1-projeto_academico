@@ -1,3 +1,8 @@
+
 import './index.css';
 
-console.log('módulo de boletim');
+export default {
+    init() {
+        console.log('aluno boletim');
+    }
+}

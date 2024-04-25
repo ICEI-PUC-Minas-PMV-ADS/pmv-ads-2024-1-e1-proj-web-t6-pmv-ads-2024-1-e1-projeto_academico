@@ -1,3 +1,8 @@
+
 import './index.css';
 
-console.log('modulo de frequência');
+export default {
+    init() {
+        console.log('turme frequencia');
+    }
+}

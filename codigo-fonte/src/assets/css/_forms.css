@@ -10,6 +10,16 @@
     gap: 5px;
 }
 
+form input:disabled, 
+form select:disabled, 
+form button:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+form button {
+    cursor: pointer;
+}
+
 .form-group label {
     font-size: 14px;
 
@@ -21,7 +31,7 @@
     padding: 7px;
     border: none;
     border-radius: 7px;
-    outline: none;
+    outline: 1px solid #DEDEDE;
 }
 
 .form-group button {
