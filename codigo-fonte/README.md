@@ -108,12 +108,14 @@ Para tanto siga os passos:
 		path: '/visualizar_aluno', 
 		layout: 'dashboard', 
 		permission: 'auth', 
-		moduleHTML: '/src/pages/aluno/visualizar_aluno.html', 
-		moduleJS: '/src/pages/aluno/visualizar_aluno.js', 
+		moduleHTML: () => import('/src/pages/aluno/visualizar_aluno.html?raw'), 
+		moduleJS: () => import('/src/pages/aluno/visualizar_aluno.js'), 
 	},
    ...
    // O restante das rotas
    ```
+   Não esqueça de adicionar `?raw` para os arquivos html, senão o vite não consegue carregar esse módulo.
+   
    O resultado disso será uma rota para o aluno que pode ser acessada na aplicação dessa forma:
    
    `http://localhost:8080/visualizar_aluno`
