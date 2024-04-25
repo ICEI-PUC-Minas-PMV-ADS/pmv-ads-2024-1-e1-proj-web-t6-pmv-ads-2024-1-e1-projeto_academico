@@ -1,33 +1,37 @@
-import { useAuthentication } from "@/hooks/useAuthentication";
+import { useAuthentication } from "/src/hooks/useAuthentication.js";
 import './index.css';
 
-const formLogin = document.getElementById('form-login');
-const { sigIn } = useAuthentication();
+export default {
+    init() {
+        const formLogin = document.getElementById('form-login');
+        const { sigIn } = useAuthentication();
 
-if (formLogin) {
-    const loginButton = formLogin.querySelector('.form-login-button');
+        if (formLogin) {
+            const loginButton = formLogin.querySelector('.form-login-button');
 
-    formLogin.addEventListener('submit', async (event) => {
-        event.preventDefault();
+            formLogin.addEventListener('submit', async (event) => {
+                event.preventDefault();
 
-        try {
-            const username = formLogin.querySelector('#username').value;
-            const password = formLogin.querySelector('#password').value;
+                try {
+                    const username = formLogin.querySelector('#username').value;
+                    const password = formLogin.querySelector('#password').value;
 
-            loginButton.innerText = 'Carregando...';
-            loginButton.setAttribute('disabled', 'disabled');
-            loginButton.classList.add('disabled');
+                    loginButton.innerText = 'Carregando...';
+                    loginButton.setAttribute('disabled', 'disabled');
+                    loginButton.classList.add('disabled');
 
-            await sigIn(username, password);
+                    await sigIn(username, password);
 
 
-            loginButton.innerText = 'ENTRAR';
-            loginButton.removeAttribute('disabled');
-            loginButton.classList.remove('disabled');
+                    loginButton.innerText = 'ENTRAR';
+                    loginButton.removeAttribute('disabled');
+                    loginButton.classList.remove('disabled');
 
-            window.location.reload();
-        } catch (error) {
-            console.error(error);
+                    window.location.reload();
+                } catch (error) {
+                    console.error(error);
+                }
+            });
         }
-    });
+    }
 }

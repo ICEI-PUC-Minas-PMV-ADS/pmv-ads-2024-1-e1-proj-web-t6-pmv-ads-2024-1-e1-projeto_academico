@@ -1,3 +1,8 @@
+
 import './index.css';
 
-console.log('modulo de certificado de conclusao');
+export default {
+    init() {
+        console.log('aluno certificado conclusao');
+    }
+}

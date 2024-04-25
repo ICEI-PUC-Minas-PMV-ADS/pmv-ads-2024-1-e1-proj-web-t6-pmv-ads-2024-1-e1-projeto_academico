@@ -1,4 +1,4 @@
-import { useAuthentication } from '@/hooks/useAuthentication';
+import { useAuthentication } from '/src/hooks/useAuthentication.js';
 import { useMask } from './useMask';
 
 export const useDashboardUtils = () => {
@@ -21,10 +21,12 @@ export const useDashboardUtils = () => {
     function startAuthenticatedFuncionalities() {
         const { getUSerData } = useAuthentication();
         const name = document.querySelector('.auth-username');
+        const image = document.querySelector('.auth-image');
         const userData = getUSerData();
 
         if (Object.keys(userData).length) {
             name.innerText = userData.name;
+            image.setAttribute('src', userData.image);
         }
     }
 

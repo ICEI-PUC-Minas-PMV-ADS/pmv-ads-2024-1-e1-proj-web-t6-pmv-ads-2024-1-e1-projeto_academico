@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #DEDEDE;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+}
+
+td .edit-button,
+td .delete-button {
+    border: none;
+    background-color: var(--bg-primary);
+    color: #FFF;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+td .delete-button {
+    background-color: var(--color-error);
+}
+
+td .actions-wrapper {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}

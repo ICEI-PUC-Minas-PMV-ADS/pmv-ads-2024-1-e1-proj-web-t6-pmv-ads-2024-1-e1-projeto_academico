@@ -1,8 +1,12 @@
 import './index.css';
 
-console.log('módulo home');
+export default {
+    init() {
+        console.log('home');
+    }
+}
 
-// import { useDashboardUtils } from "@/hooks/useDashboardUtils";
+// import { useDashboardUtils } from "/src/hooks/useDashboardUtils";
 
 
 // const { showNotification } = useDashboardUtils();
