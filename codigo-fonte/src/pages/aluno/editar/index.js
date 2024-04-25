@@ -1,10 +1,10 @@
 import { studentEntityService } from '@/services/studentEntityService.service.js';
 import { useDashboardUtils } from '@/hooks/useDashboardUtils.js';
 import { navigateToRoute } from '@/router';
-import { faker } from '@faker-js/faker';
 import './index.css';
 
-function setStateLoading(form, state = true) {
+function setStateLoading(state = true) {
+    const form = document.querySelector('.form-cadastro-aluno');
     if (form) {
         const inputs = form.querySelectorAll('input, select');
         const buttonSubmit = form.querySelector('button[type=submit]');
@@ -29,14 +29,50 @@ function setStateLoading(form, state = true) {
     }
 }
 
+async function loadStudentData() {
+    const id = [...window.location.href.split('/')].pop();
+    const form = document.querySelector('.form-cadastro-aluno');
+
+    if (form) {
+        setStateLoading();
+
+        const { data } = await studentEntityService.getByCode(id);
+
+        Object.entries({ ...data }).forEach(([key, value]) => {
+            if (['id', 'created_at'].includes(key)) {
+                return;
+            }
+
+            const input = form.querySelector(`input[name=${key}], select[name=${key}]`);
+
+            if (['nacionalidade', 'naturalidade'].includes(key)) {
+                const options = input.querySelectorAll('options');
+
+                options.forEach((option) => {
+                    option.removeAttribute('selected');
+
+                    if (option.value === value) {
+                        option.setAttribute('selected');
+                    }
+                })
+            }
+
+            input.value = value;
+        });
+
+        setStateLoading(false);
+    }
+}
+
 async function onFormSubmit(event) {
     event.preventDefault();
-
     const form = document.querySelector('.form-cadastro-aluno');
+    const id = [...window.location.href.split('/')].pop();
+
+    setStateLoading(form);
+
     const inputs = form.querySelectorAll('input, select');
     const { showNotification } = useDashboardUtils();
-    
-    setStateLoading(form);
 
     if (inputs) {
         const payload = {};
@@ -46,25 +82,22 @@ async function onFormSubmit(event) {
             payload[key] = value;
         });
 
-        payload.id = faker.string.uuid();
-        payload.created_at = new Date().toISOString();
+        await studentEntityService.update(id, payload);
 
-        await studentEntityService.create(payload);
-
-        showNotification({ 
-            type: 'success', 
-            title: 'Sucesso', 
+        showNotification({
+            type: 'success',
+            title: 'Sucesso',
             message: 'Dados cadastrados com sucesso'
         });
 
+        setStateLoading(form);
         navigateToRoute(null, '/aluno/lista');
-
-        setStateLoading(form, false);
     }
 }
 
 export default {
     init() {
+        loadStudentData();
         window.onFormSubmit = null;
         window.onFormSubmit = onFormSubmit;
     }

@@ -1,3 +1,8 @@
+
 import './index.css';
 
-console.log('modulo de cancelar matricula');
+export default {
+    init() {
+        console.log('aluno cancelar matricula');
+    }
+}

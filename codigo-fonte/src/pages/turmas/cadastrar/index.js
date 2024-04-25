@@ -1,3 +1,8 @@
+
 import './index.css';
 
-console.log('modulo de cadastrar');
+export default {
+    init() {
+        console.log('turme cadastrar');
+    }
+}

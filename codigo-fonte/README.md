@@ -29,31 +29,15 @@ Este README fornecerá instruções passo a passo sobre como baixar, instalar o 
 
 ## Executando o projeto
 
-1. **Clone o repositório:**
+1. **Instale as dependências:**
 
-   Clone o repositório do projeto para o seu computador usando o Git. Por exemplo:
-
-   ```
-   git clone https://github.com/usuario/vanilla-base.git
-   ```
-
-2. **Navegue até o diretório do projeto:**
-
-   Use o comando `cd` para navegar até o diretório do projeto que você acabou de clonar:
-
-   ```
-   cd vanilla-base
-   ```
-
-3. **Instale as dependências:**
-
-   Execute o seguinte comando para instalar as dependências do projeto usando o npm:
+   Execute o seguinte comando, na raiz do projeto frontend, para instalar as dependências do projeto usando o npm:
 
    ```
    npm install
    ```
 
-4. **Inicie o servidor de desenvolvimento:**
+2. **Inicie o servidor de desenvolvimento:**
 
    Depois que todas as dependências forem instaladas, você pode iniciar o servidor de desenvolvimento usando o comando:
 
@@ -63,7 +47,7 @@ Este README fornecerá instruções passo a passo sobre como baixar, instalar o 
 
    Este comando iniciará o servidor de desenvolvimento do Vite. Após a inicialização, você poderá acessar o projeto no navegador.
 
-5. **Acesso ao projeto:**
+3. **Acesso ao projeto:**
 
    Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
 
@@ -216,7 +200,7 @@ Chame esse service no seu módulo e utilize a vontade.
 Em `src/pages/aluno/visualizar_aluno.js`:
 
 ```js
-import { alunoService } from '@/services/alunoService.service.js';
+import { alunoService } from '/src/services/alunoService.service.js';
 
 const meuButton = document.getElementById('meu_button');
 const id = 1;

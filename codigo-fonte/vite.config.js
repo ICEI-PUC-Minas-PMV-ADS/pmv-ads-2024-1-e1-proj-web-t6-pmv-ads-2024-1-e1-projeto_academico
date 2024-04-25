@@ -3,7 +3,9 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [],
-	assetsInclude: ['**/*.html'],
+	build: {
+		chunkSizeWarningLimit: 1024 * 6,
+	},
 	server: {
 		port: 8080,
 		host: true,
