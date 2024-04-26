@@ -1,12 +1,17 @@
 # Template padrão da Aplicação
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+O layout padrão do site (HTML e CSS) que será utilizado em todas as páginas, em correspondência ao projeto de Interface elaborado anteriormente, conforme imagem abaixo é formado por uma área referente aos perfis de aluno e professor, uma área lateral referente ao menu de navegação, uma área referente ao título da opção a qual o usuário selecionou e uma área para o conteúdo a ser exibido:
 
-[Apresente a estrutura padrão da sua aplicação.]
+![Template Padrão](img/templatePadrao.png)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+A área do aluno e professor apresenta a miniatura da foto do usuário; o título e nome do usuário.
+
+A área do menu de navegação possui uma faixa de opções de acordo com o perfil do usuário logado. As opções são referentes às funcionalidades da aplicação, além de contar com uma opção referente às configurações.
+
+A área do título traz a descrição da funcionalidade selecionada.
+
+A área do conteúdo é preenchida de acordo com a funcionalidade selecionada, onde a mesma pode conter formulários, listas, tabelas e visualizações de documentos.
+
+Para a identidade visual optou-se por um design simples, leve e fluido e a palheta de cores apresentada abaixo:
+
+![Paleta de Cores](img/paletaDeCores.png)
