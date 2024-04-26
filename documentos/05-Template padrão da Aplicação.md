@@ -14,4 +14,4 @@ A área do conteúdo é preenchida de acordo com a funcionalidade selecionada, o
 
 Para a identidade visual optou-se por um design simples, leve e fluido e a palheta de cores apresentada abaixo:
 
-![Paleta de Cores](img/paletaDeCores.png)
+![Paleta de Cores](img/paletaDeCoresNovo.png)
