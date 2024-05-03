@@ -1,29 +1,100 @@
 <div class="page-wrapper boletim-page">
-    <link rel="stylesheetBoletim" href="index.css">
+    <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
     <div class="flex justify-between gap-4 items-center">
         <h1 class="text-primary">Consultar Boletim</h1>
     </div>
-    <div>
-        <label>Informe o CPF ou Código de Matrícula do Aluno: *</label>
-        <input type="text" id="identificadorAluno" name="identificadorAluno" required>
+        
+    <label id="textoLabelInformeCPF">Informe o CPF ou Código de Matrícula do Aluno: *</label>
+        
+    <div id="pesquisaAluno" >
+            <input type="text" id="CPFInput" name="cpf" maxlength="14" placeholder="CPF ou Matrícula do Aluno *">
+            <input type="submit" id="botaoPesquisar" value=" ">
     </div>
-    <div class="card">
-        <h2>Boletim</h2>
-    </div>
-    <div id="nomeAluno">
-        Aluno:
-    </div>
-    <div id="anoLetivo">
-        Ano Letivo:
-    </div>
-    <div id="turma">
-        Turma:
-    </div>
-    <div id="notaTurma">
-        Nota:
-    </div>
-    <div id="situacaoTurma">
-        Situação:
+    
+    <div id="linha"></div>
+    
+        <div class="card">
+            <h2>Boletim</h2>
+            <div id="nomeAluno">
+                Aluno: Carlos Barbosa da Costa Mendes
+            </div>
+            <div id="anoLetivo">
+                Ano Letivo: 2024
+            </div>
+            <br/>
+            <div class="cardTitulo">
+                Turma
+            </div>
+            <div class="cardTitulo">
+                Nota
+            </div>
+            <div class="cardTitulo">
+                Situação
+            </div>
+            <br>
+            <!--Input do Nome da Turma 1-->
+            <div class="cardConteudoTurmas">
+                Física Aplicada
+            </div>
+            <!--Input da Nota do Aluno na Turma 1-->
+            <div class="cardConteudoTurmas">
+                9,6
+            </div>
+            <!--Input da Situação do Aluno na Turma 1-->
+            <div class="cardConteudoTurmas">
+                Aprovado
+            </div>
+            <br>
+            <!--Input do Nome da Turma 2-->
+            <div class="cardConteudoTurmas">
+                Química Geral
+            </div>
+            <!--Input da Nota do Aluno na Turma 2-->
+            <div class="cardConteudoTurmas">
+                7,3
+            </div>
+            <!--Input da Situação do Aluno na Turma 2-->
+            <div class="cardConteudoTurmas">
+                Aprovado
+            </div>
+            <br>
+            <!--Input do Nome da Turma 3-->
+            <div class="cardConteudoTurmas">
+                Matemática Básica
+            </div>
+            <!--Input da Nota do Aluno na Turma 3-->
+            <div class="cardConteudoTurmas">
+                8,4
+            </div>
+            <!--Input da Situação do Aluno na Turma 3-->
+            <div class="cardConteudoTurmas">
+                Aprovado
+            </div>
+            <br>
+            <!--Input do Nome da Turma 4-->
+            <div class="cardConteudoTurmas">
+                Geografia
+            </div>
+            <!--Input da Nota do Aluno na Turma 4-->
+            <div class="cardConteudoTurmas">
+                5,4
+            </div>
+            <!--Input da Situação do Aluno na Turma 4-->
+            <div class="cardConteudoTurmas">
+                Reprovado
+            </div>
+            <!--Marcador da Página Atual-->
+            <div class="outrasPaginas" id="paginaAtual">
+                1
+            </div>
+            <!--Marcadores das Outras Páginas Disponíveis-->
+            <div class="outrasPaginas">
+                2
+            </div>
+            <div class="outrasPaginas">
+                3
+            </div>
+        </div>
     </div>
 </div>
