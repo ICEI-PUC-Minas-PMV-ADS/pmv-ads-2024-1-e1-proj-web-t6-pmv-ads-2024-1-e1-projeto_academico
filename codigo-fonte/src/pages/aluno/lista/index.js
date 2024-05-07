@@ -1,5 +1,8 @@
 import { studentEntityService } from '/src/services/studentEntityService.service.js';
 import { useDOMManager } from '/src/hooks/useDOMManager.js';
+import { useDashboardUtils } from '@/hooks/useDashboardUtils';
+import { navigateToRoute } from '@/router';
+import './index.css';
 
 let started = false;
 
@@ -7,6 +10,7 @@ async function startStudentListModule() {
     started = true;
 
     const { createTable, createTableActions } = useDOMManager();
+    const { showNotification } = useDashboardUtils();
 
     const wrapper = document.querySelector('.aluno-lista-wrapper');
 
@@ -41,20 +45,48 @@ async function startStudentListModule() {
 
             const editButton = row.querySelector('.edit-button');
             const deleteButton = row.querySelector('.delete-button');
+            const activeButton = row.querySelector('.active-button');
 
             if (editButton) {
                 editButton.addEventListener('click', (event) => {
                     event.preventDefault();
 
+                    // Redireciona para a tela de edição
                     navigateToRoute(null, `/aluno/editar/${id}`);
                 })
             }
 
             if (deleteButton) {
-                deleteButton.addEventListener('click', (event) => {
+                deleteButton.addEventListener('click', async (event) => {
                     event.preventDefault();
 
-                    console.log('delete');
+                    // deve desativar o aluno
+                    await studentEntityService.delete(id);
+
+                    showNotification({ 
+                        type: 'success', 
+                        title: 'Sucesso', 
+                        message: 'Aluno desativado com sucessso'
+                    });
+
+                    navigateToRoute(null, `/aluno/lista/`);
+                })
+            }
+
+            if (activeButton) {
+                activeButton.addEventListener('click', async (event) => {
+                    event.preventDefault();
+
+                    // deve reactivar o aluno
+                    await studentEntityService.activate(id);
+
+                    showNotification({ 
+                        type: 'success', 
+                        title: 'Sucesso', 
+                        message: 'Aluno reativado com sucessso'
+                    });
+
+                    navigateToRoute(null, `/aluno/lista/`);
                 })
             }
         });
@@ -64,8 +96,7 @@ async function startStudentListModule() {
     }
 }
 
-import './index.css';
-import { navigateToRoute } from '@/router';
+
 
 export default {
     init() {
