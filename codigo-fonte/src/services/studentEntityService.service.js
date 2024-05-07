@@ -42,11 +42,20 @@ export const studentEntityService = {
         });
     },
     async delete(id) {
-        removeItem(id);
+        updateItem(id, { active: false });
+
+        return fakeRequest({
+            message: 'Dados retornados com sucesso',
+            data: [],
+        });
+    },
+    async activate(id) {
+        updateItem(id, { active: true });
 
         return fakeRequest({
             message: 'Dados retornados com sucesso',
             data: [],
         });
     }
+
 }
