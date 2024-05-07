@@ -1,0 +1,12 @@
+.btn {
+    height:40px;
+    padding: 0 10px;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn.btn-primary {
+    background-color: var(--bg-primary);
+}

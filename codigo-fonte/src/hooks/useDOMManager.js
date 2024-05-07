@@ -49,6 +49,7 @@ export const useDOMManager = () => {
                 row.classList.add('global-el-table-row');
                 row.classList.add('body-row');
                 row.setAttribute('data-id', i.id);
+                row.setAttribute('data-active', i.active);
         
                 headers.forEach((header) => {
                     const cell = document.createElement('td');
@@ -81,6 +82,10 @@ export const useDOMManager = () => {
             tableHeaderRow.appendChild(th);
 
             tableBodyRow.forEach(row => {
+                const active = row.getAttribute('data-active') === 'true';
+
+                console.log('active', active);
+
                 const buttonEdit = document.createElement('button');
                 buttonEdit.classList.add('edit-button');
                 buttonEdit.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-edit"></span>';
@@ -89,11 +94,25 @@ export const useDOMManager = () => {
                 buttonDelete.classList.add('delete-button');
                 buttonDelete.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-delete"></span>';
 
+                const buttonActive = document.createElement('button');
+                buttonActive.classList.add('active-button');
+                buttonActive.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-refresh"></span>';
+
+
                 const actionsWrapper = document.createElement('div');
                 actionsWrapper.classList.add('actions-wrapper');
                 const td = document.createElement('td');
+                
                 actionsWrapper.appendChild(buttonEdit);
-                actionsWrapper.appendChild(buttonDelete);
+
+                if (active) {
+                    actionsWrapper.appendChild(buttonDelete);
+                }
+
+                if (!active) {
+                    actionsWrapper.appendChild(buttonActive);
+                }
+
                 td.appendChild(actionsWrapper);
                 row.appendChild(td);
             })

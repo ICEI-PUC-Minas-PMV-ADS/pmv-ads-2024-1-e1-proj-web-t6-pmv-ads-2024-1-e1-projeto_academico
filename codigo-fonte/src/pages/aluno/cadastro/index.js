@@ -48,6 +48,7 @@ async function onFormSubmit(event) {
 
         payload.id = faker.string.uuid();
         payload.created_at = new Date().toISOString();
+        payload.active = true;
 
         await studentEntityService.create(payload);
 

@@ -7,6 +7,13 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/authentication/login/index.js'),
 	},
 	{ 
+		path: '/recuperar', 
+		layout: 'auth', 
+		permission: 'guest', 
+		moduleHTML: () => import('@/pages/authentication/recovery/index.html?raw'), 
+		moduleJS: () => import('@/pages/authentication/recovery/index.js'),
+	},
+	{ 
 		path: '/', 
 		layout: 'dashboard', 
 		permission: 'auth', 
