@@ -43,21 +43,23 @@ async function loadStudentData() {
                 return;
             }
 
-            const input = form.querySelector(`input[name=${key}], select[name=${key}]`);
+            const inputs = form.querySelectorAll(`input[name=${key}], select[name=${key}]`);
 
-            if (['nacionalidade', 'naturalidade'].includes(key)) {
-                const options = input.querySelectorAll('options');
-
-                options.forEach((option) => {
-                    option.removeAttribute('selected');
-
-                    if (option.value === value) {
-                        option.setAttribute('selected');
-                    }
-                })
-            }
-
-            input.value = value;
+            inputs.forEach((input) => {
+                if (['nacionalidade', 'naturalidade'].includes(key)) {
+                    const options = input.querySelectorAll('options');
+    
+                    options.forEach((option) => {
+                        option.removeAttribute('selected');
+    
+                        if (option.value === value) {
+                            option.setAttribute('selected');
+                        }
+                    })
+                }
+    
+                input.value = value;
+            });
         });
 
         setStateLoading(false);
