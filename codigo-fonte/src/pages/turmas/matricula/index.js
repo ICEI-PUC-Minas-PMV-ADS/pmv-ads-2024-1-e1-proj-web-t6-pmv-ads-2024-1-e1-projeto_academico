@@ -3,6 +3,6 @@ import './index.css';
 
 export default {
     init() {
-        console.log('turme matricula');
+        console.log('turma matricula');
     }
 }

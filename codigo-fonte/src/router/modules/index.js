@@ -119,6 +119,13 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/turmas/visualizar/index.js'),
 	},
 	{ 
+		path: '/turmas/notas', 
+		layout: 'dashboard', 
+		permission: 'auth', 
+		moduleHTML: () => import('@/pages/turmas/notas/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/notas/index.js'),
+	},
+	{ 
 		path: '/settings', 
 		layout: 'dashboard', 
 		permission: 'auth', 
