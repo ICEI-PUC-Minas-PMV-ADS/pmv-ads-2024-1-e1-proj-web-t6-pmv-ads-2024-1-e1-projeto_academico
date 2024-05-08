@@ -84,8 +84,6 @@ export const useDOMManager = () => {
             tableBodyRow.forEach(row => {
                 const active = row.getAttribute('data-active') === 'true';
 
-                console.log('active', active);
-
                 const buttonEdit = document.createElement('button');
                 buttonEdit.classList.add('edit-button');
                 buttonEdit.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-edit"></span>';
