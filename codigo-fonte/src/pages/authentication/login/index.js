@@ -1,5 +1,6 @@
 import { useAuthentication } from "/src/hooks/useAuthentication.js";
 import './index.css';
+import { useDashboardUtils } from "@/hooks/useDashboardUtils";
 
 export default {
     init() {
@@ -8,6 +9,7 @@ export default {
 
         if (formLogin) {
             const loginButton = formLogin.querySelector('.form-login-button');
+            const { showNotification } = useDashboardUtils();
 
             formLogin.addEventListener('submit', async (event) => {
                 event.preventDefault();
@@ -29,7 +31,14 @@ export default {
 
                     window.location.reload();
                 } catch (error) {
-                    console.error(error);
+                    showNotification({
+                        type: 'error',
+                        title: 'Erro!',
+                        message: String(error).replace('Error: ', ''),
+                    });
+                    loginButton.innerText = 'ENTRAR';
+                    loginButton.removeAttribute('disabled');
+                    loginButton.classList.remove('disabled');
                 }
             });
         }
