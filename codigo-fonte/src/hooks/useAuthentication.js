@@ -1,3 +1,4 @@
+import { useDashboardUtils } from "./useDashboardUtils";
 import { authenticationService } from "/src/services/authentication.service.js";
 
 export const useAuthentication = () => {
@@ -9,6 +10,8 @@ export const useAuthentication = () => {
 		} catch (error) {
 			console.error(error);
 			localStorage.removeItem('userData');
+
+			throw new Error(error.message);
 		}
 	}
 
