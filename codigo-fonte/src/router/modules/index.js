@@ -7,6 +7,13 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/authentication/login/index.js'),
 	},
 	{ 
+		path: '/recuperar', 
+		layout: 'auth', 
+		permission: 'guest', 
+		moduleHTML: () => import('@/pages/authentication/recovery/index.html?raw'), 
+		moduleJS: () => import('@/pages/authentication/recovery/index.js'),
+	},
+	{ 
 		path: '/', 
 		layout: 'dashboard', 
 		permission: 'auth', 
@@ -110,6 +117,13 @@ const RouteModules = [
 		permission: 'auth', 
 		moduleHTML: () => import('@/pages/turmas/visualizar/index.html?raw'), 
 		moduleJS: () => import('@/pages/turmas/visualizar/index.js'),
+	},
+	{ 
+		path: '/turmas/notas', 
+		layout: 'dashboard', 
+		permission: 'auth', 
+		moduleHTML: () => import('@/pages/turmas/notas/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/notas/index.js'),
 	},
 	{ 
 		path: '/settings', 
