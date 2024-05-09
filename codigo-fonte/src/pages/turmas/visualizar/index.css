@@ -1,3 +1,176 @@
-/**
-Módulo visualizar
-**/
+body {
+    background-color: #ECECEC;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-top: 10px;
+}
+
+.text-primary {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0C098E;
+}
+
+#textoLabelInformeCPF{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12;
+}
+
+h2 {
+    margin: 10px;
+    text-align: start;
+}
+
+.card {
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    background-color: white;
+    text-align: center;
+}
+
+#linha {
+    width: 90%;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+#pesquisaAluno {
+    width: 30%;
+    height: 35px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #ffffff;
+
+}
+
+#CPFInput {
+    border: none;
+    width: 90%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+#botaoPesquisar {
+    width: 30px;
+    height: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #ffffff;
+    background-image: url(https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-bleue.png);
+    background-size: 1.8em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+#nomeAluno {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    font-weight: bold;
+    border-top: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+#anoLetivo {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18;
+    font-weight: bold;
+    border-top: 10px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cardTitulo {
+    width: 30.9%;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0C098E;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-top: 10px;
+}
+
+.cardConteudoTurmas {
+
+    width: 30.9%;
+    display: inline-flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    border-top: 10px;
+}
+
+.outrasPaginas {
+    width: max-content;
+    color: #9c9c9c;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#paginaAtual {
+    color: #0C098E;
+}
+
+.turma-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #dedada;
+    border-radius: 5px;
+    background-color: #d5d3d3;
+  }
+  
+ 
+  .turma-action button {
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0C098E;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .turma-action button:hover {
+    background-color: #0A067D;
+  }
+
+
+  .turma-info {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    font-weight: bold
+  }
+  
+  .turma-info p {
+    margin: 20; /* Remover a margem padrão dos parágrafos */
+  }
+  
+  .turma-info p:not(:last-child) {
+    margin-right: 100px; /* Adicionar margem direita entre os itens */
+  }
