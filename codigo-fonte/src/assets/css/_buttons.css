@@ -5,6 +5,8 @@
     background-color: #444;
     color: #fff;
     border-radius: 5px;
+    width: fit-content;
+    cursor: pointer;
 }
 
 .btn.btn-primary {

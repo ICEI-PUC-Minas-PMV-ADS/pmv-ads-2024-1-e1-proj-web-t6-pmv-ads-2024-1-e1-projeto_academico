@@ -304,6 +304,14 @@
     color: #fff;
 }
 
+.font-bold {
+    font-weight: bold;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
 .bg-black {
     background-color: #000;
 }

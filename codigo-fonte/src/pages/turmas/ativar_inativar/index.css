@@ -1,28 +1,9 @@
-body {
-    background-color: #ECECEC;
-    margin-top: 10px;
-}
-
-h1 {
-    margin-top: 10px;
-}
-
-.text-primary {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0C098E;
-}
-
-#textoLabelInformeCPF{
+.ativar-inativar-page #textoLabelInformeCPF {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12;
 }
 
-h2 {
-    margin: 10px;
-    text-align: start;
-}
-
-.card {
+.ativar-inativar-page .card {
     width: 90%;
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
@@ -30,13 +11,13 @@ h2 {
     text-align: center;
 }
 
-#linha {
+.ativar-inativar-page #linha {
     width: 90%;
     border-bottom: 1px solid black;
     padding: 10px;
 }
 
-#pesquisaAluno {
+.ativar-inativar-page #pesquisaAluno {
     width: 30%;
     height: 35px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
@@ -45,7 +26,7 @@ h2 {
 
 }
 
-#CPFInput {
+.ativar-inativar-page #CPFInput {
     border: none;
     width: 90%;
     height: 100%;
@@ -54,7 +35,7 @@ h2 {
     display: inline-block;
 }
 
-#botaoPesquisar {
+.ativar-inativar-page #botaoPesquisar {
     width: 30px;
     height: 100%;
     border-radius: 5px;
@@ -67,7 +48,7 @@ h2 {
     border: none;
 }
 
-#nomeAluno {
+.ativar-inativar-page #nomeAluno {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
@@ -78,7 +59,7 @@ h2 {
     flex-wrap: wrap;    
 }
 
-#anoLetivo {
+.ativar-inativar-page #anoLetivo {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
@@ -89,7 +70,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.cardTitulo {
+.ativar-inativar-page .cardTitulo {
     width: 30.9%;
     display: inline-flex;
     justify-content: center;
@@ -104,7 +85,7 @@ h2 {
     border-top: 10px;
 }
 
-.cardConteudoTurmas {
+.ativar-inativar-page .cardConteudoTurmas {
 
     width: 30.9%;
     display: inline-flex;
@@ -119,7 +100,7 @@ h2 {
     border-top: 10px;
 }
 
-.outrasPaginas {
+.ativar-inativar-page .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
@@ -127,11 +108,11 @@ h2 {
     font-weight: bold;
 }
 
-#paginaAtual {
+.ativar-inativar-page #paginaAtual {
     color: #0C098E;
 }
 
-.turma-item {
+.ativar-inativar-page .turma-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -145,7 +126,7 @@ h2 {
   }
   
  
-  .turma-action-ativar button {
+  .ativar-inativar-page .turma-action-ativar button {
     padding: 5px 20px;
     border: none;
     border-radius: 5px;
@@ -155,32 +136,32 @@ h2 {
     transition: background-color 0.3s;
   }
   
-  .turma-action-ativar button:hover {
+  .ativar-inativar-page .turma-action-ativar button:hover {
     background-color: #8382a1;
   }
 
 
-  .turma-info {
+  .ativar-inativar-page .turma-info {
     display: flex;
     flex-direction: row;
     align-items: right;
     font-weight: bold
   }
   
-  .turma-info p {
+  .ativar-inativar-page .turma-info p {
     margin: 20; /* Remover a margem padrão dos parágrafos */
   }
   
-  .turma-info p:not(:last-child) {
+  .ativar-inativar-page .turma-info p:not(:last-child) {
     margin-right: 100px; /* Adicionar margem direita entre os itens */
   }
 
 
-  input[type="checkbox"]#checkbox_ativar {
+  .ativar-inativar-page input[type="checkbox"]#checkbox_ativar {
     display: none;
 }
 
-input[type="checkbox"]#checkbox_ativar + label {
+.ativar-inativar-page input[type="checkbox"]#checkbox_ativar + label {
     padding: 5px 20px;
     margin-right: 10px;
     border: none;
@@ -190,16 +171,16 @@ input[type="checkbox"]#checkbox_ativar + label {
     cursor: pointer;
 }
 
-input[type="checkbox"]#checkbox_ativar:checked + label {
+.ativar-inativar-page input[type="checkbox"]#checkbox_ativar:checked + label {
     background-color: #0C098E;
 }
 
-input[type="checkbox"]#checkbox_ativar:checked + label::before {
+.ativar-inativar-page input[type="checkbox"]#checkbox_ativar:checked + label::before {
     content: "Ativar      ";
     padding: 5px 20px;
 }
 
-input[type="checkbox"]#checkbox_ativar + label::before {
+.ativar-inativar-page input[type="checkbox"]#checkbox_ativar + label::before {
     content: "Inativar";
     padding: 5px 13px;
 }

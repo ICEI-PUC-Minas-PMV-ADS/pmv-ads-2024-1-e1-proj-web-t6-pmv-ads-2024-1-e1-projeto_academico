@@ -98,11 +98,18 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/turmas/cadastrar/index.js'),
 	},
 	{ 
-		path: '/turmas/lancar_frequencia', 
+		path: '/turmas/frequencia/lista', 
 		layout: 'dashboard', 
 		permission: 'auth', 
-		moduleHTML: () => import('@/pages/turmas/lancar_frequencia/index.html?raw'), 
-		moduleJS: () => import('@/pages/turmas/lancar_frequencia/index.js'),
+		moduleHTML: () => import('@/pages/turmas/frequencia_lista/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/frequencia_lista/index.js'),
+	},
+	{ 
+		path: '/turmas/frequencia/form', 
+		layout: 'dashboard', 
+		permission: 'auth', 
+		moduleHTML: () => import('@/pages/turmas/frequencia_form/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/frequencia_form/index.js'),
 	},
 	{ 
 		path: '/turmas/matricula', 

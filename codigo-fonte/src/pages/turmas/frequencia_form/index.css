@@ -1,21 +1,4 @@
-/**
-Módulo frequência
-**/
-body {
-    background-color: #ECECEC;
-    margin-top: 10px;
-}
-
-h1 {
-    margin-top: 10px;
-}
-
-.text-primary {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #0C098E;
-}
-
-#textoLabelPesquisarTurmas{
+.frequencia-page #textoLabelPesquisarTurmas {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12;
     color: #0C098E;
@@ -23,7 +6,7 @@ h1 {
 }
 
 
-.card {
+.frequencia-page .card {
     width: 90%;
     font-family: Arial, Helvetica, sans-serif;
     color: #000000;
@@ -31,13 +14,13 @@ h1 {
     text-align: center;
 }
 
-#linha {
+.frequencia-page #linha {
     width: 90%;
     border-bottom: 1px solid black;
     padding: 10px;
 }
 
-#pesquisarTurmas {
+.frequencia-page #pesquisarTurmas {
     width: 30%;
     height: 35px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
@@ -46,7 +29,7 @@ h1 {
 
 }
 
-#TURMAInput {
+.frequencia-page #TURMAInput {
     border: none;
     width: 90%;
     height: 100%;
@@ -55,7 +38,7 @@ h1 {
     display: inline-block;
 }
 
-#botaoPesquisar {
+.frequencia-page #botaoPesquisar {
     width: 30px;
     height: 100%;
     border-radius: 5px;
@@ -68,7 +51,7 @@ h1 {
     border: none;
 }
 
-#nomeMateria {
+.frequencia-page #nomeMateria {
     color:#0C098E;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
@@ -79,7 +62,7 @@ h1 {
     flex-wrap: wrap;    
 }
 
-#anoLetivo {
+.frequencia-page #anoLetivo {
     color:#0C098E;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
@@ -90,7 +73,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-#nomeProfessor {
+.frequencia-page #nomeProfessor {
     color:#0C098E;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
@@ -101,7 +84,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-#data {
+.frequencia-page #data {
     color:#0C098E;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18;
@@ -113,7 +96,7 @@ h1 {
     justify-content: right
 }
 
-.cardPrincipalAluno {
+.frequencia-page .cardPrincipalAluno {
     width: 20%;
     height: 65px;
     top: 440px;
@@ -131,7 +114,7 @@ h1 {
     border-top: 10px;
 }
 
-.cardPrincipalPresenca {
+.frequencia-page .cardPrincipalPresenca {
     width: 15.45%;
     height: 65px;
     top: 439px;
@@ -149,7 +132,7 @@ h1 {
     border-top: 10px;
 }
 
-.cardPrincipalFalta {
+.frequencia-page .cardPrincipalFalta {
     width: 15.45%;
     height: 65px;
     top: 439px;
@@ -185,7 +168,7 @@ h1 {
     border-top: 10px;
 }
 
-.cardConteudoAlunos {
+.frequencia-page .cardConteudoAlunos {
 
     width: 20%;
     height: 65px;
@@ -204,7 +187,7 @@ h1 {
     border-top: 10px;
 }
 
-.cardConteudoPresenca {
+.frequencia-page .cardConteudoPresenca {
     width: 15.45%;
     height: 65px;
     top: 520px;
@@ -222,7 +205,7 @@ h1 {
     border-top: 10px;
 }
 
-.cardConteudoAusencia {
+.frequencia-page .cardConteudoAusencia {
     width: 15.45%;
     height: 65px;
     top: 520px;
@@ -258,12 +241,7 @@ h1 {
     border-top: 10px;
 }
 
-button {
-    width: 10%; 
-
-}
-
-.outrasPaginas {
+.frequencia-page .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
@@ -271,6 +249,6 @@ button {
     font-weight: bold;
 }
 
-#paginaAtual {
+.frequencia-page #paginaAtual {
     color: #0C098E;
 }
