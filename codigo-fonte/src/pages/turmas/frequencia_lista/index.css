@@ -51,13 +51,13 @@
     border: none;
 }
 
-.lista-mae {
+.frequencia-page .lista-mae {
     display: flex;
     flex-direction: column;
     gap: 16px;
 } 
 
-.lista-filho {
+.frequencia-page .lista-filho {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr 1fr;
