@@ -43,9 +43,6 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 Marcelly Freitas
 
 
-<br>
-<br>
-<br>
 
 ### Tela de recuperação de senha
 
@@ -86,9 +83,48 @@ Não possui. A ação é simulada como envio de email ao usuário para recupera�
 #### Responsável
 Marcelly Freitas
 
-<br>
-<br>
-<br>
+
+
+### Tela de Home/Dashboard
+
+![tela recuperação de senha](/documentos/img/telas/home.png)
+##### *Tela de Home/Dashboard*
+
+
+#### Requisito atendido
+
+- Não possui RF.
+
+
+#### Artefatos da funcionalidade
+
+- [home/index.html](/codigo-fonte/src/pages/home/index.html)
+- [home/index.css](/codigo-fonte/src/pages/home/index.css)
+- [home/index.js](/codigo-fonte/src/pages/home/index.js)
+
+
+#### Estrutura de Dados
+
+Não possui.
+
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
+4. Após realizar o login é a primeira tela que aparece.
+
+
+#### Responsável
+Marcelly Freitas
+
+
 
 ### Tela com lista de alunos cadastrados
 
@@ -130,9 +166,7 @@ Marcelly Freitas
 #### Responsável
 Marcelly Freitas
 
-<br>
-<br>
-<br>
+
 
 ### Tela de cadastro de alunos
 
@@ -175,9 +209,7 @@ Marcelly Freitas
 #### Responsável
 Marcelly Freitas
 
-<br>
-<br>
-<br>
+
 
 ### Tela de edição de aluno
 
@@ -220,9 +252,7 @@ Marcelly Freitas
 #### Responsável
 Marcelly Freitas
 
-<br>
-<br>
-<br>
+
 
 ### Desativar e Reativar aluno no sistema
 
@@ -269,9 +299,9 @@ Marcelly Freitas
 #### Responsável
 Marcelly Freitas
 
-<br>
-<br>
-<br>
+
+
+<!-- estrutura padrão:  -->
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
