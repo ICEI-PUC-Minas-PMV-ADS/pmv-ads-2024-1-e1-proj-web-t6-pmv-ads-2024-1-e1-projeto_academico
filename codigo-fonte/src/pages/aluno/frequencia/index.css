@@ -1,3 +1,28 @@
 /**
 Módulo frequência
 **/
+
+body {
+    background-color: #5e5b5b;
+    margin-top: 10px;
+}
+
+.cardDisciplina {
+
+    width: 183px;
+    height: 60px;
+    top: 300px;
+    left: 450px;
+    display: inline-flex;
+    justify-content: left;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    background-color:#b5b0b0;
+    color:black;
+    padding: 10px;
+    margin: 10px;
+    border-top: 10px;
+
+}
