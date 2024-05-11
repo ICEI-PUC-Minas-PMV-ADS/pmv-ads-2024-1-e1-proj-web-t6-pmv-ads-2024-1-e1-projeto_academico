@@ -126,11 +126,18 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/turmas/visualizar/index.js'),
 	},
 	{ 
-		path: '/turmas/notas', 
+		path: '/turmas/notas/lista', 
 		layout: 'dashboard', 
 		permission: 'auth', 
-		moduleHTML: () => import('@/pages/turmas/notas/index.html?raw'), 
-		moduleJS: () => import('@/pages/turmas/notas/index.js'),
+		moduleHTML: () => import('@/pages/turmas/notas_lista/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/notas_lista/index.js'),
+	},
+	{ 
+		path: '/turmas/notas/form', 
+		layout: 'dashboard', 
+		permission: 'auth', 
+		moduleHTML: () => import('@/pages/turmas/notas_form/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/notas_form/index.js'),
 	},
 	{ 
 		path: '/settings', 
