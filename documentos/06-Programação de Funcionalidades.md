@@ -374,7 +374,7 @@ Fernando Vinicius Sousa Moura
     ```
 
 3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
-4. Após fazer login no sistema, acesse a opção de menu à esquerda "Consultar Boletim" para ter acesso a página com a as notas do boletim de um aluno.
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Turmas/cadastrar turmas" para ter acesso a página de cadastro de turmas.
 
 
 #### Responsável
