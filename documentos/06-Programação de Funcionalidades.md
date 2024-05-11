@@ -417,7 +417,7 @@ Caio de Souza Araujo
 
 #### Requisito atendido
 
-### Tela de Consulta do Boletim
+### Tela de Consulta Turmas
 
 ![telaCadastrarTurmas](/documentos/img/cadastrarTurmas.png)
 
