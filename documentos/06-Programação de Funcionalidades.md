@@ -393,6 +393,82 @@ Caio de Souza Araujo
 
 #### Requisito atendido
 
+### Tela de Consulta do Boletim
+
+![telaConsultaBoletim](/documentos/img/telaConsultaBoletim.png)
+
+
+#### Requisito atendido
+
+
+[RF-05: CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma)]
+
+
+#### Artefatos da funcionalidade
+
+
+- [turmas/cadastrar/index.html](/codigo-fonte/src/pages/turmas/cadastrar/index.html)
+- [turmas/cadastrar/index.css](/codigo-fonte/src/pages/turmas/cadastrar/index.css)
+- [turmas/cadastrar/index.js](/codigo-fonte/src/pages/turmas/cadastrar/index.js)
+
+- [turmas/ativar_inativar/index.html](/codigo-fonte/src/pages/turmas/ativar_inativar/index.html)
+- [turmas/ativar_inativar/index.css](/codigo-fonte/src/pages/turmas/ativar_inativar/index.css)
+- [turmas/ativar_inativar/index.js](/codigo-fonte/src/pages/turmas/ativar_inativar/index.js)
+
+- [turmas/visualizar/index.html](/codigo-fonte/src/pages/turmas/visualizar/index.html)
+- [turmas/visualizar/index.css](/codigo-fonte/src/pages/turmas/visualizar/index.css)
+- [turmas/visualizar/index.js](/codigo-fonte/src/pages/turmas/visualizar/index.js)
+
+- [turmas/matricula/index.html](/codigo-fonte/src/pages/turmas/matricula/index.html)
+- [turmas/matricula/index.css](/codigo-fonte/src/pages/turmas/matricula/index.css)
+- [turmas/matricula/index.js](/codigo-fonte/src/pages/turmas/matricula/index.js)
+
+
+#### Estrutura de Dados
+
+- Dados foram inseridos dentro do própri arquivo HTML para verificação da implementação.
+
+![dadosConsultaBoletim](/documentos/img/estruturaCadastrarTurmas.png)
+
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Cadastrar turma" para ter acesso a página de cadastro de turmas.
+5. Após fazer login no sistema, acesse a opção de menu à esquerda "Matricular Aluno" para ter acesso a página para matricular um aluno a uma turma.
+6. Após fazer login no sistema, acesse a opção de menu à esquerda "Visualizar Turmas" para ter acesso a página para visualizar as turmas disponiveis e os detalhes.
+7. Após fazer login no sistema, acesse a opção de menu à esquerda "Ativar/ Inativar Turma" para ter acesso a página ativar ou invativar uma turma especifica.
+
+#### Responsável
+
+Caio de Souza Araujo
+
+
+### Título da funcionalidade
+
+[Adicione imagem da funcionalidade/tela]
+
+
+#### Requisito atendido
+
+### Tela de Consulta Turmas
+
+![telaCadastrarTurmas](/documentos/img/cadastrarTurmas.png)
+
+![telaAtivarOuInativarTurmas](/documentos/img/ativarOuInativarTurmas.png)
+
+![telaMatricularAluno](/documentos/img/matricularAluno.png)
+
+![telaVisualizarTurma](/documentos/img/visualizarTurma.png)
+
+
 [RF-X: adicione a descrição do requisito atendido]
 
 
