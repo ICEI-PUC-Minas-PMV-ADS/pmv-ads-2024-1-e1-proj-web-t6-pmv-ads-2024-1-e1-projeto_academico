@@ -5,35 +5,15 @@
     padding: 10px;
 }
 
-#pesquisaAluno {
-    width: 30%;
-    height: 35px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
-    border-radius: 5px;
-    background-color: #ffffff;
-
-}
-
-#CPFInput {
+.cpfInput {
     border: none;
-    width: 90%;
-    height: 100%;
+    width: 400px;
+    height: 35px;
     border-radius: 5px;
     padding-left: 10px;
+    padding-right: 40px;
     display: inline-block;
-}
-
-#botaoPesquisar {
-    width: 30px;
-    height: 100%;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #ffffff;
-    background-image: url(https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-bleue.png);
-    background-size: 1.8em;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
 }
 
 #nomeAluno {
@@ -105,3 +85,18 @@
     color: #0C098E;
 }
 
+.search-btn {
+    position: relative;
+    bottom: 2px;
+    left: -35px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+ 
+.search-icon {
+    height: 22px;
+    vertical-align: middle;
+    background-color: transparent;
+}

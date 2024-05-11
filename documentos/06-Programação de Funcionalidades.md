@@ -301,7 +301,7 @@ Marcelly Freitas
 
 ### Tela de Consulta do Boletim
 
-![telaConsultaBoletim](documentos\img\telaConsultaBoletim.png)
+![telaConsultaBoletim](/documentos/img/telaConsultaBoletim.png)
 
 
 #### Requisito atendido
@@ -320,7 +320,7 @@ Marcelly Freitas
 
 - Dados foram inseridos dentro do própri arquivo HTML para verificação da implementação.
 
-![dadosConsultaBoletim](documentos\img\estruturaDadosBoletim.png)
+![dadosConsultaBoletim](/documentos/img/estruturaDadosBoletim.png)
 
 
 #### Instruções de acesso
