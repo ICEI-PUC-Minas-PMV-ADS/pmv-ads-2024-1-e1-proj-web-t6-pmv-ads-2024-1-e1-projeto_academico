@@ -299,6 +299,46 @@ Marcelly Freitas
 #### Responsável
 Marcelly Freitas
 
+### Tela de Consulta do Boletim
+
+![telaConsultaBoletim](documentos\img\telaConsultaBoletim.png)
+
+
+#### Requisito atendido
+
+[RF-14: Alunos devem poder emitir boletins com suas notas por disciplina]
+
+
+#### Artefatos da funcionalidade
+
+- [alunos/boletim/index.html](codigo-fonte\src\pages\aluno\boletim\index.html)
+- [alunos/boletim/index.css](codigo-fonte\src\pages\aluno\boletim\index.css)
+- [alunos/boletim/index.js](codigo-fonte\src\pages\aluno\boletim\index.js)
+
+
+#### Estrutura de Dados
+
+- Dados foram inseridos dentro do própri arquivo HTML para verificação da implementação.
+
+![dadosConsultaBoletim](documentos\img\estruturaDadosBoletim.png)
+
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Consultar Boletim" para ter acesso a página com a as notas do boletim de um aluno.
+
+
+#### Responsável
+
+Fernando Vinicius Sousa Moura
 
 
 <!-- estrutura padrão:  -->
