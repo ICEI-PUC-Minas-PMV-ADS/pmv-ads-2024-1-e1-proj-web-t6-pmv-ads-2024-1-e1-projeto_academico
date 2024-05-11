@@ -1,3 +1,4 @@
+
 #linha {
     width: 2%;
     border-bottom: 1px solid black;
@@ -87,12 +88,17 @@
     border-top: 10px;
 }
 
-.outrasPaginas {
-    width: max-content;
-    color: #9c9c9c;
-    display: inline-block;
+.paginasBoletim {
+    width: 100%;
+    display: flex;
     margin-top: 10px;
     font-weight: bold;
+    justify-content: center;
+}
+
+.outrasPaginas {
+    color: #9c9c9c;
+    padding: 2px;
 }
 
 #paginaAtual {
