@@ -366,21 +366,21 @@ Fernando Vinicius Sousa Moura
 #### Artefatos da funcionalidade
 
 
-- [alunos/boletim/index.html](/codigo-fonte/src/pages/turmas/cadastrar/index.html)
-- [alunos/boletim/index.css](/codigo-fonte/src/pages/turmas/cadastrar/index.css)
-- [alunos/boletim/index.js](/codigo-fonte/src/pages/turmas/cadastrar/index.js)
+- [turmas/cadastrar/index.html](/codigo-fonte/src/pages/turmas/cadastrar/index.html)
+- [turmas/cadastrar/index.css](/codigo-fonte/src/pages/turmas/cadastrar/index.css)
+- [turmas/cadastrar/index.js](/codigo-fonte/src/pages/turmas/cadastrar/index.js)
 
-- [alunos/boletim/index.html](/codigo-fonte/src/pages/turmas/ativar_inativar/index.html)
-- [alunos/boletim/index.css](/codigo-fonte/src/pages/turmas/ativar_inativar/index.css)
-- [alunos/boletim/index.js](/codigo-fonte/src/pages/turmas/ativar_inativar/index.js)
+- [turmas/ativar_inativar/index.html](/codigo-fonte/src/pages/turmas/ativar_inativar/index.html)
+- [turmas/ativar_inativar/index.css](/codigo-fonte/src/pages/turmas/ativar_inativar/index.css)
+- [turmas/ativar_inativar/index.js](/codigo-fonte/src/pages/turmas/ativar_inativar/index.js)
 
-- [alunos/boletim/index.html](/codigo-fonte/src/pages/turmas/visualizar/index.html)
-- [alunos/boletim/index.css](/codigo-fonte/src/pages/turmas/visualizar/index.css)
-- [alunos/boletim/index.js](/codigo-fonte/src/pages/turmas/visualizar/index.js)
+- [turmas/visualizar/index.html](/codigo-fonte/src/pages/turmas/visualizar/index.html)
+- [turmas/visualizar/index.css](/codigo-fonte/src/pages/turmas/visualizar/index.css)
+- [turmas/visualizar/index.js](/codigo-fonte/src/pages/turmas/visualizar/index.js)
 
-- [alunos/boletim/index.html](/codigo-fonte/src/pages/turmas/matricula/index.html)
-- [alunos/boletim/index.css](/codigo-fonte/src/pages/turmas/matricula/index.css)
-- [alunos/boletim/index.js](/codigo-fonte/src/pages/turmas/matricula/index.js)
+- [turmas/matricula/index.html](/codigo-fonte/src/pages/turmas/matricula/index.html)
+- [turmas/matricula/index.css](/codigo-fonte/src/pages/turmas/matricula/index.css)
+- [turmas/matricula/index.js](/codigo-fonte/src/pages/turmas/matricula/index.js)
 
 
 #### Estrutura de Dados
