@@ -311,9 +311,9 @@ Marcelly Freitas
 
 #### Artefatos da funcionalidade
 
-- [alunos/boletim/index.html](codigo-fonte\src\pages\aluno\boletim\index.html)
-- [alunos/boletim/index.css](codigo-fonte\src\pages\aluno\boletim\index.css)
-- [alunos/boletim/index.js](codigo-fonte\src\pages\aluno\boletim\index.js)
+- [alunos/boletim/index.html](/codigo-fonte/src/pages/aluno/boletim/index.html)
+- [alunos/boletim/index.css](/codigo-fonte/src/pages/aluno/boletim/index.css)
+- [alunos/boletim/index.js](/codigo-fonte/src/pages/aluno/boletim/index.js)
 
 
 #### Estrutura de Dados
