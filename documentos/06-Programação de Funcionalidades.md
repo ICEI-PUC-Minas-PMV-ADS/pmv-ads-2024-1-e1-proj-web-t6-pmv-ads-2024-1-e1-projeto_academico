@@ -2,6 +2,8 @@
 
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
+<!-- Parte da Tela de Login e CRUD de Alunos - Marcelly Thais Freitas Neves:  -->
+
 ### Tela de Login
 
 ![tela login](/documentos/img/telas/login.png)
@@ -299,6 +301,8 @@ Marcelly Freitas
 #### Responsável
 Marcelly Freitas
 
+<!-- Parte da Consulta ao Boletim - Fernando Moura:  -->
+
 ### Tela de Consulta do Boletim
 
 ![telaConsultaBoletim](/documentos/img/telaConsultaBoletim.png)
@@ -306,7 +310,7 @@ Marcelly Freitas
 
 #### Requisito atendido
 
-[RF-14: Alunos devem poder emitir boletins com suas notas por disciplina]
+- RF-14: Alunos devem poder emitir boletins com suas notas por disciplina
 
 
 #### Artefatos da funcionalidade
@@ -318,7 +322,7 @@ Marcelly Freitas
 
 #### Estrutura de Dados
 
-- Dados foram inseridos dentro do própri arquivo HTML para verificação da implementação.
+- Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
 
 ![dadosConsultaBoletim](/documentos/img/estruturaDadosBoletim.png)
 
@@ -340,68 +344,23 @@ Marcelly Freitas
 
 Fernando Vinicius Sousa Moura
 
-### Tela 
+<!-- Parte do CRUD de Turmas - Caio Araujo:  -->
 
-![telaConsultaBoletim](/documentos/img/telaConsultaBoletim.png)
+### Telas de Cadastro, Inativação, Visualização de Turma e Matrícula
 
+![telaCadastrarTurmas](/documentos/img/cadastrarTurmas.png)
 
-#### Requisito atendido
+![telaAtivarOuInativarTurmas](/documentos/img/ativarOuInativarTurmas.png)
 
-[RF-05: CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma) ]
+![telaMatricularAluno](/documentos/img/matricularAluno.png)
 
-
-#### Artefatos da funcionalidade
-
-- [alunos/boletim/index.html](/codigo-fonte/src/pages/turmas/matricula/index.html)
-- [alunos/boletim/index.css](/codigo-fonte/src/pages/turmas/matricula/index.css)
-- [alunos/boletim/index.js](/codigo-fonte/src/pages/turmas/matricula/index.js)
-
-
-#### Estrutura de Dados
-
-- Dados foram inseridos dentro do própri arquivo HTML para verificação da implementação.
-
-![dadosConsultaBoletim](/documentos/img/estruturaDadosBoletim.png)
-
-
-#### Instruções de acesso
-
-1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
-2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
-
-    ```
-    cd codigo-fonte && npm run dev
-    ```
-
-3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
-4. Após fazer login no sistema, acesse a opção de menu à esquerda "Turmas/cadastrar turmas" para ter acesso a página de cadastro de turmas.
-
-
-#### Responsável
-
-Caio de Souza Araujo
-
-
-<!-- estrutura padrão:  -->
-
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
-
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
-
-
-#### Requisito atendido
-
-### Tela de Consulta do Boletim
-
-![telaConsultaBoletim](/documentos/img/telaConsultaBoletim.png)
+![telaVisualizarTurma](/documentos/img/visualizarTurma.png)
 
 
 #### Requisito atendido
 
 
-[RF-05: CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma)]
+- RF-05: CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma)
 
 
 #### Artefatos da funcionalidade
@@ -426,9 +385,9 @@ Caio de Souza Araujo
 
 #### Estrutura de Dados
 
-- Dados foram inseridos dentro do própri arquivo HTML para verificação da implementação.
+- Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
 
-![dadosConsultaBoletim](/documentos/img/estruturaCadastrarTurmas.png)
+![dadosEstruturaTurma](/documentos/img/estruturaCadastrarTurmas.png)
 
 
 #### Instruções de acesso
@@ -449,25 +408,6 @@ Caio de Souza Araujo
 #### Responsável
 
 Caio de Souza Araujo
-
-
-### Título da funcionalidade
-
-[Adicione imagem da funcionalidade/tela]
-
-
-#### Requisito atendido
-
-### Tela de Consulta Turmas
-
-![telaCadastrarTurmas](/documentos/img/cadastrarTurmas.png)
-
-![telaAtivarOuInativarTurmas](/documentos/img/ativarOuInativarTurmas.png)
-
-![telaMatricularAluno](/documentos/img/matricularAluno.png)
-
-![telaVisualizarTurma](/documentos/img/visualizarTurma.png)
-
 
 <!-- Parte de Frequência - Brena Ferreira:  -->
 
@@ -510,6 +450,8 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 #### Responsável
 
 Brena Ferreira
+
+<!-- Parte de Lançamento de Notas - Kevin Lucas:  -->
 
 
 ### Tela Lançamento de Frequência
@@ -554,7 +496,6 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 Brena Ferreira
 
 
-
 ### Tela Lançamento/Consulta de Notas
 
 ![tela lancar notas](/documentos/img/lancarNotas.png) 
@@ -562,6 +503,8 @@ Brena Ferreira
 ![tela lancar notas preenchido](/documentos/img/lancarNotasPreenchido.png)
 
 #### Requisito atendido
+
+RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir notas de um Aluno)
 
 RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir notas de um Aluno)
 
@@ -576,10 +519,19 @@ RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir 
 - [notas_form/index.css](/codigo-fonte/src/pages/turmas/notas_form/index.css)
 - [notas_form/index.js](/codigo-fonte/src/pages/turmas/notas_form/index.js)
 
+- [notas_lista/index.html](/codigo-fonte/src/pages/turmas/notas_lista/index.html)                
+- [notas_lista/index.css](/codigo-fonte/src/pages/turmas/notas_lista/index.css)
+- [notas_lista/index.js](/codigo-fonte/src/pages/turmas/notas_lista/index.js)
+
+- [notas_form/index.html](/codigo-fonte/src/pages/turmas/notas_form/index.html)                
+- [notas_form/index.css](/codigo-fonte/src/pages/turmas/notas_form/index.css)
+- [notas_form/index.js](/codigo-fonte/src/pages/turmas/notas_form/index.js)
+
 
 
 #### Estrutura de Dados
 
+- Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
 - Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
 
 
@@ -598,16 +550,21 @@ RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir 
 4. Após fazer login no sistema, acesse a opção de menu à esquerda "Lançar Notas" para ter acesso à página de lançamento de notas.
 
 5. Após isso, irá abrir a tela com as informações das turmas para ser realizado o lançamento/edição das notas dos alunos que estão inseridos em determinada turma.
+1. Para executar o sistema localmente, é necessária a instalação do Node.js.
+
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até http://localhost:8080 para visualizar o projeto em execução.
+
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Lançar Notas" para ter acesso à página de lançamento de notas.
+
+5. Após isso, irá abrir a tela com as informações das turmas para ser realizado o lançamento/edição das notas dos alunos que estão inseridos em determinada turma.
 
 
 #### Responsável
 
 Kevin Lucas
-
-
-> **Links Úteis**:
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
-
