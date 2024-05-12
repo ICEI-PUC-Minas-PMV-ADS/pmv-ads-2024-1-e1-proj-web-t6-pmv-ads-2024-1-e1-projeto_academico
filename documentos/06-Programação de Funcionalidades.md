@@ -469,6 +469,100 @@ Caio de Souza Araujo
 ![telaVisualizarTurma](/documentos/img/visualizarTurma.png)
 
 
+<!-- Parte de Frequência - Brena Ferreira:  -->
+
+
+### Tela Consulta de Frequência
+
+(/documentos/img/visualizarFrequencia.png)
+
+#### Requisito atendido
+RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e excluir frequências de um Aluno).
+
+
+#### Artefatos da funcionalidade
+
+- [frequencia_form/index.html](/codigo-fonte/src/pages/turmas/frequencia_form/index.html)
+- [frequencia_form/index.css](/codigo-fonte/src/pages/turmas/frequencia_form/index.css)
+- [frequencia_form/index.js](/codigo-fonte/src/pages/turmas/frequencia_form/index.js)
+
+#### Estrutura de Dados
+
+(/documentos/img/estruturaDadosVisualizarFrequencia.png)
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessária a instalação do Node.js.
+
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até http://localhost:8080 para visualizar o projeto em execução.
+
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Lançar Frequência" para ter acesso à página de lançamento de frequências.
+
+5. Após isso, irá abrir a tela com as informações das turmas para ser realizado o lançamento da frequência dos alunos que estão inseridos na determinada turma.
+
+
+#### Responsável
+
+Brena Ferreira
+
+
+### Tela Lançamento de Frequência
+
+(/documentos/img/lancarFrequencia.png)
+
+#### Requisito atendido
+RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e excluir frequências de um Aluno).
+
+
+#### Artefatos da funcionalidade
+
+- [frequencia_lista/index.html](/codigo-fonte/src/pages/turmas/frequencia_lista/index.html)
+- [frequencia_lista/index.css](/codigo-fonte/src/pages/turmas/frequencia_lista/index.css)
+- [frequencia_lista/index.js](/codigo-fonte/src/pages/turmas/frequencia_lista/index.js)
+
+#### Estrutura de Dados
+
+(/documentos/img/estruturaDadosLancarFrequencia.png)
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessária a instalação do Node.js.
+
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até http://localhost:8080 para visualizar o projeto em execução.
+
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Lançar Frequência" para ter acesso à página de lançamento de frequências.
+
+5. Após isso, irá abrir a tela com as informações das turmas para ser realizado o lançamento da frequência dos alunos que estão inseridos na determinada turma.
+
+6. Será necessário clicar no botão Lançar Frequência na turma desejada. Após isso, estará dísponivel a lista de alunos inseridos naquela turma para ser informado o status da frequência.
+
+
+#### Responsável
+
+Brena Ferreira
+
+
+<!-- MODELO:  -->
+
+### Título da funcionalidade
+
+[Adicione imagem da funcionalidade/tela]
+
+
+
+#### Requisito atendido
 [RF-X: adicione a descrição do requisito atendido]
 
 
@@ -490,8 +584,6 @@ Caio de Souza Araujo
 #### Responsável
 
 [Adicione nome do responsável pelo desenvolvimento da funcionalidade]
-
-
 
 
 > **Links Úteis**:
