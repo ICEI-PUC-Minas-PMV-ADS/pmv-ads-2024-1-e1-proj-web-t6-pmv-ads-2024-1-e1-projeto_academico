@@ -474,7 +474,7 @@ Caio de Souza Araujo
 
 ### Tela Consulta de Frequência
 
-(/documentos/img/visualizarFrequencia.png)
+![telaVisualizarFrequencia](/documentos/img/telas/visualizarFrequencia.png)
 
 #### Requisito atendido
 RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e excluir frequências de um Aluno).
@@ -488,7 +488,7 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 
 #### Estrutura de Dados
 
-(/documentos/img/estruturaDadosVisualizarFrequencia.png)
+![dadosVisualizarFrequencia](/documentos/img/telas/estruturaDadosVisualizarFrequencia.png)
 
 #### Instruções de acesso
 
@@ -514,7 +514,7 @@ Brena Ferreira
 
 ### Tela Lançamento de Frequência
 
-(/documentos/img/lancarFrequencia.png)
+![telaLancarFrequencia](/documentos/img/telas/lancarFrequencia.png)
 
 #### Requisito atendido
 RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e excluir frequências de um Aluno).
@@ -528,7 +528,7 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 
 #### Estrutura de Dados
 
-(/documentos/img/estruturaDadosLancarFrequencia.png)
+![dadosLancarFrequencia](/documentos/img/telas/estruturaDadosLancarFrequencia.png)
 
 #### Instruções de acesso
 
@@ -546,7 +546,7 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 
 5. Após isso, irá abrir a tela com as informações das turmas para ser realizado o lançamento da frequência dos alunos que estão inseridos na determinada turma.
 
-6. Será necessário clicar no botão Lançar Frequência na turma desejada. Após isso, estará dísponivel a lista de alunos inseridos naquela turma para ser informado o status da frequência.
+6. Será necessário clicar no botão Lançar Frequência, na turma desejada. Após isso, estará dísponivel a lista de alunos inseridos naquela turma para ser informado o status da frequência.
 
 
 #### Responsável
