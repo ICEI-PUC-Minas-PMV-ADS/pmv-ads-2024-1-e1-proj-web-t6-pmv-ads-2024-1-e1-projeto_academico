@@ -554,36 +554,55 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 Brena Ferreira
 
 
-<!-- MODELO:  -->
 
-### Título da funcionalidade
+### Tela Lançamento/Consulta de Notas
 
-[Adicione imagem da funcionalidade/tela]
+![tela lancar notas](/documentos/img/lancarNotas.png) 
 
-
+![tela lancar notas preenchido](/documentos/img/lancarNotasPreenchido.png)
 
 #### Requisito atendido
-[RF-X: adicione a descrição do requisito atendido]
+
+RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir notas de um Aluno)
 
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+- [notas_lista/index.html](/codigo-fonte/src/pages/turmas/notas_lista/index.html)                
+- [notas_lista/index.css](/codigo-fonte/src/pages/turmas/notas_lista/index.css)
+- [notas_lista/index.js](/codigo-fonte/src/pages/turmas/notas_lista/index.js)
+
+- [notas_form/index.html](/codigo-fonte/src/pages/turmas/notas_form/index.html)                
+- [notas_form/index.css](/codigo-fonte/src/pages/turmas/notas_form/index.css)
+- [notas_form/index.js](/codigo-fonte/src/pages/turmas/notas_form/index.js)
+
 
 
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
+- Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
 
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+1. Para executar o sistema localmente, é necessária a instalação do Node.js.
+
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até http://localhost:8080 para visualizar o projeto em execução.
+
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Lançar Notas" para ter acesso à página de lançamento de notas.
+
+5. Após isso, irá abrir a tela com as informações das turmas para ser realizado o lançamento/edição das notas dos alunos que estão inseridos em determinada turma.
 
 
 #### Responsável
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Kevin Lucas
 
 
 > **Links Úteis**:
