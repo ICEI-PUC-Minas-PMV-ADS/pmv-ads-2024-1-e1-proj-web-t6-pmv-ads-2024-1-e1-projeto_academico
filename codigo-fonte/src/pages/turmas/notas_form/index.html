@@ -1,9 +1,9 @@
-
 <div class="page-wrapper notas-form">
     
     <div>
         <button class="listadeturmas" onclick="navigateToRoute(event, '/turmas/notas/lista')">Lista de Turmas</button>
     </div>
+
     
     <div class="title">
         <div>
@@ -31,7 +31,7 @@
     <h3 class="data">Data: 28/04/2024</h3>
 
     <div class="classes" style="display: flex; flex-direction: column;">
-        <table class="tabelamateria">
+        <table id="tabelamateria">
             <thead>
                 <tr class="cabecalho">
                     <th class="fileira1">Aluno</th>
@@ -71,8 +71,9 @@
 
     <div class="botaosavecancell"> 
         <button type="button" onclick="cancelarEdicao()" id="botaocancelar">Cancelar</button>
-        <button type="button" onclick="salvarDados()" id="botaosalvar">Salvar</button>
+        <button type="button" onclick="salvarInformacoes()" id="botaosalvar">Salvar</button>
     </div>
+    
     
     <footer>
         <nav class="pagination">
@@ -81,4 +82,5 @@
                 <button id="pagina3">3</button>
         </nav>
     </footer>
+    
 </div>

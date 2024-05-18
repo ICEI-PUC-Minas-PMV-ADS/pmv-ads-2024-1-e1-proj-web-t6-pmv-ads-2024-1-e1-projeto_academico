@@ -127,7 +127,7 @@
     width: 90%;
 }
 
-.notas-form .tabelamateria {
+.notas-form #tabelamateria {
     border-collapse: separate;
     border-spacing: 10px;
     position: relative;
@@ -322,8 +322,6 @@
     font-size: 17px;
     text-align: center;
     border: none;
-    line-height: inherit;
-    float: right;
     cursor: pointer;
-    margin-bottom: -250px;
+    float: right;
 }

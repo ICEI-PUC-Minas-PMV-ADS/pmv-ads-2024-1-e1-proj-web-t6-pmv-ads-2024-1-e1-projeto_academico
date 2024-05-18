@@ -6,11 +6,3 @@ export default {
         console.log('turma notas');
     }
 }
-function salvarDados() {
-    alert('Dados salvos!');
-}
-
-function cancelarEdicao() {
-
-    location.reload();
-}
