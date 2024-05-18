@@ -1,83 +1,86 @@
 
-<div class="page-wrapper notas-form">
-    <div>
-        <button class="listadeturmas" onclick="navigateToRoute(event, '/turmas/notas/lista')">Lista de Turmas</button>
-    </div>
-    
-    <div class="title">
-        <div>
-            <h1>Lançar Notas</h1>
+<html>
+<div class="page-wrapper">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="index.js" defer></script>
+        <link rel="stylesheet" href="index.css">
+        <title>Lançar Notas</title>
+    </head>
+
+    <body>
+        <div><button class="listadeturmas" onclick="navigateToRoute(event, '/turmas/notas/lista')">Lista de Turmas</button></div>
+        <div class="title">
+            <div>
+                <h1>Lançar Notas</h1>
+            </div>
+            <p class="titlepesquisarturmas">Pesquisar Turmas:</p>
+
+            <div class="barradepesquisa">
+                <input class="search-bar" type="search" name="q" placeholder="">
+                <button class="search-btn" type="submit"><img
+                        src="https://s3-alpha-sig.figma.com/img/b282/0d51/04145da7707f32d6a7e68cac0acd6589?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pNVjqfOKMBtrboUbiagLh0w-a2uUOpIBK9E46fZ8oTA5VK0bQJPlHdMU9ExUuZoA26i3COkyY9wZ9VxBLce5CQf4b6MGaz7MMdrWXoXZJWSQIwEguChbcY4CqS9MMO8xRWSR-dByFowrk8kJyjpxJlcVaWgxSbtmloE3w2JeTEcigjzOGTMKQFSCWm9y2KY9VCkcUmhVgSG98DI4CwrdMlgTPXo1tyL0H-mYpNFGOJJh7PgNgXuz7TR~lVE8gYUQ9lEeO5z-PdVpZYNuJwuFndiowEnaATdV9DlueVDw2RFCznTAhtYXL7-Iy52SCf2WPjzP-SWxkl7Y9rmyRiW68g__"
+                        alt="Ícone de Pesquisa" class="search-icon"></button>
+            </div>
+
         </div>
-        
-        <p class="titlepesquisarturmas">Pesquisar Turmas:</p>
+        <hr class="linhadivisora">
+        </hr>
 
-        <div class="barradepesquisa">
-            <input class="search-bar" type="search" name="q" placeholder="">
-            <button class="search-btn" type="submit">
-                <img
-                    src="https://s3-alpha-sig.figma.com/img/b282/0d51/04145da7707f32d6a7e68cac0acd6589?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pNVjqfOKMBtrboUbiagLh0w-a2uUOpIBK9E46fZ8oTA5VK0bQJPlHdMU9ExUuZoA26i3COkyY9wZ9VxBLce5CQf4b6MGaz7MMdrWXoXZJWSQIwEguChbcY4CqS9MMO8xRWSR-dByFowrk8kJyjpxJlcVaWgxSbtmloE3w2JeTEcigjzOGTMKQFSCWm9y2KY9VCkcUmhVgSG98DI4CwrdMlgTPXo1tyL0H-mYpNFGOJJh7PgNgXuz7TR~lVE8gYUQ9lEeO5z-PdVpZYNuJwuFndiowEnaATdV9DlueVDw2RFCznTAhtYXL7-Iy52SCf2WPjzP-SWxkl7Y9rmyRiW68g__"
-                    alt="Ícone de Pesquisa" class="search-icon">
-            </button>
-        </div>
+        <h2 class="nomemateria">Física Aplicada</h2>
+        <h3 class="anomateria">Ano: 2016</h3>
+        <h3 class="nomeprofessor">Professora: Maria Cássia</h3>
+        <h3 class="data">Data: 28/04/2024</h3>
 
-    </div>
-    <hr class="linhadivisora">
-    </hr>
+        <div class="classes" style="display: flex; flex-direction: column;">
+            <table class="tabelamateria">
+                <thead>
+                    <tr class="cabecalho">
+                        <th class="fileira1">Aluno</th>
+                        <th class="fileira2">Prova</th>
+                        <th class="fileira3">Atividade</th>
+                        <th class="fileira4">Observações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="nomealuno">Carlos José da Silva Mota</td>
+                        <td class="notaprova" contenteditable="true">10</td>
+                        <td class="notaatividade" contenteditable="true">10</td>
+                        <td class="observacoes" contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="nomealuno">Beatriz Mariana Arouche</td>
+                        <td class="notaprova" contenteditable="true">9</td>
+                        <td class="notaatividade" contenteditable="true">7,5</td>
+                        <td class="observacoes" contenteditable="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="nomealuno">José Trindade Pacheco</td>
+                        <td class="notaprova" contenteditable="true">4,5</td>
+                        <td class="notaatividade" contenteditable="true">8</td>
+                        <td class="observacoes" contenteditable="true">Reposição</td>
+                    </tr>
+                    <tr>
+                        <td class="nomealuno">Josélia Kelly Mendes Abreu</td>
+                        <td class="notaprova" contenteditable="true">9,5</td>
+                        <td class="notaatividade" contenteditable="true">6</td>
+                        <td class="observacoes" contenteditable="true"></td>
+                    </tr>
+                </tbody>
+            </table>
 
-    <h2 class="nomemateria">Física Aplicada</h2>
-    <h3 class="anomateria">Ano: 2016</h3>
-    <h3 class="nomeprofessor">Professora: Maria Cássia</h3>
-    <h3 class="data">Data: 28/04/2024</h3>
-
-    <div class="classes" style="display: flex; flex-direction: column;">
-        <table class="tabelamateria">
-            <thead>
-                <tr class="cabecalho">
-                    <th class="fileira1">Aluno</th>
-                    <th class="fileira2">Prova</th>
-                    <th class="fileira3">Atividade</th>
-                    <th class="fileira4">Observações</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="nomealuno">Carlos José da Silva Mota</td>
-                    <td class="notaprova" contenteditable="true">10</td>
-                    <td class="notaatividade" contenteditable="true">10</td>
-                    <td class="observacoes" contenteditable="true"></td>
-                </tr>
-                <tr>
-                    <td class="nomealuno">Beatriz Mariana Arouche</td>
-                    <td class="notaprova" contenteditable="true">9</td>
-                    <td class="notaatividade" contenteditable="true">7,5</td>
-                    <td class="observacoes" contenteditable="true"></td>
-                </tr>
-                <tr>
-                    <td class="nomealuno">José Trindade Pacheco</td>
-                    <td class="notaprova" contenteditable="true">4,5</td>
-                    <td class="notaatividade" contenteditable="true">8</td>
-                    <td class="observacoes" contenteditable="true">Reposição</td>
-                </tr>
-                <tr>
-                    <td class="nomealuno">Josélia Kelly Mendes Abreu</td>
-                    <td class="notaprova" contenteditable="true">9,5</td>
-                    <td class="notaatividade" contenteditable="true">6</td>
-                    <td class="observacoes" contenteditable="true"></td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="botaosavecancell"> 
+            <div class="botaosavecancell"> 
         <button type="button" onclick="cancelarEdicao()" id="botaocancelar">Cancelar</button>
         <button type="button" onclick="salvarDados()" id="botaosalvar">Salvar</button>
-    </div>
-    
-    <footer>
-        <nav class="pagination">
-                <button id="pagina1">1</button>
-                <button id="pagina2">2</button>
-                <button id="pagina3">3</button>
-        </nav>
-    </footer>
-</div>
+           </div>
+        
+            <footer>
+                <nav class="pagination">
+                        <button id="pagina1">1</button>
+                        <button id="pagina2">2</button>
+                        <button id="pagina3">3</button>
+                </nav>
+            </footer>
