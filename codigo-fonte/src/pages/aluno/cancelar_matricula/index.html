@@ -1,7 +1,84 @@
-<div class="page-wrapper">
-    <h1 class="text-primary">Cancelamento de Matrícula</h1>
+<div class="flex flex-col gap-6 cancelamento_matricula">
+    <div class="title">
+        <div>
+            <h1>Cancelamento de Matrícula</h1>
+        </div>
+    </div>
 
-    <div>
-        BEM VINDO!
+    <div class="flex flex-col gap-4">
+        <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
+
+        <div class="input_global_search">
+            <input data-mask="999.999.999-99" placeholder="xxx.xxx.xxx-xx" type="search" id="cpf" name="cpf" required>
+            <span class="iconify-inline" data-icon="ic:baseline-search"></span>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="flex flex-col gap-4">
+            <div>
+                <h2>Turmas Atualmente Matriculado</h2>
+                <p class="font-bold">Aluno: Carlos da Silva Salles</p>
+            </div>
+
+            <div>
+                <div class="lista-mae">
+                    <div class="lista-filho">
+                        <div><span class="font-bold text-primary">Física Aplicada</span></div>
+                        <div><span class="font-bold">Ano: 2016</span></div>
+                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
+                        <div class="flex justify-center gap-2">
+                            <button class="btn btn-success w-full">Ativar</button>
+                            <button class="btn btn-danger w-full">Cancelar</button>
+                        </div>
+                    </div>
+                    <div class="lista-filho">
+                        <div><span class="font-bold text-primary">Química Geral</span></div>
+                        <div><span class="font-bold">Ano: 2016</span></div>
+                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
+                        <div class="flex justify-center gap-2">
+                            <button class="btn btn-primary w-full">Desativar</button>
+                            <button class="btn btn-danger w-full">Cancelar</button>
+                        </div>
+                    </div>
+                    <div class="lista-filho">
+                        <div><span class="font-bold text-primary">História</span></div>
+                        <div><span class="font-bold">Ano: 2016</span></div>
+                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
+                        <div class="flex justify-center gap-2">
+                            <button class="btn btn-primary w-full">Desativar</button>
+                            <button class="btn btn-danger w-full">Cancelar</button>
+                        </div>
+                    </div>
+                    <div class="lista-filho">
+                        <div><span class="font-bold text-primary">Gramática</span></div>
+                        <div><span class="font-bold">Ano: 2016</span></div>
+                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
+                        <div class="flex justify-center gap-2">
+                            <button class="btn btn-primary w-full">Desativar</button>
+                            <button class="btn btn-danger w-full">Cancelar</button>
+                        </div>
+                    </div>
+                    <div class="lista-filho">
+                        <div><span class="font-bold text-primary">Geografia</span></div>
+                        <div><span class="font-bold">Ano: 2016</span></div>
+                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
+                        <div class="flex justify-center gap-2">
+                            <button class="btn btn-primary w-full">Desativar</button>
+                            <button class="btn btn-danger w-full">Cancelar</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center">
+                    <div class="outrasPaginas" id="paginaAtual">1</div>
+                    <div class="outrasPaginas">2</div>
+                    <div class="outrasPaginas">3</div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 </div>
