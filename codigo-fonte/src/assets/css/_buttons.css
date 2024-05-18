@@ -5,10 +5,19 @@
     background-color: #444;
     color: #fff;
     border-radius: 5px;
-    width: fit-content;
+    width: inherit fit-content;
     cursor: pointer;
 }
 
 .btn.btn-primary {
-    background-color: var(--bg-primary);
+    background-color: var(--color-primary);
+}
+.btn.btn-danger {
+    background-color: var(--color-error);
+}
+.btn.btn-success {
+    background-color: var(--color-success);
+}
+.btn.btn-warning {
+    background-color: var(--color-warning);
 }
