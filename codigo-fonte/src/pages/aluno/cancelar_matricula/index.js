@@ -3,6 +3,8 @@ import './index.css';
 
 export default {
     init() {
-        console.log('aluno cancelar matricula');
+        var cancelButtons = document.querySelectorAll('.button-cancelar');
+        var activeButtons = document.querySelectorAll('.button-ativar');
+        var inactiveButtons = document.querySelectorAll('.button-desativar');
     }
 }
