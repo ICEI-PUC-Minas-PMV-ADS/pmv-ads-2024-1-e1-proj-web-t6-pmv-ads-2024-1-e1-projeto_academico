@@ -1,83 +1,85 @@
-<div class="page-wrapper">
-    <h1 class="text-primary">Consultar Frequência</h1>
 
-    <label id="textoLabelInformeCPF">Informe o CPF ou Código de Matrícula do Aluno: *</label>
-
-    <div id="pesquisaAluno" >
-            <input type="text" id="CPFInput" name="cpf" maxlength="14" placeholder="CPF ou Matrícula do Aluno *">
-            <input type="submit" id="botaoPesquisar" value=" ">
+<div class="page-wrapper lancar-frequencia-page">
+    <div class="flex justify-between gap-4 items-center">
+        <h1 class="text-primary">Consultar Frequência</h1>
+    </div>
+        
+    <label id="textoLabelPesquisarCPF">Insira o seu CPF ou Código de Matrícula</label>
+        
+    <div id="pesquisarCPF">
+        <input type="text" id="CPFInput" name="cpf" maxlength="14">
+        <input type="submit" id="botaoPesquisar" value=" ">
     </div>
 
     <div id="linha"></div>
-       <div class="card">
-            <!--Colocar a data que deseja ver a frequência 1-->
-             <div class="cardDisciplina">
-                 Disciplina: Física Aplicada
-             </div>
-             <div class="cardData">
-                 Data: 20/03/2024 
-             </div>
-             <div class="cardProfessor">
-                 Professor: Maria Cassia 
-             </div>
-             <div class="cardSituacao">
-                 Situação: PRESENTE
-             </div>
-             <br/>
-             <div class="cardDisciplina">
-                 Disciplina: Física Aplicada
-             </div>
-             <div class="cardData">
-                 Data: 21/03/2024 
-             </div>
-             <div class="cardProfessor">
-                 Professor: Maria Cassia 
-             </div>
-             <div class="cardSituacao">
-                 Situação: PRESENTE
-             </div>
-             <br/>
-             <div class="cardDisciplina">
-                 Disciplina: Física Aplicada
-             </div>
-             <div class="cardData">
-                 Data: 22/03/2024 
-             </div>
-             <div class="cardProfessor">
-                 Professor: Maria Cassia 
-             </div>
-             <div class="cardSituacao">
-                  Situação: PRESENTE
-             </div>
-             <br/>
-             <div class="cardDisciplina">
-                 Disciplina: Física Aplicada
-             </div>
-             <div class="cardData">
-                 Data: 23/03/2024 
-             </div> 
-             <div class="cardProfessor">
-                 Professor: Maria Cassia 
-             </div>
-             <div class="cardSituacao">
-                 Situação: PRESENTE
-             </div>
-             
-             <br/>
+        <div class="card">
+            <div class="lista-mae">
+                <div class="lista-filho">
+                    <div><span class="font-bold">Disciplina: Física Aplicada</span></div>
+                    <br>
+                    <div><span class="font-bold">Data: 20/03/2024</span></div>
+                    <br>
+                    <div><span class="font-bold">Professor: Maria Cassia</span></div>
+                    <br>
+                    <div><span class="font-bold">Situação: PRESENTE</span></div>
+                    <div>
+                        <button class="btn btn-presenca">✓</button> <id="botaoPresenca">
+                    </div>
+                </div>
+                <div class="lista-filho">
+                    <div><span class="font-bold">Disciplina: Física Aplicada</span></div>
+                    <br>
+                    <div><span class="font-bold">Data: 21/03/2024</span></div>
+                    <br>
+                    <div><span class="font-bold">Professor: Maria Cassia</span></div>
+                    <br>
+                    <div><span class="font-bold">Situação: FALTA</span></div>
+                    <div>
+                        <button class="btn btn-falta">X</button>
+                    </div>
+                </div>
+                <div class="lista-filho">
+                    <div><span class="font-bold">Disciplina: Física Aplicada</span></div>
+                    <br>
+                    <div><span class="font-bold">Data: 22/03/2024</span></div>
+                    <br>
+                    <div><span class="font-bold">Professor: Maria Cassia</span></div>
+                    <br>
+                    <div><span class="font-bold">Situação: PRESENTE</span></div>
+                    <div>
+                        <button class="btn btn-presenca">✓</button>
+                    </div>
+                </div>
+                <div class="lista-filho">
+                    <div><span class="font-bold">Disciplina: Física Aplicada</span></div>
+                    <br>
+                    <div><span class="font-bold">Data: 23/03/2024</span></div>
+                    <br>
+                    <div><span class="font-bold">Professor: Maria Cassia</span></div>
+                    <br>
+                    <div><span class="font-bold">Situação: PRESENTE</span></div>
+                    <div>
+                        <button class="btn btn-presenca">✓</button>
+                    </div>
+                </div>
+                <div class="lista-filho">
+                    <div><span class="font-bold">Disciplina: Física Aplicada</span></div>
+                    <br>
+                    <div><span class="font-bold">Data: 24/03/2024</span></div>
+                    <br>
+                    <div><span class="font-bold">Professor: Maria Cassia</span></div>
+                    <br>
+                    <div><span class="font-bold">Situação: PRESENTE</span></div>
+                    <div>
+                        <button class="btn btn-presenca">✓</button>
+                    </div>
+                </div>
 
-             <!--Marcador da Página Atual-->
-             <div class="outrasPaginas" id="paginaAtual">
-                 1
-             </div>
-             <!--Marcadores das Outras Páginas Disponíveis-->
-             <div class="outrasPaginas">
-                 2
-             </div>
-             <div class="outrasPaginas">
-                 3
-             </div>
+            </div>
 
-            </div> 
-       </div>  
+            <div class="outrasPaginas" id="paginaAtual">1</div>
+            <div class="outrasPaginas">2</div>
+            <div class="outrasPaginas">3</div>
+        </div>
     </div>
 </div>
