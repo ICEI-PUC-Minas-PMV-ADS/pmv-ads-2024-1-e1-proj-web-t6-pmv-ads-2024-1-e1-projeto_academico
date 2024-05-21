@@ -506,7 +506,6 @@ Brena Ferreira
 
 RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir notas de um Aluno)
 
-RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir notas de um Aluno)
 
 
 #### Artefatos da funcionalidade
