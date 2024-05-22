@@ -73,12 +73,27 @@
 }
 
 
-.lancar-frequencia-page .botaoPresenca {
+.lancar-frequencia-page #botaoPresenca {
     width: 30px;
-    height: 100%;
+    height: 30px;
     border-radius: 5px;
     display: inline-block;
-    background-color:#1E9848;
+    background-color: green ;
+    color:#ffffff ;
+    background-size: 1.8em;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+
+.lancar-frequencia-page #botaoFalta {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #EA4545;
+    color:#ffffff ;
     background-size: 1.8em;
     background-repeat: no-repeat;
     background-position: center;
