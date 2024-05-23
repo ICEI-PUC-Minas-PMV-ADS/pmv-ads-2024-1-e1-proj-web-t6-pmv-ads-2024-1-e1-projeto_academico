@@ -1,10 +1,10 @@
 import './index.css';
-import visualizarTurmas from '../visualizar'; // Importe o módulo de visualização de turmas
-import { turmaEntityService } from '@/services/turmaEntityService.service.js'; // Importe o serviço de entidade de turma
+import visualizarTurmas from '../visualizar'; 
+import { turmaEntityService } from '@/services/turmaEntityService.service.js'; 
 
-// Após o sucesso do cadastro de turmas, chame a função para criar uma nova turma na página de visualização de turmas
+
 async function onFormSubmit(event) {
-    // Seu código existente...
+    
 
     if (inputs) {
         const payload = {};
@@ -18,7 +18,7 @@ async function onFormSubmit(event) {
         payload.created_at = new Date().toISOString();
         payload.active = true;
 
-        // Corrija a chamada para usar o serviço de entidade de turma
+        
         await turmaEntityService.create(payload);
 
         showNotification({ 
@@ -27,10 +27,10 @@ async function onFormSubmit(event) {
             message: 'Dados cadastrados com sucesso'
         });
 
-        // Chame a função para criar uma nova turma com os mesmos dados na página de visualização de turmas
+       
         await visualizarTurmas.createTurma(payload);
 
-        // Inserir dinamicamente as informações da turma na página
+       
         const turmasContainer = document.getElementById('turmasContainer');
         const turmaItem = document.createElement('div');
         turmaItem.classList.add('turma-item');
