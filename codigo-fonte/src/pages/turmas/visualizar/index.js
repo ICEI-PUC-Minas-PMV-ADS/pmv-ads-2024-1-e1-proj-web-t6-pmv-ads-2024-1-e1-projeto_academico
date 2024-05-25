@@ -24,11 +24,18 @@ async function startClassRoomModule() {
         const lista = document.createElement('ul');
 
         collection.forEach((turma) => {
-            const item = document.createElement('li');
-            item.textContent = turma.nome;
+        //     const item = document.createElement('li');
+        //     item.textContent = turma.nome;
 
-            lista.appendChild(item);
-        });
+        //     lista.appendChild(item);
+        // });
+        const item = document.createElement('li');
+        item.innerHTML = `
+            <span class="turma-nome">${turma.nome}</span>
+            <span class="turma-info">${turma.ano} - ${turma.professor}</span>
+        `;
+        lista.appendChild(item);
+    });
 
         wrapper.appendChild(lista);
         
