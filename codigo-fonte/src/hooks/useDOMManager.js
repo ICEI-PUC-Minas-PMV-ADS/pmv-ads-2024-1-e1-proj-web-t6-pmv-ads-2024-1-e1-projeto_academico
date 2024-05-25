@@ -5,6 +5,92 @@
 export const useDOMManager = () => {
     /**
      * 
+     * @param {Array} collection  
+     */
+    function createList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const emailNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.nome;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+                emailNode.textContent = item.email;
+                emailNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(emailNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {HTMLListElement|null} table 
+     */
+    function createListActions(list = null) {
+        if (list) {
+            const listItems = list.querySelectorAll('li');
+
+            listItems.forEach(row => {
+                const actionsNode = row.querySelector('.actions');
+                actionsNode.classList.add('actions-wrapper');
+                const active = row.getAttribute('data-active') === 'true';
+
+                const buttonEdit = document.createElement('button');
+                buttonEdit.classList.add('btn');
+                buttonEdit.classList.add('btn-primary');
+                buttonEdit.classList.add('edit-button');
+                buttonEdit.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-edit"></span>';
+
+                const buttonDelete = document.createElement('button');
+                buttonDelete.classList.add('btn');
+                buttonDelete.classList.add('btn-danger');
+                buttonDelete.classList.add('delete-button');
+                buttonDelete.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-delete"></span>';
+
+                const buttonActive = document.createElement('button');
+                buttonActive.classList.add('btn');
+                buttonActive.classList.add('btn-success');
+                buttonActive.classList.add('active-button');
+                buttonActive.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-refresh"></span>';
+
+                actionsNode.appendChild(buttonEdit);
+
+                if (active) {
+                    actionsNode.appendChild(buttonDelete);
+                }
+
+                if (!active) {
+                    actionsNode.appendChild(buttonActive);
+                }
+            })
+        }
+    }
+
+    /**
+     * 
      * @param {Array} collection 
      * @param {Array} headers 
      * 
@@ -116,9 +202,13 @@ export const useDOMManager = () => {
             })
         }
     }
+
+    
     
     return {
         createTable,
+        createList,
         createTableActions,
+        createListActions,
     }
 };
