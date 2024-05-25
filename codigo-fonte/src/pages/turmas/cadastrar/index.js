@@ -1,10 +1,41 @@
 import './index.css';
-import visualizarTurmas from '../visualizar'; 
 import { turmaEntityService } from '@/services/turmaEntityService.service.js'; 
+import { useDashboardUtils } from '@/hooks/useDashboardUtils';
+import { faker } from '@faker-js/faker';
 
+function setStateLoading(form, state = true) {
+    if (form) {
+        const inputs = form.querySelectorAll('input, select');
+        const buttonSubmit = form.querySelector('button[type=submit]');
+        const buttoncancel = form.querySelector('button[type=button]');
+        
+        if (state) {
+            inputs.forEach((input) => {
+                input.setAttribute('disabled', 'disabled');
+            });
+            buttonSubmit.setAttribute('disabled', 'disabled');
+            buttonSubmit.textContent = 'Carregando...';
+            buttoncancel.setAttribute('disabled', 'disabled');
+        } else {
+            inputs.forEach((input) => {
+                input.removeAttribute('disabled');
+            });
+            buttonSubmit.removeAttribute('disabled');
+            buttonSubmit.textContent = 'Atualizar';
+            buttoncancel.removeAttribute('disabled');
+        }
+
+    }
+}
 
 async function onFormSubmit(event) {
-    
+    event.preventDefault();
+
+    const form = document.querySelector('#turma-form');
+    const inputs = form.querySelectorAll('input, select');
+    const { showNotification } = useDashboardUtils();
+
+    setStateLoading(form);
 
     if (inputs) {
         const payload = {};
@@ -18,7 +49,6 @@ async function onFormSubmit(event) {
         payload.created_at = new Date().toISOString();
         payload.active = true;
 
-        
         await turmaEntityService.create(payload);
 
         showNotification({ 
@@ -27,27 +57,15 @@ async function onFormSubmit(event) {
             message: 'Dados cadastrados com sucesso'
         });
 
-       
-        await visualizarTurmas.createTurma(payload);
-
-       
-        const turmasContainer = document.getElementById('turmasContainer');
-        const turmaItem = document.createElement('div');
-        turmaItem.classList.add('turma-item');
-        turmaItem.innerHTML = `
-            <h3>${payload.nome}</h3>
-            <div class="turma-info">
-                <p>Ano: ${payload.ano}</p>
-                <p>Responsável: ${payload.responsavel}</p>
-            </div>
-            <div class="turma-action">
-                <a href="/visualizar_detalhes/index.html"><button>Detalhes</button></a>
-            </div>
-        `;
-        turmasContainer.appendChild(turmaItem);
-
-        navigateToRoute(null, '/turma/lista');
+        navigateToRoute(null, '/turmas/visualizar');
 
         setStateLoading(form, false);
+    }
+}
+
+export default {
+    init() {
+        window.onFormSubmit = null;
+        window.onFormSubmit = onFormSubmit;
     }
 }
