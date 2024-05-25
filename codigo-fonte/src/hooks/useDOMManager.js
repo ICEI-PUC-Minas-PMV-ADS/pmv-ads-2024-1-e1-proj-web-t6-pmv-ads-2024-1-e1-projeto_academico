@@ -7,6 +7,141 @@ export const useDOMManager = () => {
      * 
      * @param {Array} collection  
      */
+    function createAttendanceList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const yearNode = document.createElement('div');
+                const responsibleNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.nome;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+                
+                yearNode.textContent = item.semestre;
+                yearNode.classList.add('font-bold');
+
+                responsibleNode.textContent = 'Responsável: ' + item.professor;
+                responsibleNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(yearNode);
+                li.appendChild(responsibleNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {Array} collection  
+     */
+    function createRegistrationList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-name', item.nome);
+                li.setAttribute('data-cpf', item.cpf);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const emailNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.nome;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+                emailNode.textContent = item.email;
+                emailNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(emailNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {Array} collection  
+     */
+    function createCancelRegistrationList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const classRoomNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.aluno_name;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+
+                classRoomNode.textContent = item.turma_nome;
+                classRoomNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(classRoomNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {Array} collection  
+     */
     function createList(collection = []) {
         const list = document.createElement('ul');
         list.classList.add('lista-mae');
@@ -210,5 +345,8 @@ export const useDOMManager = () => {
         createList,
         createTableActions,
         createListActions,
+        createAttendanceList,
+        createRegistrationList,
+        createCancelRegistrationList,
     }
 };

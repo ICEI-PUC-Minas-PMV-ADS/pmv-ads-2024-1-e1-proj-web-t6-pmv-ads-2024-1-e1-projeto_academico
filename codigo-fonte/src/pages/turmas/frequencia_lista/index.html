@@ -7,59 +7,20 @@
     <label id="textoLabelPesquisarTurmas">Pesquisar Turmas:</label>
         
     <div id="pesquisarTurmas">
-        <input type="text" id="TURMAInput" name="turma" maxlength="14">
-        <input type="submit" id="botaoPesquisar" value=" ">
+        <form id="attendance-search-form">
+            <input type="search" id="TURMAInput" name="turma" maxlength="14" value="Física">
+            <input type="submit" id="botaoPesquisar" value=" ">
+        </form>
     </div>
 
     <div id="linha"></div>
-        <div class="card">
-            <div class="lista-mae">
-                <div class="lista-filho">
-                    <div><span class="font-bold text-primary">Física Aplicada</span></div>
-                    <div><span class="font-bold">Ano: 2016</span></div>
-                    <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                    <div>
-                        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/form')">Lançar Frequência</button>
-                    </div>
-                </div>
-                <div class="lista-filho">
-                    <div><span class="font-bold text-primary">Química Geral</span></div>
-                    <div><span class="font-bold">Ano: 2016</span></div>
-                    <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                    <div>
-                        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/form')">Lançar Frequência</button>
-                    </div>
-                </div>
-                <div class="lista-filho">
-                    <div><span class="font-bold text-primary">História</span></div>
-                    <div><span class="font-bold">Ano: 2016</span></div>
-                    <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                    <div>
-                        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/form')">Lançar Frequência</button>
-                    </div>
-                </div>
-                <div class="lista-filho">
-                    <div><span class="font-bold text-primary">Gramática</span></div>
-                    <div><span class="font-bold">Ano: 2016</span></div>
-                    <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                    <div>
-                        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/form')">Lançar Frequência</button>
-                    </div>
-                </div>
-                <div class="lista-filho">
-                    <div><span class="font-bold text-primary">Geografia</span></div>
-                    <div><span class="font-bold">Ano: 2016</span></div>
-                    <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                    <div>
-                        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/form')">Lançar Frequência</button>
-                    </div>
-                </div>
 
-            </div>
-
-            <div class="outrasPaginas" id="paginaAtual">1</div>
-            <div class="outrasPaginas">2</div>
-            <div class="outrasPaginas">3</div>
+    <div class="card">
+        <div class="attendance-list-wrapper">
+            <h4 class="attendance-empty-title">
+                Utilize o filtro acima para pesquisar pelo nome de uma turma.
+            </h4>
         </div>
+       
     </div>
 </div>

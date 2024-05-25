@@ -12,7 +12,7 @@ async function startStudentListModule() {
     const { createList, createListActions } = useDOMManager();
     const { showNotification } = useDashboardUtils();
 
-    const wrapper = document.querySelector('.lista-wrapper');
+    const wrapper = document.querySelector('.lista-aluno .lista-wrapper');
 
     if (wrapper) {
         if (document.querySelector('.loading')) {
