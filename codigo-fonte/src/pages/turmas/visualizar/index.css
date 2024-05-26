@@ -1,149 +1,64 @@
-#textoLabelInformeCPF{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12;
-}
-
-#linha {
-    width: 90%;
-    border-bottom: 1px solid black;
-    padding: 10px;
-}
-
-#pesquisaAluno {
-    width: 30%;
-    height: 35px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
-    border-radius: 5px;
-    background-color: #ffffff;
-
-}
-
-#CPFInput {
-    border: none;
-    width: 90%;
-    height: 100%;
-    border-radius: 5px;
-    padding-left: 10px;
-    display: inline-block;
-}
-
-#botaoPesquisar {
-    width: 30px;
-    height: 100%;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #ffffff;
-    background-image: url(https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-bleue.png);
-    background-size: 1.8em;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-}
-
-#nomeAluno {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18;
-    font-weight: bold;
-    border-top: 10px;
-    margin: 10px;
+.classroom-page .classroom-search-form {
+    background-color: #fff;
+    width: fit-content;
     display: flex;
-    flex-wrap: wrap;    
+    gap: 16px;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
 }
 
-#anoLetivo {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18;
-    font-weight: bold;
-    border-top: 10px;
-    margin: 10px;
+.classroom-page .classroom-search-form input {
+    border: none;
+    background: none;
+    flex: 1;
+    height: 30px;
+    outline: none;
+}
+
+
+.classroom-page .classroom-search-form button {
+    border: none;
+    background: none;
+}
+
+.classroom-page .classroom-search-form svg {
+    font-size: 22px;
+    color: var(--color-primary);
+}
+
+.classroom-page .lista-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+} 
+.classroom-page .lista-mae {
     display: flex;
-    flex-wrap: wrap;
-}
+    flex-direction: column;
+    gap: 16px;
+    width: max-content;
+    min-width: 100%;
+} 
 
-.cardTitulo {
-    width: 30.9%;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color: #0C098E;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.cardConteudoTurmas {
-
-    width: 30.9%;
-    display: inline-flex;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
+.classroom-page .lista-filho {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(300px, 2fr) minmax(100px, 1fr);
+    row-gap: 16px;
+    padding: 16px;
     background-color: #D9D9D9;
-    color: black;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
+    border-radius: 8px;
+    align-items: center;
 }
 
-.outrasPaginas {
+.classroom-page .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
     margin-top: 10px;
     font-weight: bold;
 }
-
-#paginaAtual {
-    color: #0C098E;
-}
-
-.turma-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 900px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 10px;
-    border: 1px solid #dedada;
-    border-radius: 5px;
-    background-color: #d5d3d3;
-  }
-  
- 
-  .turma-action button {
-    padding: 5px 30px;
-    border: none;
-    border-radius: 5px;
-    background-color: #0C098E;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .turma-action button:hover {
-    background-color: #0A067D;
-  }
-
-
-  .turma-info {
-    display: flex;
-    flex-direction: row;
-    align-items: right;
-    font-weight: bold
-  }
-  
-  .turma-info p {
-    margin: 20; /* Remover a margem padrão dos parágrafos */
-  }
-  
-  .turma-info p:not(:last-child) {
-    margin-right: 100px; /* Adicionar margem direita entre os itens */
-  }

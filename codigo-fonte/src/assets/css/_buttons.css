@@ -21,3 +21,10 @@
 .btn.btn-warning {
     background-color: var(--color-warning);
 }
+
+button:disabled {
+    background-color: #DEDEDE !important;
+    color: #444 !important;
+    opacity: 0.9;
+    cursor: not-allowed;
+}

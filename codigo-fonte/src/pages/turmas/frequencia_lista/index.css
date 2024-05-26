@@ -1,66 +1,53 @@
-#textoLabelPesquisarTurmas {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12;
-    color: #0C098E;
-    font-weight:bold
-}
-
-
-.frequencia-page .card {
-    width: 90%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    background-color: white;
-    text-align: center;
-}
-
-.frequencia-page #linha {
-    width: 90%;
-    border-bottom: 1px solid black;
-    padding: 10px;
-}
-
-.frequencia-page #pesquisarTurmas {
-    width: 30%;
-    height: 35px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
+.frequencia-page .frequencia-search-form {
+    background-color: #fff;
+    width: fit-content;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 8px 16px;
     border-radius: 5px;
-    background-color: #ffffff;
-
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
 }
 
-.frequencia-page #TURMAInput {
+.frequencia-page .frequencia-search-form input {
     border: none;
-    width: 90%;
-    height: 100%;
-    border-radius: 5px;
-    padding-left: 10px;
-    display: inline-block;
+    background: none;
+    flex: 1;
+    height: 30px;
+    outline: none;
 }
 
-.frequencia-page #botaoPesquisar {
-    width: 30px;
-    height: 100%;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #ffffff;
-    background-image: url(https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-bleue.png);
-    background-size: 1.8em;
-    background-repeat: no-repeat;
-    background-position: center;
+
+.frequencia-page .frequencia-search-form button {
     border: none;
+    background: none;
 }
 
+.frequencia-page .frequencia-search-form svg {
+    font-size: 22px;
+    color: var(--color-primary);
+}
+
+.frequencia-page .lista-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+} 
 .frequencia-page .lista-mae {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: max-content;
+    min-width: 100%;
 } 
 
 .frequencia-page .lista-filho {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(300px, 2fr) minmax(100px, 1fr);
     row-gap: 16px;
     padding: 16px;
     background-color: #D9D9D9;
@@ -74,8 +61,4 @@
     display: inline-block;
     margin-top: 10px;
     font-weight: bold;
-}
-
-.frequencia-page #paginaAtual {
-    color: #0C098E;
 }

@@ -5,6 +5,277 @@
 export const useDOMManager = () => {
     /**
      * 
+     * @param {Array} collection  
+     */
+    function createAttendanceList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const yearNode = document.createElement('div');
+                const responsibleNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.nome;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+                
+                yearNode.textContent = item.semestre;
+                yearNode.classList.add('font-bold');
+
+                responsibleNode.textContent = 'Responsável: ' + item.professor;
+                responsibleNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(yearNode);
+                li.appendChild(responsibleNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {Array} collection  
+     */
+    function createRegistrationList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-name', item.nome);
+                li.setAttribute('data-cpf', item.cpf);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const emailNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.nome;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+                emailNode.textContent = item.email;
+                emailNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(emailNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+     /**
+     * 
+     * @param {Array} collection  
+     */
+     function createSimpleFrequencyListList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-name', item.aluno_name);
+                li.setAttribute('data-cpf', item.aluno_cpf);
+                li.setAttribute('data-status', item.status_aluno);
+
+                const nameNode = document.createElement('div');
+                const turmaNode = document.createElement('div');
+                const dataNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.aluno_name;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+
+                turmaNode.textContent = item.turma_name;
+                turmaNode.classList.add('font-bold');
+
+                dataNode.textContent = new Date(item.data).toLocaleDateString();
+                dataNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(turmaNode);
+                li.appendChild(dataNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {Array} collection  
+     */
+    function createCancelRegistrationList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const classRoomNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.aluno_name;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+
+                classRoomNode.textContent = item.turma_nome;
+                classRoomNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(classRoomNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {Array} collection  
+     */
+    function createList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-active', item.active);
+
+                const nameNode = document.createElement('div');
+                const emailNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.nome;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+                emailNode.textContent = item.email;
+                emailNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(emailNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
+    /**
+     * 
+     * @param {HTMLListElement|null} table 
+     */
+    function createListActions(list = null) {
+        if (list) {
+            const listItems = list.querySelectorAll('li');
+
+            listItems.forEach(row => {
+                const actionsNode = row.querySelector('.actions');
+                actionsNode.classList.add('actions-wrapper');
+                const active = row.getAttribute('data-active') === 'true';
+
+                const buttonEdit = document.createElement('button');
+                buttonEdit.classList.add('btn');
+                buttonEdit.classList.add('btn-primary');
+                buttonEdit.classList.add('edit-button');
+                buttonEdit.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-edit"></span>';
+
+                const buttonDelete = document.createElement('button');
+                buttonDelete.classList.add('btn');
+                buttonDelete.classList.add('btn-danger');
+                buttonDelete.classList.add('delete-button');
+                buttonDelete.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-delete"></span>';
+
+                const buttonActive = document.createElement('button');
+                buttonActive.classList.add('btn');
+                buttonActive.classList.add('btn-success');
+                buttonActive.classList.add('active-button');
+                buttonActive.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-refresh"></span>';
+
+                actionsNode.appendChild(buttonEdit);
+
+                if (active) {
+                    actionsNode.appendChild(buttonDelete);
+                }
+
+                if (!active) {
+                    actionsNode.appendChild(buttonActive);
+                }
+            })
+        }
+    }
+
+    /**
+     * 
      * @param {Array} collection 
      * @param {Array} headers 
      * 
@@ -116,9 +387,17 @@ export const useDOMManager = () => {
             })
         }
     }
+
+    
     
     return {
         createTable,
+        createList,
         createTableActions,
+        createListActions,
+        createAttendanceList,
+        createRegistrationList,
+        createCancelRegistrationList,
+        createSimpleFrequencyListList,
     }
 };
