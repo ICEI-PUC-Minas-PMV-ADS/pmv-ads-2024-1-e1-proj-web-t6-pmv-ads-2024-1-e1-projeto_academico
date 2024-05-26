@@ -1,6 +1,5 @@
 
 import { turmaEntityService } from '@/services/turmaEntityService.service';
-import { frequencyEntityService } from '@/services/frequencyEntity.service';
 import { useDOMManager } from '/src/hooks/useDOMManager.js';
 import { navigateToRoute } from '@/router';
 import './index.css';
@@ -12,11 +11,9 @@ async function startAttendanceModule() {
 
     const { createAttendanceList } = useDOMManager();
 
-    const form = document.querySelector('.attendance-page .attendance-search-form');
-    const wrapper = document.querySelector('.attendance-page .lista-wrapper');
-    const title = document.querySelector('.attendance-page .attendance-empty-title');
-
-    
+    const form = document.querySelector('.frequencia-page .frequencia-search-form');
+    const wrapper = document.querySelector('.frequencia-page .lista-wrapper');
+    const title = document.querySelector('.frequencia-page .frequencia-empty-title');
 
     if (form && wrapper) {
         form.addEventListener('submit', async (event) => {

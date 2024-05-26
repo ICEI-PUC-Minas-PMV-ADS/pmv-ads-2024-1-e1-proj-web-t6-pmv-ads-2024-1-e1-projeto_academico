@@ -1,252 +1,32 @@
-.frequencia-page #textoLabelPesquisarTurmas {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12;
-    color: #0C098E;
-    font-weight:bold
-}
-
-
-.frequencia-page .card {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    background-color: white;
-    text-align: center;
-}
-
-.frequencia-page #linha {
-    border-bottom: 1px solid black;
-    padding: 10px;
-}
-
-.frequencia-page #pesquisarTurmas {
-    width: 30%;
-    height: 35px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
-    border-radius: 5px;
-    background-color: #ffffff;
-
-}
-
-.frequencia-page #TURMAInput {
-    border: none;
-    width: 90%;
-    height: 100%;
-    border-radius: 5px;
-    padding-left: 10px;
-    display: inline-block;
-}
-
-.frequencia-page #botaoPesquisar {
-    width: 30px;
-    height: 100%;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #ffffff;
-    background-image: url(https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-bleue.png);
-    background-size: 1.8em;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-}
-
-.frequencia-page #nomeMateria {
-    color:#0C098E;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18;
-    font-weight: bold;
-    border-top: 10px;
-    margin: 10px;
+.matricula-form-page .lista-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+} 
+.matricula-form-page .lista-mae {
     display: flex;
-    flex-wrap: wrap;    
+    flex-direction: column;
+    gap: 16px;
+    width: max-content;
+    min-width: 100%;
+} 
+
+.matricula-form-page .lista-filho {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    row-gap: 16px;
+    padding: 16px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    align-items: center;
 }
 
-.frequencia-page #anoLetivo {
-    color:#0C098E;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18;
-    font-weight: bold;
-    border-top: 10px;
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.frequencia-page #nomeProfessor {
-    color:#0C098E;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18;
-    font-weight: bold;
-    border-top: 10px;
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.frequencia-page #data {
-    color:#0C098E;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18;
-    font-weight: bold;
-    border-top: 10px;
-    margin: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: right
-}
-
-.frequencia-page .cardPrincipalAluno {
-    width: 20%;
-    height: 65px;
-    top: 440px;
-    left: 459px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color: #0C098E;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.frequencia-page .cardPrincipalPresenca {
-    width: 15.45%;
-    height: 65px;
-    top: 439px;
-    left: 821px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color: #0C098E;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.frequencia-page .cardPrincipalFalta {
-    width: 15.45%;
-    height: 65px;
-    top: 439px;
-    left: 973px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color: #0C098E;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.cardPrincipalObservacao{
-    width: 20%;
-    height: 65px;
-    top: 438px;
-    left: 1125px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color: #0C098E;
-    color: white;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.frequencia-page .cardConteudoAlunos {
-
-    width: 20%;
-    height: 65px;
-    top: 520px;
-    left: 459px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color:#D9D9D9;
-    color:#000000 ;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.frequencia-page .cardConteudoPresenca {
-    width: 15.45%;
-    height: 65px;
-    top: 520px;
-    left: 821px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color:#D9D9D9;
-    color:#000000 ;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.frequencia-page .cardConteudoAusencia {
-    width: 15.45%;
-    height: 65px;
-    top: 520px;
-    left: 974px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color:#D9D9D9;
-    color:#000000 ;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.cardConteudoObservacao{
-    width: 20%;
-    height: 65px;
-    top: 520px;
-    left: 1127px;
-    display: inline-flex;
-    justify-content: center;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    background-color:#D9D9D9;
-    color:#000000 ;
-    padding: 20px;
-    margin: 10px;
-    border-top: 10px;
-}
-
-.frequencia-page .outrasPaginas {
+.matricula-form-page .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
     margin-top: 10px;
     font-weight: bold;
-}
-
-.frequencia-page #paginaAtual {
-    color: #0C098E;
 }

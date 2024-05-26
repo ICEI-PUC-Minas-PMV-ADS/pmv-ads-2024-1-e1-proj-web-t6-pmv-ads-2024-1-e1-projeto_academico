@@ -93,9 +93,9 @@ async function startAttendanceModule() {
     const loadingWrapper = document.querySelector('.loading-wrapper');
     const turmaID = window.location.href.split('/').pop();
     const { data: turma } = await turmaEntityService.getByCode(turmaID);
-    const nomeNode = document.querySelector('#nomeMateria');
-    const yearNode = document.querySelector('#anoLetivo');
-    const responsibleNode = document.querySelector('#nomeProfessor');
+    const nomeNode = document.querySelector('#frequencia-nome');
+    const yearNode = document.querySelector('#frequencia-ano');
+    const responsibleNode = document.querySelector('#frequencia-responsavel');
     const dateNode = document.querySelector('#data');
     const buttonSubmit = formWrapper.querySelector('button[type=submit]');
 
@@ -104,7 +104,7 @@ async function startAttendanceModule() {
     responsibleNode.innerHTML = '';
     dateNode.innerHTML = '';
 
-    nomeNode.textContent = turma.nome;
+    nomeNode.textContent = 'Turma: ' + turma.nome;
     yearNode.textContent = 'Período: ' + turma.semestre;
     responsibleNode.textContent = 'Responsável: ' + turma.professor;
     dateNode.textContent = 'Data: ' + new Date().toLocaleDateString();

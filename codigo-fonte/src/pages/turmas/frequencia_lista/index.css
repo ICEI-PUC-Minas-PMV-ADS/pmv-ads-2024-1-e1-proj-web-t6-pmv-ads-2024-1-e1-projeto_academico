@@ -1,4 +1,4 @@
-.attendance-page .attendance-search-form {
+.frequencia-page .frequencia-search-form {
     background-color: #fff;
     width: fit-content;
     display: flex;
@@ -11,7 +11,7 @@
     max-width: 100%;
 }
 
-.attendance-page .attendance-search-form input {
+.frequencia-page .frequencia-search-form input {
     border: none;
     background: none;
     flex: 1;
@@ -20,23 +20,23 @@
 }
 
 
-.attendance-page .attendance-search-form button {
+.frequencia-page .frequencia-search-form button {
     border: none;
     background: none;
 }
 
-.attendance-page .attendance-search-form svg {
+.frequencia-page .frequencia-search-form svg {
     font-size: 22px;
     color: var(--color-primary);
 }
 
-.attendance-page .lista-wrapper {
+.frequencia-page .lista-wrapper {
     display: block;
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
 } 
-.attendance-page .lista-mae {
+.frequencia-page .lista-mae {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -44,7 +44,7 @@
     min-width: 100%;
 } 
 
-.attendance-page .lista-filho {
+.frequencia-page .lista-filho {
     width: 100%;
     display: grid;
     grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(300px, 2fr) minmax(100px, 1fr);
@@ -55,7 +55,7 @@
     align-items: center;
 }
 
-.attendance-page .outrasPaginas {
+.frequencia-page .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
