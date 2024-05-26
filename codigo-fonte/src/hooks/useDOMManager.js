@@ -95,6 +95,56 @@ export const useDOMManager = () => {
         }
     }
 
+     /**
+     * 
+     * @param {Array} collection  
+     */
+     function createSimpleFrequencyListList(collection = []) {
+        const list = document.createElement('ul');
+        list.classList.add('lista-mae');
+
+        if (collection.length) {
+            collection.forEach((item) => {
+                const li = document.createElement('li');
+                li.classList.add('lista-filho');
+
+                li.setAttribute('data-id', item.id);
+                li.setAttribute('data-name', item.aluno_name);
+                li.setAttribute('data-cpf', item.aluno_cpf);
+                li.setAttribute('data-status', item.status_aluno);
+
+                const nameNode = document.createElement('div');
+                const turmaNode = document.createElement('div');
+                const dataNode = document.createElement('div');
+                const actionsNode = document.createElement('div');
+                
+                nameNode.textContent = item.aluno_name;
+                nameNode.classList.add('font-bold');
+                nameNode.classList.add('text-primary');
+
+                turmaNode.textContent = item.turma_name;
+                turmaNode.classList.add('font-bold');
+
+                dataNode.textContent = new Date(item.data).toLocaleDateString();
+                dataNode.classList.add('font-bold');
+
+                actionsNode.classList.add('actions');
+                actionsNode.classList.add('flex');
+                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('gap-2');
+
+                li.appendChild(nameNode);
+                li.appendChild(turmaNode);
+                li.appendChild(dataNode);
+                li.appendChild(actionsNode);
+
+                list.appendChild(li);
+            });
+
+            return list;
+        }
+    }
+
     /**
      * 
      * @param {Array} collection  
@@ -348,5 +398,6 @@ export const useDOMManager = () => {
         createAttendanceList,
         createRegistrationList,
         createCancelRegistrationList,
+        createSimpleFrequencyListList,
     }
 };

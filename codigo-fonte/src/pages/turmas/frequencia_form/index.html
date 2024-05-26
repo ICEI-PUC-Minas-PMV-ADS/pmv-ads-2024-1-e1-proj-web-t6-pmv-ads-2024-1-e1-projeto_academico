@@ -3,11 +3,9 @@
     <div class="flex justify-between gap-4 items-center">
         <h1 class="text-primary">Lançar Frequência</h1>
 
-        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/lista')">Lista de Frequências</button>
+        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/lista')">Lista turmas</button>
     </div>
         
-    <div id="linha"></div>
-
     <div class="card loading-wrapper">
         <div class="loading">Carregando...</div>
     </div>
@@ -33,96 +31,37 @@
                 </div>
             </div>
 
-            <div class="form">
-                <div class="cardPrincipalAluno">
-                    Aluno
+            <div class="form flex flex-col gap-4">
+                <div class="header">
+                    <div class="row">
+                        <div>ALUNO</div>
+                        <div>PRESENÇA</div>
+                        <div>AUSÊNCIA</div>
+                        <div>JUSTIFICADO</div>
+                    </div>
                 </div>
-                <div class="cardPrincipalPresenca">
-                    P
-                </div>
-                <div class="cardPrincipalFalta">
-                    F
-                </div>
-                <div class="cardPrincipalObservacao">
-                    Observações
-                </div>
-                <br>
-        
-                <!--Input do Nome do Aluno 1-->
-                <div class="cardConteudoAlunos">
-                    Carlos José da Silva Mota
-                </div>
-                <!--Input se o Aluno 1 Estava Presente-->
-                <div class="cardConteudoPresenca">
-                    P
-                </div>
-                <!--Input se o Aluno 1 Estava Ausente-->
-                <div class="cardConteudoAusencia">
-                    F
-                </div>
-                <!--Input de Observações-->
-                <div class="cardConteudoObservacao">
-                    Sem Justificativa
-                </div>
-                <br>
-        
-                <!--Input do Nome do Aluno 2-->
-                <div class="cardConteudoAlunos">
-                    Beatriz Mariana Arouche
-                </div>
-                <!--Input se o Aluno 2 Estava Presente-->
-                <div class="cardConteudoPresenca">
-                    P
-                </div>
-                <!--Input se o Aluno 2 Estava Ausente-->
-                <div class="cardConteudoAusencia">
-                    F
-                </div>
-                <!--Input de Observações-->
-                <div class="cardConteudoObservacao">
-                    Sem Justificativa
-                </div>
-                <br>
-        
-                <!--Input do Nome do Aluno 3-->
-                <div class="cardConteudoAlunos">
-                    José Trindade Pacheco
-                </div>
-                <!--Input se o Aluno 3 Estava Presente-->
-                <div class="cardConteudoPresenca">
-                    P
-                </div>
-                <!--Input se o Aluno 3 Estava Ausente-->
-                <div class="cardConteudoAusencia">
-                    F
-                </div>
-                <!--Input de Observações-->
-                <div class="cardConteudoObservacao">
-                    Sem Justificativa
-                </div>
-                <br>
-        
-                <!--Input do Nome do Aluno 4-->
-                <div class="cardConteudoAlunos">
-                    Josélia Kelly Mendes Abreu
-                </div>
-                <!--Input se o Aluno 4 Estava Presente-->
-                <div class="cardConteudoPresenca">
-                    P
-                </div>
-                <!--Input se o Aluno 4 Estava Ausente-->
-                <div class="cardConteudoAusencia">
-                    F
-                </div>
-                <!--Input de Observações-->
-                <div class="cardConteudoObservacao">
-                    Sem Justificativa
-                </div>
-                <br>
 
-                <div class="pagination flex justify-center items-center gap-4">
-                    <button type="button" class="btn btn-secondary">Cancelar</button>
-                    <button type="button" class="btn btn-primary">Salvar</button>
+                <div class="body flex flex-col gap-4">
+                    <div class="row">
+                        <div>Carlos José da Silva Mota</div>
+                        <div>
+                            <input type="radio" class="hidden" id="presenca" name="frequency" value="P">
+                            <label for="presenca">P</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="hidden" id="ausencia" name="frequency" value="F">
+                            <label for="ausencia">P</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="hidden" id="justificado" name="frequency" value="J">
+                            <label for="justificado">Justificado</label>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div>
+                    <button class="btn btn-primary" type="submit">Lançar frequência</button>
                 </div>
             </div>
         </div>

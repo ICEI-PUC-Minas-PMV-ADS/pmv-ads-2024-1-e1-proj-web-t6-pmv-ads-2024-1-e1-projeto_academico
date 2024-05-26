@@ -56,7 +56,7 @@ async function startRegistrationModule() {
                             const buttonAction = document.createElement('button');
                             buttonAction.classList.add('btn')
                             buttonAction.classList.add('btn-primary')
-                            buttonAction.textContent = 'Lançar frequência';
+                            buttonAction.textContent = 'Matricular na turma';
                             elemento.appendChild(buttonAction);
                         });
 

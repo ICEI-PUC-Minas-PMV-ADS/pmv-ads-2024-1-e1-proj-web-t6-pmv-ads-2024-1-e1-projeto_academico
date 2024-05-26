@@ -1,10 +1,10 @@
-.matricula-form-page .lista-wrapper {
+.frequencia-page  .lista-wrapper {
     display: block;
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
 } 
-.matricula-form-page .lista-mae {
+.frequencia-page  .lista-mae {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -12,7 +12,7 @@
     min-width: 100%;
 } 
 
-.matricula-form-page .lista-filho {
+.frequencia-page  .lista-filho {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -23,10 +23,46 @@
     align-items: center;
 }
 
-.matricula-form-page .outrasPaginas {
+.frequencia-page  .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
     margin-top: 10px;
     font-weight: bold;
+}
+.frequencia-page .form .row {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.frequencia-page .form .header .row div {
+    background-color: #0C098E;
+    color: #FFF;
+}
+.frequencia-page .form .body .row div {
+    background-color: #DEDEDE;
+    color: #333;
+}
+.frequencia-page .form .row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+.frequencia-page .form .body label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.frequencia-page input[type="radio"]:checked + label {
+    background-color: #0C098E;
+    color: #fff;
+    border-color: #0C098E;
 }

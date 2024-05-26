@@ -98,7 +98,7 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/turmas/frequencia_lista/index.js'),
 	},
 	{ 
-		path: '/turmas/frequencia/form/:id', 
+		path: '/turmas/frequencia/:id', 
 		layout: 'dashboard', 
 		permission: 'auth', 
 		moduleHTML: () => import('@/pages/turmas/frequencia_form/index.html?raw'), 

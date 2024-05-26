@@ -1,73 +1,74 @@
 <div class="container matricula-page">
-    <h1>Cadastrar Turmas</h1>
-    
-    <form id="turma-form" onsubmit="onFormSubmit(event)">
-        <div class="form-group">
-            <label for="nome">Nome da Turma:</label>
-            <input type="text" id="nome" name="nome" required>
-        </div>
+    <div class="flex justify-between gap-4 items-center">
+        <h1 class="text-primary">Cadastrar Turma</h1>
 
-        <div class="field">
-            <label for="professor">Professor Responsável:</label>
-            <input type="text" id="professor" name="professor" required>
-        </div>
+        <button class="btn btn-primary cursor-pointer" onclick="navigateToRoute(event, '/turmas/visualizar')">Lista de turmas</button>
+    </div>
 
-        <div class="field">
-            <label for="aulas">Quantidade de Aulas:</label>
-            <input type="number" id="aulas" name="aulas" required>
-        </div>
+    <div class="card">
+        <form id="turma-form" onsubmit="onFormSubmit(event)">
+            <div class="flex flex-col gap-4">
+                <div class="form-col-1">
+                    <div class="form-group">
+                        <label for="nome">Nome da Turma:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                </div>
+                <div class="form-col-2">
+                    <div class="form-group">
+                        <label for="inicio">Data de Início das Aulas:</label>
+                        <input type="date" id="inicio" name="inicio" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="encerramento">Previsão de Encerramento:</label>
+                        <input type="date" id="encerramento" name="encerramento" required>
+                    </div>
+                </div>
+                <div class="form-col-2">
+                    <div class="form-group">
+                        <label for="max_alunos">Quantidade Máxima de Alunos:</label>
+                        <input type="number" id="max_alunos" name="max_alunos" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="dias_semana">Dias de Aula na Semana:</label>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="dia_d" name="dia_d" value="D">
+                            <label for="dia_d">D</label>
+                            <input type="checkbox" id="dia_s1" name="dia_s1" value="S">
+                            <label for="dia_s1">S</label>
+                            <input type="checkbox" id="dia_t" name="dia_t" value="T">
+                            <label for="dia_t">T</label>
+                            <input type="checkbox" id="dia_q1" name="dia_q1" value="Q">
+                            <label for="dia_q1">Q</label>
+                            <input type="checkbox" id="dia_q2" name="dia_q2" value="Q">
+                            <label for="dia_q2">Q</label>
+                            <input type="checkbox" id="dia_s2" name="dia_s2" value="S">
+                            <label for="dia_s2">S</label>
+                            <input type="checkbox" id="dia_s3" name="dia_s3" value="S">
+                            <label for="dia_s3">S</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-col-2">
+                    <div class="form-group">
+                        <label for="horario">Horário das Aulas:</label>
+                        <input type="time" id="horario" name="horario" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="semestre">Semestre/Ano:</label>
+                        <input type="text" id="semestre" name="semestre" required>
+                    </div>
+                </div>
 
-        <div class="field">
-            <label for="inicio">Data de Início das Aulas:</label>
-            <input type="date" id="inicio" name="inicio" required>
-        </div>
-
-        <div class="field">
-            <label for="encerramento">Previsão de Encerramento:</label>
-            <input type="date" id="encerramento" name="encerramento" required>
-        </div>
-        
-        <div class="field">
-            <label for="max_alunos">Quantidade Máxima de Alunos:</label>
-            <input type="number" id="max_alunos" name="max_alunos" required>
-        </div>
-
-        <div class="field">
-            <label for="dias_semana">Dias de Aula na Semana:</label>
-            <div class="checkbox-group">
-                <input type="checkbox" id="dia_d" name="dia_d" value="D">
-                <label for="dia_d">D</label>
-                <input type="checkbox" id="dia_s1" name="dia_s1" value="S">
-                <label for="dia_s1">S</label>
-                <input type="checkbox" id="dia_t" name="dia_t" value="T">
-                <label for="dia_t">T</label>
-                <input type="checkbox" id="dia_q1" name="dia_q1" value="Q">
-                <label for="dia_q1">Q</label>
-                <input type="checkbox" id="dia_q2" name="dia_q2" value="Q">
-                <label for="dia_q2">Q</label>
-                <input type="checkbox" id="dia_s2" name="dia_s2" value="S">
-                <label for="dia_s2">S</label>
-                <input type="checkbox" id="dia_s3" name="dia_s3" value="S">
-                <label for="dia_s3">S</label>
+                <div class="form-col-1">
+                    <div class="flex justify-end gap-4">
+                        <button type="submit" class="btn btn-primary" id="salvar-btn">Cadastrar turma</button>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="field">
-            <label for="horario">Horário das Aulas:</label>
-            <input type="time" id="horario" name="horario" required>
-        </div>
-
-        <div class="field">
-            <label for="semestre">Semestre/Ano:</label>
-            <input type="text" id="semestre" name="semestre" required>
-        </div>
-
-        <div class="buttons">
-            <button type="button" id="cancelar-btn">Cancelar</button>
-        </div>
-
-        <div class="buttons2">
-            <button type="submit" id="salvar-btn">Salvar</button>
-        </div>
-    </form>
+        </form>
+    </div>
 </div>

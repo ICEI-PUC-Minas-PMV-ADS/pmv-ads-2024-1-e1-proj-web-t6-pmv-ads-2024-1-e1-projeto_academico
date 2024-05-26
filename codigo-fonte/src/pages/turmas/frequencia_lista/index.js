@@ -1,5 +1,6 @@
 
 import { turmaEntityService } from '@/services/turmaEntityService.service';
+import { frequencyEntityService } from '@/services/frequencyEntity.service';
 import { useDOMManager } from '/src/hooks/useDOMManager.js';
 import { navigateToRoute } from '@/router';
 import './index.css';
@@ -11,9 +12,11 @@ async function startAttendanceModule() {
 
     const { createAttendanceList } = useDOMManager();
 
-    const form = document.querySelector('#attendance-search-form');
-    const wrapper = document.querySelector('.attendance-list-wrapper');
-    const title = document.querySelector('.attendance-empty-title');
+    const form = document.querySelector('.attendance-page .attendance-search-form');
+    const wrapper = document.querySelector('.attendance-page .lista-wrapper');
+    const title = document.querySelector('.attendance-page .attendance-empty-title');
+
+    
 
     if (form && wrapper) {
         form.addEventListener('submit', async (event) => {
@@ -24,11 +27,10 @@ async function startAttendanceModule() {
             }
 
             const inputSearch = form.querySelector('input[type=search]');
-            
 
             if (inputSearch) {
                 const query = inputSearch.value;
-
+                
                 if (query.length) {
                     wrapper.innerHTML = '';
                     const loadingElement = document.createElement('div');
@@ -37,12 +39,14 @@ async function startAttendanceModule() {
                     wrapper.append(loadingElement);
 
                     const { data: classRoomCollection } = await turmaEntityService.getAll();
+                    
 
                     const filtered = [...classRoomCollection].filter((_) => {
                         return _.nome.toLowerCase().includes(query.toLowerCase());
                     });
 
                     if (!filtered.length) {
+                        wrapper.innerHTML = '';
                         wrapper.append(title);
                         alert('Não foram encontrados resultados para a pesquisa.');
                     } else {
@@ -67,10 +71,9 @@ async function startAttendanceModule() {
                                 const id = elemento.getAttribute('data-id');
                                 event.preventDefault();
 
-                                navigateToRoute(null, `/turmas/frequencia/form/${id}`);
+                                navigateToRoute(null, `/turmas/frequencia/${id}`);
                             });
                         });
-
 
                         loadingElement.remove();    
                         wrapper.appendChild(list);
@@ -83,13 +86,13 @@ async function startAttendanceModule() {
 
 export default {
     init() {
-        if (started) {
-            return;
-        }
-
         startAttendanceModule();
 
         window.addEventListener('changepage', function(event) {
+            if (started) {
+                return;
+            }
+
             startAttendanceModule();
         });
     }

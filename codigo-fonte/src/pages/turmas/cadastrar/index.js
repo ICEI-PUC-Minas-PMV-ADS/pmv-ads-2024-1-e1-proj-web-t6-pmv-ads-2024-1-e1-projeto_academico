@@ -7,7 +7,6 @@ function setStateLoading(form, state = true) {
     if (form) {
         const inputs = form.querySelectorAll('input, select');
         const buttonSubmit = form.querySelector('button[type=submit]');
-        const buttoncancel = form.querySelector('button[type=button]');
         
         if (state) {
             inputs.forEach((input) => {
@@ -15,14 +14,12 @@ function setStateLoading(form, state = true) {
             });
             buttonSubmit.setAttribute('disabled', 'disabled');
             buttonSubmit.textContent = 'Carregando...';
-            buttoncancel.setAttribute('disabled', 'disabled');
         } else {
             inputs.forEach((input) => {
                 input.removeAttribute('disabled');
             });
             buttonSubmit.removeAttribute('disabled');
             buttonSubmit.textContent = 'Atualizar';
-            buttoncancel.removeAttribute('disabled');
         }
 
     }
