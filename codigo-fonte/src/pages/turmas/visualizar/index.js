@@ -1,35 +1,59 @@
 import { turmaEntityService } from '@/services/turmaEntityService.service.js'; 
-import { useDashboardUtils } from '@/hooks/useDashboardUtils.js';
-import { navigateToRoute } from '@/router';
-
 import './index.css';
 
-async function createTurma(turma) {
-    const { showNotification } = useDashboardUtils();
+let started = false;
 
-    try {
+async function startClassRoomModule() {
+    started = true;
+
+    const wrapper = document.querySelector('.turma-lista');
+
+    if (wrapper) {
+        if (document.querySelector('.loading')) {
+            return false;
+        }
+
+        const loadingElement = document.createElement('div');
+        loadingElement.classList.add('loading');
+        loadingElement.innerHTML = 'Carregando...';
+
+        wrapper.appendChild(loadingElement);
+
+        const { data: collection } = await turmaEntityService.getAll();
+
+        const lista = document.createElement('ul');
+
+        collection.forEach((turma) => {
+        //     const item = document.createElement('li');
+        //     item.textContent = turma.nome;
+
+        //     lista.appendChild(item);
+        // });
+        const item = document.createElement('li');
+        item.innerHTML = `
+            <span class="turma-nome">${turma.nome}</span>
+            <span class="turma-info">${turma.ano} - ${turma.professor}</span>
+        `;
+        lista.appendChild(item);
+    });
+
+        wrapper.appendChild(lista);
         
-        await turmaEntityService.create(turma);
-
-        showNotification({ 
-            type: 'success', 
-            title: 'Sucesso', 
-            message: 'Turma criada com sucesso'
-        });
-
-        
-
-    } catch (error) {
-        
-        console.error('Erro ao criar turma:', error);
-        showNotification({ 
-            type: 'error', 
-            title: 'Erro', 
-            message: 'Erro ao criar turma. Por favor, tente novamente mais tarde.'
-        });
+        loadingElement.remove();    
     }
 }
 
 export default {
-    createTurma 
-};
+    init() {
+        if (started) {
+            return;
+        }
+
+        startClassRoomModule();
+
+        window.addEventListener('changepage', function(event) {
+            startClassRoomModule();
+        });
+    }
+}
+

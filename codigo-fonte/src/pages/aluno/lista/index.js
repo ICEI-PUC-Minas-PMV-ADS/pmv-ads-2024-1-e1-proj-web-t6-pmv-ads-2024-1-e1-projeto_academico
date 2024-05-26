@@ -9,10 +9,10 @@ let started = false;
 async function startStudentListModule() {
     started = true;
 
-    const { createTable, createTableActions } = useDOMManager();
+    const { createList, createListActions } = useDOMManager();
     const { showNotification } = useDashboardUtils();
 
-    const wrapper = document.querySelector('.aluno-lista-wrapper');
+    const wrapper = document.querySelector('.lista-wrapper');
 
     if (wrapper) {
         if (document.querySelector('.loading')) {
@@ -29,16 +29,11 @@ async function startStudentListModule() {
 
         const { data: collection } = await studentEntityService.getAll();
 
-        const headers = [
-            { label: 'Nome', key: 'nome' }, 
-            { label: 'Email', key: 'email' }
-        ];
-        
-        const tableElement = createTable(collection, headers);
+        const list = createList(collection);
 
-        createTableActions(tableElement);
+        createListActions(list);
 
-        const rows = tableElement.querySelectorAll('tbody tr');
+        const rows = list.querySelectorAll('li');
 
         rows.forEach(row => {
             const id = row.getAttribute('data-id');
@@ -92,7 +87,7 @@ async function startStudentListModule() {
         });
         
         loadingElement.remove();    
-        wrapper.appendChild(tableElement);
+        wrapper.appendChild(list);
     }
 }
 
