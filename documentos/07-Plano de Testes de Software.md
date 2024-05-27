@@ -16,9 +16,27 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 |Caso de Teste    | CT-001 - Testes Funcionalidades turma|
 |:---|:---|
 | Requisitos Associados | RF- 05 CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma) |
+
 | Objetivo do Teste | Verificar todo o processo de cadastro, visualização, exclusão e inserção de alunos a turmas |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
+
+| Passos | 1 - Acessar a tela inicial e clicar Turmas > Cadastrar Turmas.
+|          2 - Preencher os campos e clicar em cadastrar para que uma nova turma seja cadastrada.      
+|          3 - Ao voltar para a tela de lista de turmas verifico se a turma cadastrada está presente.
+|          4 - Após encontrar a turma cadastrada na lista, clico em editar para alterar alguma informaçao da turma desejada.
+|          5 - Ao verificar a turma cadastrada na lista, quando clicar em desativar, entao a turma nao podera mais editada.
+|          6 - Acessar a tela inicial e clicar Turmas > Matricular Aluno.
+|          7 - Ao aparecer a lista de alunos, seleciono o aluno desejado e clico em matricular na turma para a turma desejada.
+|          8 - Clico em visuzalizar turmas para poder verificar os alunos em cada turma e posso excluir o aluno da turma desejada.
+
+| Critérios de êxito | 
+
+|          1 - Ser possivel cadastrar e visualizar uma turma.
+|          2 - Deve poder incluir um aluno a uma turma desejada.      
+|          3 - Deve poder excluir um aluno de turma desejada.
+|          4 - Deve ser possivel desativar uma turma e ficar impossibilitada de editar a mesma.
+|          5 - Deve ser possivel verificar os alunos que estao cadastrados em cada turma.
+|        
+|
 | Responsável pela elaborar do caso de Teste | Caio de Souza Araujo |
 
 <table>
