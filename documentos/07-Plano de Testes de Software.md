@@ -284,6 +284,54 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
     </tbody>
 </table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-007 - Testes Funcionalidades CRUD Frequência</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e excluir frequências de um Aluno)</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Deve ser possível cadastrar, editar, visualizar e excluir as freqências de um Aluno.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Acessar o menu de Lançamento de Frequência</li>
+                    <li>Verificar se ao pesquisar as turmas, está aparecendo as turmas cadastradas.</li>
+                    <li>Verificar se ao clicar no botão "Lançar Frequência", está sendo direcionado para a tela de Lançamento de Frequência.</li>
+                    <li>Verificar se o campo de Presença, Falta e Observação está habilitado para receber informações.</li>
+                    <li>Verificar se os botões de "Cancelar" e "Salvar" estão funcionando.</li>
+                    <li>Verificar se os dados informados da frequência do aluno estão ficando salvos.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Validação do campo de pesquisar turmas.</li>
+                    <li>Validação do botão de Lançar Frequência.</li>
+                    <li>Validação do campo de Presença, Falta e Observação.</li>
+                    <li>Validação dos botões de Salvar e Cancelar.</li>
+                    <li>Após o lançamento da frequência, a informação deverá ser salva e informada na aba de Consultar Frequência.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Brena Ferreira</td>
+        </tr>
+    </tbody>
+</table>
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
