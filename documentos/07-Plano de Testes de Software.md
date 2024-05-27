@@ -23,43 +23,41 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
     <tbody>
         <tr>
             <td>Requisitos Associados</td>
-            <td>RF- 05 CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma)</td>
+            <td>RF-05 CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma)</td>
         </tr>
         <tr>
             <td>Objetivo do Teste</td>
-            <td>Verificar todo o processo de cadastro, visualização, exclusão e inserção de alunos a turmas.</td>
+            <td>Verificar todo o processo de cadastro, visualização, exclusão e inserção de alunos em turmas.</td>
         </tr>
         <tr>
             <td>Passos</td>
             <td>
                 <ol>
-                    <li>1 - Acessar a tela inicial e clicar Turmas > Cadastrar Turmas.</li>
-                    <li>2 - Preencher os campos e clicar em cadastrar para que uma nova turma seja cadastrada.</li>
-                    <li>3 - Ao voltar para a tela de lista de turmas verifico se a turma cadastrada está presente.</li>
-                    <li>4 - Após encontrar a turma cadastrada na lista, clico em editar para alterar alguma informaçao da turma desejada.</li>
-                    <li>5 - Ao verificar a turma cadastrada na lista, quando clicar em desativar, entao a turma nao podera mais editada.</li>
-                    <li>6 - Acessar a tela inicial e clicar Turmas > Matricular Aluno.</li>
-                    <li>7 - Ao aparecer a lista de alunos, seleciono o aluno desejado e clico em matricular na turma para a turma desejada.</li>
-                    <li> 8 - Clico em visuzalizar turmas para poder verificar os alunos em cada turma e posso excluir o aluno da turma desejada.</li>
-                
+                    <li>Acessar a tela inicial e clicar em Turmas > Cadastrar Turmas.</li>
+                    <li>Preencher os campos e clicar em cadastrar para que uma nova turma seja cadastrada.</li>
+                    <li>Voltar para a tela de lista de turmas e verificar se a turma cadastrada está presente.</li>
+                    <li>Encontrar a turma cadastrada na lista, clicar em editar para alterar alguma informação da turma desejada.</li>
+                    <li>Verificar a turma cadastrada na lista e clicar em desativar. A turma não poderá mais ser editada.</li>
+                    <li>Acessar a tela inicial e clicar em Turmas > Matricular Aluno.</li>
+                    <li>Selecionar o aluno desejado na lista de alunos e clicar em matricular na turma desejada.</li>
+                    <li>Clicar em visualizar turmas para verificar os alunos em cada turma e excluir o aluno da turma desejada.</li>
                 </ol> 
             </td>
         </tr>
         <tr>
-            <td>Critérios de êxito</td>
+            <td>Critérios de Êxito</td>
             <td>
                 <ol>
-                    <li>1 - Ser possivel cadastrar e visualizar uma turma.</li>
-                    <li>2 - Deve poder incluir um aluno a uma turma desejada.</li>
-                    <li>3 - Deve poder excluir um aluno de turma desejada.</li>
-                    <li>4 - Deve ser possivel desativar uma turma e ficar impossibilitada de editar a mesma.</li>
-                    <li>5 - Deve ser possivel verificar os alunos que estao cadastrados em cada turma.</li>
-                    
+                    <li>Deve Ser possível cadastrar e visualizar uma turma.</li>
+                    <li>Deve ser possível incluir um aluno na turma desejada.</li>
+                    <li>Deve ser possível excluir um aluno da turma desejada.</li>
+                    <li>Deve ser possível desativar uma turma, tornando-a impossível de editar.</li>
+                    <li>Deve ser possível verificar os alunos que estão cadastrados em cada turma.</li>
                 </ol> 
             </td>
         </tr>
         <tr>
-            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Responsável pela Elaboração do Caso de Teste</td>
             <td>Caio Araujo</td>
         </tr>
     </tbody>
