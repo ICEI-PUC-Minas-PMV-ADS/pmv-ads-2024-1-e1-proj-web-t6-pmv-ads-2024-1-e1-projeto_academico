@@ -175,6 +175,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>Passos</td>
             <td>
                 <ol>
+                    <li>Acessar o menu "Consultar Boletim"</li>
                     <li>Informar o CPF do aluno e clicar no botão de "Pesquisar"</li>
                     <li>Verificar as notas disponíveis por cada turma que o aluno se matriculou, caso estejam disponíveis.</li>
                 </ol> 
@@ -217,6 +218,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>Passos</td>
             <td>
                 <ol>
+                    <li>Acessar o menu "Emitir Declaração de Matrícula"</li>
                     <li>Informar o CPF do aluno e clicar no botão de "Pesquisar"</li>
                     <li>Caso necessário realizar a impressão, clicar em "Imprimir"</li>
                 </ol> 
@@ -259,6 +261,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>Passos</td>
             <td>
                 <ol>
+                    <li>Acessar o menu "Certificado de Conclusão"</li>
                     <li>Informar o CPF do aluno e clicar no botão de "Pesquisar"</li>
                     <li>Caso necessário realizar a impressão, clicar em "Imprimir"</li>
                 </ol> 
