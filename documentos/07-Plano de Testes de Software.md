@@ -95,7 +95,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>
                 <ol>
                     <li>Testar o fluxo de autenticação de usuário, inserindo informações de login corretas e verificando se o acesso é concedido ao sistema.</li>
-                    <li>Testar o campo de recuperação de senha.</li>
                 </ol> 
             </td>
         </tr>
@@ -104,7 +103,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>
                 <ol>
                     <li>Validação dos dados de acesso do usuário.</li>
-                    <li>Deve ser possível ir para o campo de recuperação de senha ao clicar em 'Esqueceu sua senha? Recupere agora'.</li>
                 </ol> 
             </td>
         </tr>
