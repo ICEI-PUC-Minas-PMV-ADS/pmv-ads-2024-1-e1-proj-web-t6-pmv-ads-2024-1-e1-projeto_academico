@@ -196,6 +196,91 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
     </tbody>
 </table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-005 - Testes Funcionalidades Emitir Declaração de Matrícula </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-08 Emitir Declaração de Matrícula</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar se o processo de emissão de declaração de matrícula está sendo executado de forma satisfatória.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Informar o CPF do aluno e clicar no botão de "Pesquisar"</li>
+                    <li>Caso necessário realizar a impressão, clicar em "Imprimir"</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Validações do campo em que é inserido o CPF.</li>
+                    <li>Verificar se o documento gerado para visualização da declaração contém os dados corretos do aluno.</li>
+                    <li>Verificar se ao clicar em "Imprimir" está sendo redirecionado para uma nova aba de impressão com o documento gerado.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Fernando Moura</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-006 - Testes Funcionalidades Emitir Certificado de Conclusão</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-09 Usuários autorizados devem poder emitir certificados ou diplomas para os alunos que concluíram com sucesso o curso</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar se o processo de emissão do certificado de conclusão está sendo executado de forma satisfatória.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Informar o CPF do aluno e clicar no botão de "Pesquisar"</li>
+                    <li>Caso necessário realizar a impressão, clicar em "Imprimir"</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Validações do campo em que é inserido o CPF.</li>
+                    <li>Verificar se o documento gerado para visualização da declaração contém os dados corretos do aluno.</li>
+                    <li>Verificar se o documento gerado é referente somente às turmas que o aluno de fato concluiu.</li>
+                    <li>Verificar se ao clicar em "Imprimir" está sendo redirecionado para uma nova aba de impressão com o documento gerado.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Fernando Moura</td>
+        </tr>
+    </tbody>
+</table>
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
