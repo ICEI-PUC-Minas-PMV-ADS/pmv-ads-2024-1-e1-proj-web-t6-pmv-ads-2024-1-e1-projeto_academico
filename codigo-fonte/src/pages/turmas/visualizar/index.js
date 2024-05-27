@@ -1,59 +1,84 @@
-import { turmaEntityService } from '@/services/turmaEntityService.service.js'; 
+import { turmaEntityService } from '@/services/turmaEntityService.service';
+import { useDOMManager } from '/src/hooks/useDOMManager.js';
+import { navigateToRoute } from '@/router';
 import './index.css';
 
 let started = false;
 
-async function startClassRoomModule() {
+async function startClassroomModule() {
     started = true;
 
-    const wrapper = document.querySelector('.turma-lista');
+    const { createAttendanceList } = useDOMManager();
 
-    if (wrapper) {
-        if (document.querySelector('.loading')) {
-            return false;
-        }
+    const form = document.querySelector('.classroom-page .classroom-search-form');
+    const wrapper = document.querySelector('.classroom-page .lista-wrapper');
+    const title = document.querySelector('.classroom-page .classroom-empty-title');
 
-        const loadingElement = document.createElement('div');
-        loadingElement.classList.add('loading');
-        loadingElement.innerHTML = 'Carregando...';
+    if (form && wrapper) {
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
 
-        wrapper.appendChild(loadingElement);
+            if (document.querySelector('.loading')) {
+                return false;
+            }
 
-        const { data: collection } = await turmaEntityService.getAll();
+            const inputSearch = form.querySelector('input[type=search]');
 
-        const lista = document.createElement('ul');
+            if (inputSearch) {
+                const query = inputSearch.value;
+                
+                if (query.length) {
+                    wrapper.innerHTML = '';
+                    const loadingElement = document.createElement('div');
+                    loadingElement.classList.add('loading');
+                    loadingElement.innerHTML = 'Carregando...';
+                    wrapper.append(loadingElement);
 
-        collection.forEach((turma) => {
-        //     const item = document.createElement('li');
-        //     item.textContent = turma.nome;
+                    const { data: classRoomCollection } = await turmaEntityService.getAll();
 
-        //     lista.appendChild(item);
-        // });
-        const item = document.createElement('li');
-        item.innerHTML = `
-            <span class="turma-nome">${turma.nome}</span>
-            <span class="turma-info">${turma.ano} - ${turma.professor}</span>
-        `;
-        lista.appendChild(item);
-    });
+                    const filtered = [...classRoomCollection].filter((turma) => {
+                        return turma.nome.toLowerCase().includes(query.toLowerCase());
+                    });
 
-        wrapper.appendChild(lista);
-        
-        loadingElement.remove();    
+                    if (!filtered.length) {
+                        wrapper.innerHTML = '';
+                        wrapper.append(title);
+                        alert('Não foram encontrados resultados para a pesquisa.');
+                    } else {
+                        const list = createAttendanceList(filtered);
+                        const rows = list.querySelectorAll('.actions');
+                        
+                        rows.forEach(elemento => {
+                            const buttonEdit = document.createElement('button');
+                            buttonEdit.classList.add('btn', 'btn-primary');
+                            buttonEdit.textContent = 'Editar';
+
+                            const buttonInactive = document.createElement('button');
+                            buttonInactive.classList.add('btn', 'btn-danger');
+                            buttonInactive.textContent = 'Desativar';
+                            elemento.appendChild(buttonEdit);
+                            elemento.appendChild(buttonInactive);
+                        });
+
+                        loadingElement.remove();    
+                        wrapper.appendChild(list);
+                    }
+                }
+            }
+        });
     }
 }
 
 export default {
     init() {
-        if (started) {
-            return;
-        }
-
-        startClassRoomModule();
+        startClassroomModule();
 
         window.addEventListener('changepage', function(event) {
-            startClassRoomModule();
+            if (started) {
+                return;
+            }
+
+            startClassroomModule();
         });
     }
 }
-

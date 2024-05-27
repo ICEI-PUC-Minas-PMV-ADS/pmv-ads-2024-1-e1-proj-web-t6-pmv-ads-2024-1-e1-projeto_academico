@@ -1,139 +1,71 @@
 
-<div class="page-wrapper frequencia-page">
+<div class="page-wrapper frequencia-form-page">
     <div class="flex justify-between gap-4 items-center">
         <h1 class="text-primary">Lançar Frequência</h1>
 
-        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/lista')">Lista de Frequências</button>
+        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/frequencia/lista')">Lista turmas</button>
     </div>
         
-    <label id="textoLabelPesquisarTurmas">Pesquisar Turmas:</label>
-        
-    <div id="pesquisarTurmas" >
-            <input type="text" id="TURMAInput" name="turma" maxlength="14">
-            <input type="submit" id="botaoPesquisar" value=" ">
+    <div class="card loading-wrapper">
+        <div class="loading">Carregando...</div>
     </div>
-
-    <div id="linha"></div>
         
-        <div class="card">
-
-            <div id="nomeMateria">
-                Física Aplicada
+    <div class="hidden card form-wrapper">
+        <div class="frequencia-form-wrapper flex flex-col gap-4">
+            <div class="flex flex-col gap-4">
+                <div id="frequencia-nome" class="font-bold text-primary">
+                    Física Aplicada
+                </div>
+        
+                <div id="frequencia-ano" class="font-bold">
+                    Ano Letivo: 2024
+                </div>
+                <div id="frequencia-responsavel" class="font-bold">
+                    Professora: Maria Cassia
+                </div>
             </div>
 
-            <div id="anoLetivo">
-                Ano Letivo: 2024
-            </div>
-            <div id="nomeProfessor">
-                Professora: Maria Cassia
-            </div>
-            <br/>
-            <div id="data">
-                Data: 28/04/2024
+            <div class="flex flex-col items-end">
+                <div id="data" class="font-bold">
+                    Data: 28/04/2024
+                </div>
             </div>
 
-            <div class="cardPrincipalAluno">
-                Aluno
-            </div>
-            <div class="cardPrincipalPresenca">
-                P
-            </div>
-            <div class="cardPrincipalFalta">
-                F
-            </div>
-            <div class="cardPrincipalObservacao">
-                Observações
-            </div>
-            <br>
+            <div class="form flex flex-col gap-4">
+                <div class="header">
+                    <div class="row">
+                        <div>ALUNO</div>
+                        <div>PRESENÇA</div>
+                        <div>AUSÊNCIA</div>
+                        <div>JUSTIFICADO</div>
+                    </div>
+                </div>
 
-            <!--Input do Nome do Aluno 1-->
-            <div class="cardConteudoAlunos">
-                Carlos José da Silva Mota
-            </div>
-            <!--Input se o Aluno 1 Estava Presente-->
-            <div class="cardConteudoPresenca">
-                P
-            </div>
-            <!--Input se o Aluno 1 Estava Ausente-->
-            <div class="cardConteudoAusencia">
-                F
-            </div>
-            <!--Input de Observações-->
-            <div class="cardConteudoObservacao">
-                Sem Justificativa
-            </div>
-            <br>
+                <div class="body flex flex-col gap-4">
+                    <div class="row">
+                        <div>Carlos José da Silva Mota</div>
+                        <div>
+                            <input type="radio" class="hidden" id="presenca" name="frequency" value="P">
+                            <label for="presenca">P</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="hidden" id="ausencia" name="frequency" value="F">
+                            <label for="ausencia">P</label>
+                        </div>
+                        <div>
+                            <input type="radio" class="hidden" id="justificado" name="frequency" value="J">
+                            <label for="justificado">Justificado</label>
+                        </div>
+                    </div>
+                    
+                </div>
 
-            <!--Input do Nome do Aluno 2-->
-            <div class="cardConteudoAlunos">
-                Beatriz Mariana Arouche
-            </div>
-            <!--Input se o Aluno 2 Estava Presente-->
-            <div class="cardConteudoPresenca">
-                P
-            </div>
-            <!--Input se o Aluno 2 Estava Ausente-->
-            <div class="cardConteudoAusencia">
-                F
-            </div>
-            <!--Input de Observações-->
-            <div class="cardConteudoObservacao">
-                Sem Justificativa
-            </div>
-            <br>
-
-            <!--Input do Nome do Aluno 3-->
-            <div class="cardConteudoAlunos">
-                José Trindade Pacheco
-            </div>
-            <!--Input se o Aluno 3 Estava Presente-->
-            <div class="cardConteudoPresenca">
-                P
-            </div>
-            <!--Input se o Aluno 3 Estava Ausente-->
-            <div class="cardConteudoAusencia">
-                F
-            </div>
-            <!--Input de Observações-->
-            <div class="cardConteudoObservacao">
-                Sem Justificativa
-            </div>
-            <br>
-
-            <!--Input do Nome do Aluno 4-->
-            <div class="cardConteudoAlunos">
-                Josélia Kelly Mendes Abreu
-            </div>
-            <!--Input se o Aluno 4 Estava Presente-->
-            <div class="cardConteudoPresenca">
-                P
-            </div>
-            <!--Input se o Aluno 4 Estava Ausente-->
-            <div class="cardConteudoAusencia">
-                F
-            </div>
-            <!--Input de Observações-->
-            <div class="cardConteudoObservacao">
-                Sem Justificativa
-            </div>
-            <br>
-
-            <button type="button" class="btn btn-secondary">Cancelar</button>
-            <button type="button" class="btn btn-primary">Salvar</button>
-
-            <br>    
-
-            <!--Marcador da Página Atual-->
-            <div class="outrasPaginas" id="paginaAtual">
-                1
-            </div>
-            <!--Marcadores das Outras Páginas Disponíveis-->
-            <div class="outrasPaginas">
-                2
-            </div>
-            <div class="outrasPaginas">
-                3
+                <div class="flex justify-end">
+                    <button class="btn btn-primary" type="submit">Lançar frequência</button>
+                </div>
             </div>
         </div>
+        
+        
     </div>
 </div>

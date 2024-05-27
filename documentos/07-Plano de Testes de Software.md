@@ -13,13 +13,55 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
 
-|Caso de Teste    | CT-001 - Testes Funcionalidades turma|
-|:---|:---|
-| Requisitos Associados | RF- 05 CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma) |
-| Objetivo do Teste | Verificar todo o processo de cadastro, visualização, exclusão e inserção de alunos a turmas |
-| Passos | Indicar passos para a execução do teste |
-| Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Caio de Souza Araujo |
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-001 - Testes Funcionalidades CRUD Turma</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-05 CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma)</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar todo o processo de cadastro, visualização, exclusão e inserção de alunos em turmas.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Acessar a tela inicial e clicar em Turmas > Cadastrar Turmas.</li>
+                    <li>Preencher os campos e clicar em cadastrar para que uma nova turma seja cadastrada.</li>
+                    <li>Voltar para a tela de lista de turmas e verificar se a turma cadastrada está presente.</li>
+                    <li>Encontrar a turma cadastrada na lista, clicar em editar para alterar alguma informação da turma desejada.</li>
+                    <li>Verificar a turma cadastrada na lista e clicar em desativar. A turma não poderá mais ser editada.</li>
+                    <li>Acessar a tela inicial e clicar em Turmas > Matricular Aluno.</li>
+                    <li>Selecionar o aluno desejado na lista de alunos e clicar em matricular na turma desejada.</li>
+                    <li>Clicar em visualizar turmas para verificar os alunos em cada turma e excluir o aluno da turma desejada.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de Êxito</td>
+            <td>
+                <ol>
+                    <li>Deve Ser possível cadastrar e visualizar uma turma.</li>
+                    <li>Deve ser possível incluir um aluno na turma desejada.</li>
+                    <li>Deve ser possível excluir um aluno da turma desejada.</li>
+                    <li>Deve ser possível desativar uma turma, tornando-a impossível de editar.</li>
+                    <li>Deve ser possível verificar os alunos que estão cadastrados em cada turma.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela Elaboração do Caso de Teste</td>
+            <td>Caio Araujo</td>
+        </tr>
+    </tbody>
+</table>
 
 <table>
     <thead> 
@@ -64,6 +106,45 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
                     <li>Após editar o cadastro do aluno as alterações devem ficar salvas no cadastro.</li>
                     <li>Após desativar o cadastro do aluno, deve ser possível visualizar a na lista de alunos o botão de reativar aluno.</li>
                     <li>Após reativar o cadastro do aluno, deve ser possível visualizar a na lista de alunos o botão de desativar aluno.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Marcelly Freitas</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-003 - Testes Funcionalidades Login</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-01 Tela de Login</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar se o processo de login de usuário está funcionando corretamente, permitindo que os usuários acessem suas contas com credenciais válidas.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Testar o fluxo de autenticação de usuário, inserindo informações de login corretas e verificando se o acesso é concedido ao sistema.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Validação dos dados de acesso do usuário.</li>
                 </ol> 
             </td>
         </tr>

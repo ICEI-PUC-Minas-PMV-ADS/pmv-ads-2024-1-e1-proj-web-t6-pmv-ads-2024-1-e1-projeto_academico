@@ -1,7 +1,7 @@
 import { useFakeRequest } from '@/hooks/useFakeRequest';
 import { useLocalStorage } from '/src/hooks/useLocalstorage';
 
-const COLLECTION_NAME = 'student-collection';
+const COLLECTION_NAME = 'attendance-collection';
 
 const { fakeRequest } = useFakeRequest();
 const { 
@@ -11,7 +11,7 @@ const {
     updateItem, 
 } = useLocalStorage(COLLECTION_NAME);
 
-export const studentEntityService = {
+export const attendanceEntityService = {
     async getAll() {
         return fakeRequest({
             message: 'Dados retornados com sucesso',
@@ -56,5 +56,4 @@ export const studentEntityService = {
             data: [],
         });
     }
-
 }

@@ -8,75 +8,27 @@
     <div class="flex flex-col gap-4">
         <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
 
-        <div class="input_global_search">
-            <input data-mask="999.999.999-99" placeholder="xxx.xxx.xxx-xx" type="search" id="cpf" name="cpf" required>
-            <span class="iconify-inline" data-icon="ic:baseline-search"></span>
-        </div>
+        <form class="registration-search-form">
+            <input data-mask="999.999.999-99" placeholder="xxx.xxx.xxx-xx" type="search" id="cpf" name="cpf" value="999.999.999-91" required>
+
+            <button type="submit">
+              <span class="iconify-inline" data-icon="ic:baseline-search"></span>
+            </button>
+        </form>
     </div>
 
-    <div class="card">
+    <div class="card cancelamento_matricula_empty helper">
+        <h3>Utilize a pesquisa acima para encontrar aluno</h3>
+    </div>
+
+    <div class="card hidden cancelamento_matricula_wrapper">
         <div class="flex flex-col gap-4">
             <div>
                 <h2>Turmas Atualmente Matriculado</h2>
-                <p class="font-bold">Aluno: Carlos da Silva Salles</p>
+                <p class="font-bold nome_aluno">Aluno: Carlos da Silva Salles</p>
             </div>
 
             <div class="lista-wrapper">
-                <div class="lista-mae">
-                    <div class="lista-filho">
-                        <div><span class="font-bold text-primary">Física Aplicada</span></div>
-                        <div><span class="font-bold">Ano: 2016</span></div>
-                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                        <div class="flex justify-center gap-2">
-                            <button class="btn btn-success w-full button-ativar">Ativar</button>
-                            <button class="btn btn-danger w-full button-cancelar">Cancelar</button>
-                        </div>
-                    </div>
-                    <div class="lista-filho">
-                        <div><span class="font-bold text-primary">Química Geral</span></div>
-                        <div><span class="font-bold">Ano: 2016</span></div>
-                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                        <div class="flex justify-center gap-2">
-                            <button class="btn btn-primary w-full button-desativar">Desativar</button>
-                            <button class="btn btn-danger w-full button-cancelar">Cancelar</button>
-                        </div>
-                    </div>
-                    <div class="lista-filho">
-                        <div><span class="font-bold text-primary">História</span></div>
-                        <div><span class="font-bold">Ano: 2016</span></div>
-                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                        <div class="flex justify-center gap-2">
-                            <button class="btn btn-primary w-full button-desativar">Desativar</button>
-                            <button class="btn btn-danger w-full button-cancelar">Cancelar</button>
-                        </div>
-                    </div>
-                    <div class="lista-filho">
-                        <div><span class="font-bold text-primary">Gramática</span></div>
-                        <div><span class="font-bold">Ano: 2016</span></div>
-                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                        <div class="flex justify-center gap-2">
-                            <button class="btn btn-primary w-full button-desativar">Desativar</button>
-                            <button class="btn btn-danger w-full button-cancelar">Cancelar</button>
-                        </div>
-                    </div>
-                    <div class="lista-filho">
-                        <div><span class="font-bold text-primary">Geografia</span></div>
-                        <div><span class="font-bold">Ano: 2016</span></div>
-                        <div><span class="font-bold">Responsável: Prof. Maria Cassia</span></div>
-                        <div class="flex justify-center gap-2">
-                            <button class="btn btn-primary w-full button-desativar">Desativar</button>
-                            <button class="btn btn-danger w-full button-cancelar">Cancelar</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="flex justify-center">
-                    <div class="outrasPaginas" id="paginaAtual">1</div>
-                    <div class="outrasPaginas">2</div>
-                    <div class="outrasPaginas">3</div>
-                </div>
-
             </div>
         </div>
     </div>
