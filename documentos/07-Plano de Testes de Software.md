@@ -154,6 +154,48 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
     </tbody>
 </table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-004 - Testes Funcionalidades Consultar Boletim </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-14 Alunos devem poder emitir boletins com suas notas por disciplina</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar se o processo de consulta às notas do aluno estão disponíveis de acordo com o aluno consultado.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Informar o CPF do aluno e clicar no botão de "Pesquisar"</li>
+                    <li>Verificar as notas disponíveis por cada turma que o aluno se matriculou, caso estejam disponíveis.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Validações do campo em que é inserido o CPF.</li>
+                    <li>Exibição das notas de acordo com as turmas em que o aluno é matriculado.</li>
+                    <li>Devem ser exibidas notas somente já lançadas.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Fernando Moura</td>
+        </tr>
+    </tbody>
+</table>
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
