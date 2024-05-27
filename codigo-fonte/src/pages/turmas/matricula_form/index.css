@@ -1,0 +1,32 @@
+.matricula-form-page .lista-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+} 
+.matricula-form-page .lista-mae {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: max-content;
+    min-width: 100%;
+} 
+
+.matricula-form-page .lista-filho {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    row-gap: 16px;
+    padding: 16px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.matricula-form-page .outrasPaginas {
+    width: max-content;
+    color: #9c9c9c;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}

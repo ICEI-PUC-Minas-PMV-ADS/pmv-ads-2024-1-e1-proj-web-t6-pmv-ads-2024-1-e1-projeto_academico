@@ -1,0 +1,39 @@
+
+<div class="page-wrapper matricula-form-page">
+    <div class="flex justify-between gap-4 items-center">
+        <h1 class="text-primary">Matricular Aluno</h1>
+
+        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/matricula')">Lista Turmas</button>
+    </div>
+        
+    <div class="card loading-wrapper">
+        <div class="loading">Carregando...</div>
+    </div>
+        
+    <div class="hidden card form-wrapper">
+        <div class="attendance-form-wrapper flex flex-col gap-4">
+            <div class="flex flex-col">
+                <div class="font-bold" id="nomeMateria">
+                    Física Aplicada
+                </div>
+        
+                <div class="font-bold" id="period">
+                    Ano Letivo: 2024
+                </div>
+
+                <div class="font-bold" id="nomeProfessor">
+                    Professora: Maria Cassia
+                </div>
+            </div>
+
+            <div class="flex flex-col items-end">
+                <div class="font-bold" id="data">
+                    Data: 28/04/2024
+                </div>
+            </div>
+
+            <div class="student-lista-wrapper">
+            </div>
+        </div>
+    </div>
+</div>

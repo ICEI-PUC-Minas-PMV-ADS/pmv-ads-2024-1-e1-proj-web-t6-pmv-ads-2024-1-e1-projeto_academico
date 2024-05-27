@@ -42,13 +42,6 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/aluno/lista/index.js'),
 	},
 	{ 
-		path: '/aluno/matricula', 
-		layout: 'dashboard', 
-		permission: 'auth', 
-		moduleHTML: () => import('@/pages/aluno/matricula/index.html?raw'), 
-		moduleJS: () => import('@/pages/aluno/matricula/index.js'),
-	},
-	{ 
 		path: '/aluno/boletim', 
 		layout: 'dashboard', 
 		permission: 'auth', 
@@ -105,7 +98,7 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/turmas/frequencia_lista/index.js'),
 	},
 	{ 
-		path: '/turmas/frequencia/form', 
+		path: '/turmas/frequencia/:id', 
 		layout: 'dashboard', 
 		permission: 'auth', 
 		moduleHTML: () => import('@/pages/turmas/frequencia_form/index.html?raw'), 
@@ -115,8 +108,15 @@ const RouteModules = [
 		path: '/turmas/matricula', 
 		layout: 'dashboard', 
 		permission: 'auth', 
-		moduleHTML: () => import('@/pages/turmas/matricula/index.html?raw'), 
-		moduleJS: () => import('@/pages/turmas/matricula/index.js'),
+		moduleHTML: () => import('@/pages/turmas/matricula_lista/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/matricula_lista/index.js'),
+	},
+	{ 
+		path: '/turmas/matricula/:id', 
+		layout: 'dashboard', 
+		permission: 'auth', 
+		moduleHTML: () => import('@/pages/turmas/matricula_form/index.html?raw'), 
+		moduleJS: () => import('@/pages/turmas/matricula_form/index.js'),
 	},
 	{ 
 		path: '/turmas/visualizar', 

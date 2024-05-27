@@ -1,116 +1,51 @@
-
-.cardDisciplina {
-
-    width: 183px;
-    height: 60px;
-    top: 300px;
-    left: 450px;
-    display: inline-flex;
-    justify-content: left;
-    flex-direction: row;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: left;
-    background-color:#b5b0b0;
-    color:black;
-    padding: 10px;
-    margin: 10px;
-    border-top: 10px;
-
-}
-
-#textoLabelPesquisarCPF {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12;
-    color: #0C098E;
-    font-weight:bold
-}
-
-
-.lancar-frequencia-page .card {
-    width: 90%;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000000;
-    background-color: white;
-    text-align: center;
-}
-
-.lancar-frequencia-page #linha {
-    width: 90%;
-    border-bottom: 1px solid black;
-    padding: 10px;
-}
-
-.lancar-frequencia-page #pesquisarCPF {
-    width: 30%;
-    height: 35px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0.2);
+.consultar-frequencia .consultar-frequencia-search-form {
+    background-color: #fff;
+    width: fit-content;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 8px 16px;
     border-radius: 5px;
-    background-color: #ffffff;
-
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
 }
 
-.lancar-frequencia-page #CPFInput {
+.consultar-frequencia .consultar-frequencia-search-form input {
     border: none;
-    width: 90%;
-    height: 100%;
-    border-radius: 5px;
-    padding-left: 10px;
-    display: inline-block;
-}
-
-.lancar-frequencia-page #botaoPesquisar {
-    width: 30px;
-    height: 100%;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #ffffff;
-    background-image: url(https://icones.pro/wp-content/uploads/2021/02/loupe-et-icone-de-recherche-de-couleur-bleue.png);
-    background-size: 1.8em;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-}
-
-
-.lancar-frequencia-page #botaoPresenca {
-    width: 30px;
+    background: none;
+    flex: 1;
     height: 30px;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: green ;
-    color:#ffffff ;
-    background-size: 1.8em;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
+    outline: none;
+}
+.consultar-frequencia .consultar-frequencia-search-form svg {
+    font-size: 22px;
+    color: var(--color-primary);
 }
 
-
-.lancar-frequencia-page #botaoFalta {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    display: inline-block;
-    background-color: #EA4545;
-    color:#ffffff ;
-    background-size: 1.8em;
-    background-repeat: no-repeat;
-    background-position: center;
+.consultar-frequencia .consultar-frequencia-search-form button {
     border: none;
+    background: none;
 }
 
-.lancar-frequencia-page .lista-mae {
+.consultar-frequencia .lista-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+} 
+.consultar-frequencia .lista-mae {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    text-align: left;
+    width: max-content;
+    min-width: 100%;
 } 
 
-.lancar-frequencia-page .lista-filho {
+.consultar-frequencia .lista-filho {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
     row-gap: 16px;
     padding: 16px;
     background-color: #D9D9D9;
@@ -118,7 +53,7 @@
     align-items: center;
 }
 
-.lancar-frequencia-page .outrasPaginas {
+.consultar-frequencia .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
@@ -126,6 +61,25 @@
     font-weight: bold;
 }
 
-.lancar-frequencia-page #paginaAtual {
-    color: #0C098E;
+.consultar-frequencia .icon {
+    background-color: #DDD;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.consultar-frequencia .icon.icon-success {
+    background-color: var(--color-success);
+    color: #FFF;
+}
+.consultar-frequencia .icon.icon-danger {
+    background-color: var(--color-danger);
+    color: #FFF;
+}
+.consultar-frequencia .icon.icon-wraning {
+    background-color: var(--color-wraning);
+    color: #FFF;
 }

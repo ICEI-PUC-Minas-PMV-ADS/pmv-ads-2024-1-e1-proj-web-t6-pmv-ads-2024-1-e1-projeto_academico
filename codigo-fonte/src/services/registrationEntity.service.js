@@ -1,7 +1,7 @@
 import { useFakeRequest } from '@/hooks/useFakeRequest';
 import { useLocalStorage } from '/src/hooks/useLocalstorage';
 
-const COLLECTION_NAME = 'student-collection';
+const COLLECTION_NAME = 'registration-collection';
 
 const { fakeRequest } = useFakeRequest();
 const { 
@@ -9,9 +9,10 @@ const {
     addItem, 
     getItem, 
     updateItem, 
+    removeItem,
 } = useLocalStorage(COLLECTION_NAME);
 
-export const studentEntityService = {
+export const registrationEntityService = {
     async getAll() {
         return fakeRequest({
             message: 'Dados retornados com sucesso',
@@ -41,7 +42,7 @@ export const studentEntityService = {
         });
     },
     async delete(id) {
-        updateItem(id, { active: false });
+        removeItem(id);
 
         return fakeRequest({
             message: 'Dados retornados com sucesso',
@@ -56,5 +57,4 @@ export const studentEntityService = {
             data: [],
         });
     }
-
 }

@@ -6,14 +6,16 @@ import './index.css';
 
 let started = false;
 
-async function startAttendanceModule() {
+async function startRegistrationModule() {
     started = true;
 
     const { createAttendanceList } = useDOMManager();
 
-    const form = document.querySelector('.frequencia-page .frequencia-search-form');
-    const wrapper = document.querySelector('.frequencia-page .lista-wrapper');
-    const title = document.querySelector('.frequencia-page .frequencia-empty-title');
+    const form = document.querySelector('.registration-page .registration-search-form');
+    const wrapper = document.querySelector('.registration-page .lista-wrapper');
+    const title = document.querySelector('.registration-page .attendance-empty-title');
+
+    
 
     if (form && wrapper) {
         form.addEventListener('submit', async (event) => {
@@ -36,7 +38,6 @@ async function startAttendanceModule() {
                     wrapper.append(loadingElement);
 
                     const { data: classRoomCollection } = await turmaEntityService.getAll();
-                    
 
                     const filtered = [...classRoomCollection].filter((_) => {
                         return _.nome.toLowerCase().includes(query.toLowerCase());
@@ -55,7 +56,7 @@ async function startAttendanceModule() {
                             const buttonAction = document.createElement('button');
                             buttonAction.classList.add('btn')
                             buttonAction.classList.add('btn-primary')
-                            buttonAction.textContent = 'Lançar frequência';
+                            buttonAction.textContent = 'Matricular na turma';
                             elemento.appendChild(buttonAction);
                         });
 
@@ -68,9 +69,10 @@ async function startAttendanceModule() {
                                 const id = elemento.getAttribute('data-id');
                                 event.preventDefault();
 
-                                navigateToRoute(null, `/turmas/frequencia/${id}`);
+                                navigateToRoute(null, `/turmas/matricula/${id}`);
                             });
                         });
+
 
                         loadingElement.remove();    
                         wrapper.appendChild(list);
@@ -83,14 +85,14 @@ async function startAttendanceModule() {
 
 export default {
     init() {
-        startAttendanceModule();
+        startRegistrationModule();
 
         window.addEventListener('changepage', function(event) {
             if (started) {
                 return;
             }
 
-            startAttendanceModule();
+            startRegistrationModule();
         });
     }
 }

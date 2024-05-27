@@ -1,4 +1,4 @@
-.lista-aluno .input_global_search {
+.registration-page .registration-search-form {
     background-color: #fff;
     width: fit-content;
     display: flex;
@@ -11,25 +11,32 @@
     max-width: 100%;
 }
 
-.lista-aluno .input_global_search input {
+.registration-page .registration-search-form input {
     border: none;
     background: none;
     flex: 1;
     height: 30px;
     outline: none;
 }
-.lista-aluno .input_global_search svg {
+
+
+.registration-page .registration-search-form button {
+    border: none;
+    background: none;
+}
+
+.registration-page .registration-search-form svg {
     font-size: 22px;
     color: var(--color-primary);
 }
 
-.lista-aluno .lista-wrapper {
+.registration-page .lista-wrapper {
     display: block;
     width: 100%;
     max-width: 100%;
     overflow-x: auto;
 } 
-.lista-aluno .lista-mae {
+.registration-page .lista-mae {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -37,10 +44,10 @@
     min-width: 100%;
 } 
 
-.lista-aluno .lista-filho {
+.registration-page .lista-filho {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr) minmax(300px, 2fr) minmax(100px, 1fr);
     row-gap: 16px;
     padding: 16px;
     background-color: #D9D9D9;
@@ -48,7 +55,7 @@
     align-items: center;
 }
 
-.lista-aluno .outrasPaginas {
+.registration-page .outrasPaginas {
     width: max-content;
     color: #9c9c9c;
     display: inline-block;
