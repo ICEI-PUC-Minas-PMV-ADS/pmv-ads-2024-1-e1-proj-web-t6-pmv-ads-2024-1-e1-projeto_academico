@@ -332,7 +332,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
     </tbody>
 </table>
-
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
