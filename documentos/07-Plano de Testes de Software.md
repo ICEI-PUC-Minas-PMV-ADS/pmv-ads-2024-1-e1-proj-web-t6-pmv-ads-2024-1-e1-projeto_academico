@@ -13,31 +13,57 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
 
 
-|Caso de Teste    | CT-001 - Testes Funcionalidades turma|
-|:---|:---|
-| Requisitos Associados | RF- 05 CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma) |
-
-| Objetivo do Teste | Verificar todo o processo de cadastro, visualização, exclusão e inserção de alunos a turmas |
-
-| Passos | 1 - Acessar a tela inicial e clicar Turmas > Cadastrar Turmas.
-|          2 - Preencher os campos e clicar em cadastrar para que uma nova turma seja cadastrada.      
-|          3 - Ao voltar para a tela de lista de turmas verifico se a turma cadastrada está presente.
-|          4 - Após encontrar a turma cadastrada na lista, clico em editar para alterar alguma informaçao da turma desejada.
-|          5 - Ao verificar a turma cadastrada na lista, quando clicar em desativar, entao a turma nao podera mais editada.
-|          6 - Acessar a tela inicial e clicar Turmas > Matricular Aluno.
-|          7 - Ao aparecer a lista de alunos, seleciono o aluno desejado e clico em matricular na turma para a turma desejada.
-|          8 - Clico em visuzalizar turmas para poder verificar os alunos em cada turma e posso excluir o aluno da turma desejada.
-
-| Critérios de êxito | 
-
-|          1 - Ser possivel cadastrar e visualizar uma turma.
-|          2 - Deve poder incluir um aluno a uma turma desejada.      
-|          3 - Deve poder excluir um aluno de turma desejada.
-|          4 - Deve ser possivel desativar uma turma e ficar impossibilitada de editar a mesma.
-|          5 - Deve ser possivel verificar os alunos que estao cadastrados em cada turma.
-|        
-|
-| Responsável pela elaborar do caso de Teste | Caio de Souza Araujo |
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-001 - Testes Funcionalidades CRUD Turma</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF- 05 CRUD de Turma (Deve ser possível cadastrar, editar, inserir Alunos, visualizar e excluir uma Turma)</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar todo o processo de cadastro, visualização, exclusão e inserção de alunos a turmas.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>1 - Acessar a tela inicial e clicar Turmas > Cadastrar Turmas.</li>
+                    <li>2 - Preencher os campos e clicar em cadastrar para que uma nova turma seja cadastrada.</li>
+                    <li>3 - Ao voltar para a tela de lista de turmas verifico se a turma cadastrada está presente.</li>
+                    <li>4 - Após encontrar a turma cadastrada na lista, clico em editar para alterar alguma informaçao da turma desejada.</li>
+                    <li>5 - Ao verificar a turma cadastrada na lista, quando clicar em desativar, entao a turma nao podera mais editada.</li>
+                    <li>6 - Acessar a tela inicial e clicar Turmas > Matricular Aluno.</li>
+                    <li>7 - Ao aparecer a lista de alunos, seleciono o aluno desejado e clico em matricular na turma para a turma desejada.</li>
+                    <li> 8 - Clico em visuzalizar turmas para poder verificar os alunos em cada turma e posso excluir o aluno da turma desejada.</li>
+                
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>1 - Ser possivel cadastrar e visualizar uma turma.</li>
+                    <li>2 - Deve poder incluir um aluno a uma turma desejada.</li>
+                    <li>3 - Deve poder excluir um aluno de turma desejada.</li>
+                    <li>4 - Deve ser possivel desativar uma turma e ficar impossibilitada de editar a mesma.</li>
+                    <li>5 - Deve ser possivel verificar os alunos que estao cadastrados em cada turma.</li>
+                    
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Caio Araujo</td>
+        </tr>
+    </tbody>
+</table>
 
 <table>
     <thead> 
