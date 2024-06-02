@@ -23,6 +23,24 @@ export const useDashboardUtils = () => {
         const name = document.querySelector('.auth-username');
         const image = document.querySelector('.auth-image');
         const userData = getUSerData();
+        const linkschildren = document.querySelectorAll('.sidebar-link');
+        const linksParent = document.querySelectorAll('.dashboard-layout-sidebar-menu-item');
+
+        linksParent.forEach((elemento) => {
+            const role = elemento.getAttribute('role');
+
+            if (!role.includes(userData.role)) {
+                elemento.classList.add('hidden');
+            }
+        });
+
+        linkschildren.forEach((elemento) => {
+            const role = elemento.getAttribute('role');
+
+            if (!role.includes(userData.role)) {
+                elemento.classList.add('hidden');
+            }
+        });
 
         if (Object.keys(userData).length) {
             name.innerText = userData.name;
@@ -34,6 +52,7 @@ export const useDashboardUtils = () => {
         const sidebarElement = document.querySelector('.dashboard-layout-sidebar');
         const contentElement = document.querySelector('.dashboard-layout-content');
         const togglerElement = document.querySelector('.sidebar-toggler');
+        
 
         if (sidebarElement && togglerElement) {
             togglerElement.addEventListener('click', (event) => {

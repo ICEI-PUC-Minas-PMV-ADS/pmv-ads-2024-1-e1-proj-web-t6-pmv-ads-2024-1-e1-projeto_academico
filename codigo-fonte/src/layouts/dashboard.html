@@ -1,7 +1,5 @@
 <div class="dashboard-layout">
 	<aside class="dashboard-layout-sidebar">
-		
-
 		<div class="dashboard-layout-sidebar-title">
 			<div class="sidebar-icon-wrapper">
 				<figure class="user-avatar">
@@ -16,7 +14,7 @@
 		</div>
 
 		<ul class="dashboard-layout-sidebar-menu">
-			<li class="dashboard-layout-sidebar-menu-item">
+			<li class="dashboard-layout-sidebar-menu-item" role="professor|aluno">
 				<a class="dashboard-layout-sidebar-menu-parent text-primary">
 					<div class="sidebar-icon-wrapper">
 						<span class="iconify-inline" data-icon="ic:outline-manage-accounts"></span>
@@ -29,18 +27,17 @@
 				</a>
 				<div class="dashboard-layout-sidebar-menu-children">
 					<ul>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/lista')">Cadastro de Alunos</a></li>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/frequencia')">Consultar frequência</a></li>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/matricula')">Emitir declaração de matrícula</a></li>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/boletim')">Consultar Boletim</a></li>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/cancelar-matricula')">Cancelamento Matrícula</a></li>
-						<!-- <li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/formandos')">Lista de Formandos</a></li> -->
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Certificado de Conclusão</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/lista')">Cadastro de Alunos</a></li>
+						<li class="sidebar-link" role="aluno"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/frequencia')">Consultar frequência</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/declaracao_matricula')">Emitir declaração de matrícula</a></li>
+						<li class="sidebar-link" role="aluno"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/boletim')">Consultar Boletim</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/cancelar-matricula')">Cancelamento Matrícula</a></li>
+						<li class="sidebar-link" role="aluno"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Certificado de Conclusão</a></li>
 					</ul>
 				</div>
 			</li>
 
-			<li class="dashboard-layout-sidebar-menu-item">
+			<li class="dashboard-layout-sidebar-menu-item" role="professor">
 				<a class="dashboard-layout-sidebar-menu-parent text-primary">
 					<div class="sidebar-icon-wrapper">
 						<span class="iconify-inline" data-icon="ic:outline-school"></span>
@@ -53,24 +50,14 @@
 				</a>
 				<div class="dashboard-layout-sidebar-menu-children">
 					<ul>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/visualizar')">Cadastrar Turma</a></li>
-						<!-- <li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/cadastrar')">Cadastrar Turma</a></li> -->
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/matricula')">Matricular Aluno</a></li>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/ativar_inativar')">Ativar/Inativar Turma</a></li>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/frequencia/lista')">Lançar Frequência</a></li>
-						<li><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/notas/lista')">Lançar Notas</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/visualizar')">Cadastrar Turma</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/matricula')">Matricular Aluno</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/ativar_inativar')">Ativar/Inativar Turma</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/frequencia/lista')">Lançar Frequência</a></li>
+						<li class="sidebar-link" role="professor"><a class="sidebar-text-wrapper" onclick="navigateToRoute(event, '/turmas/notas/lista')">Lançar Notas</a></li>
 					</ul>
 				</div>
 			</li>
-
-			<!-- <li class="dashboard-layout-sidebar-menu-item">
-				<a onclick="navigateToRoute(event, '/settings')" class="dashboard-layout-sidebar-menu-parent text-primary">
-					<div class="sidebar-icon-wrapper">
-						<span class="iconify-inline" data-icon="ic:outline-settings"></span>
-					</div>
-					<span class="sidebar-text-wrapper">Configurações</span>
-				</a>
-			</li> -->
 		</ul>
     </aside>
 
