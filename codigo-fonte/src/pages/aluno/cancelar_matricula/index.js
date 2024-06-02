@@ -71,19 +71,20 @@ async function startCancelRegistrationModule() {
                             rows.forEach((row) => {
                                 const actions = row.querySelector('.actions');
                                 const id = row.getAttribute('data-id');
+                                const active = JSON.parse(row.getAttribute('data-active'));
 
-                                const buttonActions = document.createElement('button');
-                                buttonActions.textContent = 'Cancelar matrícula';
-                                buttonActions.classList.add('btn');
-                                buttonActions.classList.add('btn-primary');
+                                const deleteButtonAction = document.createElement('button');
+                                deleteButtonAction.textContent = 'Cancelar matrícula';
+                                deleteButtonAction.classList.add('btn');
+                                deleteButtonAction.classList.add('btn-danger');
 
-                                buttonActions.addEventListener('click', async (event) => {
+                                deleteButtonAction.addEventListener('click', async (event) => {
                                     event.preventDefault();
 
-                                    buttonActions.setAttribute('disabled', 'disabled');
-                                    buttonActions.textContent = 'Carregando...';
+                                    deleteButtonAction.setAttribute('disabled', 'disabled');
+                                    deleteButtonAction.textContent = 'Carregando...';
 
-                                    await registrationEntityService.delete(id);
+                                    await registrationEntityService.update(id, { active: false });
 
                                     showNotification({ 
                                         type: 'success', 
@@ -94,7 +95,34 @@ async function startCancelRegistrationModule() {
                                     loadRegistration();
                                 });
 
-                                actions.appendChild(buttonActions);
+                                const activateButtonAction = document.createElement('button');
+                                activateButtonAction.textContent = 'Ativar matrícula';
+                                activateButtonAction.classList.add('btn');
+                                activateButtonAction.classList.add('btn-success');
+
+                                activateButtonAction.addEventListener('click', async (event) => {
+                                    event.preventDefault();
+
+                                    activateButtonAction.setAttribute('disabled', 'disabled');
+                                    activateButtonAction.textContent = 'Carregando...';
+
+                                    await registrationEntityService.update(id, { active: true });
+
+                                    showNotification({ 
+                                        type: 'success', 
+                                        title: 'Sucesso', 
+                                        message: 'Matricula ativada com sucesso'
+                                    });
+
+                                    loadRegistration();
+                                });
+
+                                if (active) {
+                                    actions.appendChild(deleteButtonAction);
+                                } else {
+                                    actions.appendChild(activateButtonAction);
+                                }
+
                             });
 
                             listWrapper.appendChild(list);
