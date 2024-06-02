@@ -1,9 +1,8 @@
 
-import { registrationEntityService } from '@/services/registrationEntity.service';
 import { useDashboardUtils } from '@/hooks/useDashboardUtils';
 import { useDOMManager } from '/src/hooks/useDOMManager.js';
-import './index.css';
 import { frequencyEntityService } from '@/services/frequencyEntity.service';
+import './index.css';
 
 let started = false;
 

@@ -111,7 +111,7 @@ async function startAttendanceModule() {
 
     const { data: registrationCollection} = await registrationEntityService.getAll();
     const { data: frequencyCollection } = await frequencyEntityService.getAll();
-    const filteredCollection = registrationCollection.filter((registration) => registration.turma_id === turmaID);
+    const filteredCollection = registrationCollection.filter((registration) => registration.turma_id === turmaID && registration.active);
 
     const formBody = formWrapper.querySelector('.form .body');
     formBody.innerHTML = '';
