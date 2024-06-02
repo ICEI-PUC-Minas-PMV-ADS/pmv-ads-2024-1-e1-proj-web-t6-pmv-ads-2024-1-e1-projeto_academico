@@ -337,7 +337,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
     <thead> 
         <tr>
             <th>Caso de Teste</th>
-            <th>CT-008 - Testes Funcionalidades Cancelamento de Matrícula</th>
+            <th>CT-008 - Teste Funcionalidade Cancelamento de Matrícula</th>
         </tr>
     </thead>
     <tbody>
@@ -353,6 +353,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>Passos</td>
             <td>
                 <ol>
+                    <li>Fazer login com usuário de professor</li>
                     <li>Acessar o menu de Cancelamento de Matrícula.</li>
                     <li>Deve ser possível pesquisar o aluno pelo CPF.</li>
                     <li>Deve ser possível visualizar uma lista com as turmas em que o aluno está matriculado.</li>
@@ -365,6 +366,56 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>Critérios de êxito</td>
             <td>
                 <ol>
+                    <li>Apenas o usuário de professor deve ter acesso.</li>
+                    <li>O menu deve ser acessível e carregar corretamente.</li>
+                    <li>O campo de pesquisa deve aceitar CPF e retornar resultados corretos.</li>
+                    <li>As turmas do aluno devem ser listadas corretamente após a pesquisa.</li>
+                    <li>Uma mensagem de sucesso deve ser exibida após a desativação.</li>
+                    <li>Uma mensagem de sucesso deve ser exibida após a ativação.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Marcelly Freitas</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-009 - Teste Funcionalidade Usuários autorizados devem conseguir cancelar matrícula de um aluno no sistema</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-07 Usuários autorizados devem conseguir cancelar matrícula de um aluno no sistema</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Usuários autorizados devem conseguir cancelar matrícula de um aluno no sistema.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Fazer login com usuário de professor</li>
+                    <li>Acessar o menu de Cancelamento de Matrícula.</li>
+                    <li>Deve ser possível pesquisar o aluno pelo CPF.</li>
+                    <li>Deve ser possível visualizar uma lista com as turmas em que o aluno está matriculado.</li>
+                    <li>Deve ser possível clicar no botão 'Cancelar matrícula' para realizar a desativação da matrícula do aluno.</li>
+                    <li>Deve ser possível clicar no botão 'Ativar matrícula' para realizar a ativação da matrícula do aluno.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Apenas o usuário de professor deve ter acesso.</li>
                     <li>O menu deve ser acessível e carregar corretamente.</li>
                     <li>O campo de pesquisa deve aceitar CPF e retornar resultados corretos.</li>
                     <li>As turmas do aluno devem ser listadas corretamente após a pesquisa.</li>
