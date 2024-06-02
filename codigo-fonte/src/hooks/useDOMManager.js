@@ -174,7 +174,7 @@ export const useDOMManager = () => {
 
                 actionsNode.classList.add('actions');
                 actionsNode.classList.add('flex');
-                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('justify-end');
                 actionsNode.classList.add('gap-2');
 
                 li.appendChild(nameNode);
@@ -216,7 +216,7 @@ export const useDOMManager = () => {
 
                 actionsNode.classList.add('actions');
                 actionsNode.classList.add('flex');
-                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('justify-end');
                 actionsNode.classList.add('gap-2');
 
                 li.appendChild(nameNode);
@@ -247,19 +247,22 @@ export const useDOMManager = () => {
                 buttonEdit.classList.add('btn');
                 buttonEdit.classList.add('btn-primary');
                 buttonEdit.classList.add('edit-button');
-                buttonEdit.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-edit"></span>';
+                buttonEdit.textContent = "Editar";
+                // buttonEdit.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-edit"></span>';
 
                 const buttonDelete = document.createElement('button');
                 buttonDelete.classList.add('btn');
                 buttonDelete.classList.add('btn-danger');
                 buttonDelete.classList.add('delete-button');
-                buttonDelete.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-delete"></span>';
+                buttonDelete.textContent = "Desativar";
+                // buttonDelete.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-delete"></span>';
 
                 const buttonActive = document.createElement('button');
                 buttonActive.classList.add('btn');
                 buttonActive.classList.add('btn-success');
                 buttonActive.classList.add('active-button');
-                buttonActive.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-refresh"></span>';
+                buttonActive.textContent = "Ativar";
+                // buttonActive.innerHTML = '<span class="iconify-inline" data-icon="ic:outline-refresh"></span>';
 
                 actionsNode.appendChild(buttonEdit);
 

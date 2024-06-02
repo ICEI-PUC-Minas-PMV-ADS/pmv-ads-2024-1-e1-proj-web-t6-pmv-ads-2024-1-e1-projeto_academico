@@ -1,6 +1,6 @@
 # Plano de Testes de Software
 
-[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
+<!-- [Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
@@ -10,7 +10,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Objetivo do Teste | Descrição do objetivo do teste |
 | Passos | Indicar passos para a execução do teste |
 | Critérios de êxito | Indicar os critérios de êxito  |
-| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe |
+| Responsável pela elaborar do caso de Teste | Nome do integrante da equipe | -->
 
 
 <table>
@@ -90,9 +90,9 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
                     <li>Deve ser possível cadastrar somente após o preenchimento de todos os campos obrigatórios.</li>
                     <li>Após o preenchimento do formulário, deve ser possível clicar no botão 'Cadastrar' para finalizar o cadastro do aluno.</li>
                     <li>Após a finalização do cadastro, o usuário deve ser redirecionado para a lista de alunos com a mensagem de sucesso.</li>
-                    <li>Na lista de alunos, deve ser possível clicar no botão 'editar' (ícone de caneta) para realizar alterações no cadastro do aluno.</li>
-                    <li>Na lista de alunos, deve ser possível clicar no botão 'desativar' (ícone de lixeira) para realizar a desativação do aluno.</li>
-                    <li>Na lista de alunos, deve ser possível clicar no botão 'reativar' (ícone de refresh) para realizar a reativação do aluno.</li>
+                    <li>Na lista de alunos, deve ser possível clicar no botão 'editar' para realizar alterações no cadastro do aluno.</li>
+                    <li>Na lista de alunos, deve ser possível clicar no botão 'desativar' para realizar a desativação do aluno.</li>
+                    <li>Na lista de alunos, deve ser possível clicar no botão 'reativar' para realizar a reativação do aluno.</li>
                 </ol> 
             </td>
         </tr>
@@ -332,10 +332,57 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
     </tbody>
 </table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-008 - Testes Funcionalidades Cancelamento de Matrícula</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-03 Deve ser possível desativar a matrícula de um aluno no sistema</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Deve ser possível desativar a matrícula de um aluno no sistema.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Acessar o menu de Cancelamento de Matrícula.</li>
+                    <li>Deve ser possível pesquisar o aluno pelo CPF.</li>
+                    <li>Deve ser possível visualizar uma lista com as turmas em que o aluno está matriculado.</li>
+                    <li>Deve ser possível clicar no botão 'Cancelar matrícula' para realizar a desativação da matrícula do aluno.</li>
+                    <li>Deve ser possível clicar no botão 'Ativar matrícula' para realizar a ativação da matrícula do aluno.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>O menu deve ser acessível e carregar corretamente.</li>
+                    <li>O campo de pesquisa deve aceitar CPF e retornar resultados corretos.</li>
+                    <li>As turmas do aluno devem ser listadas corretamente após a pesquisa.</li>
+                    <li>Uma mensagem de sucesso deve ser exibida após a desativação.</li>
+                    <li>Uma mensagem de sucesso deve ser exibida após a ativação.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaborar do caso de Teste</td>
+            <td>Marcelly Freitas</td>
+        </tr>
+    </tbody>
+</table>
  
-> **Links Úteis**:
+<!-- > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
 > - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7) -->

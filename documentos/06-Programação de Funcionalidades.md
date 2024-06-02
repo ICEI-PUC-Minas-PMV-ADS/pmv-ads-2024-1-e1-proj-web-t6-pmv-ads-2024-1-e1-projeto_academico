@@ -567,3 +567,44 @@ RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir 
 #### Responsável
 
 Kevin Lucas
+
+### Tela Cancelamento Matrícula
+
+![Cancelamento Matrícula](/documentos/img/telas/cancelamento_matricula.png)
+##### *Tela lista de alunos*
+
+
+#### Requisito atendido
+
+- RF-03: Deve ser possível desativar a matrícula de um aluno no sistema
+- RF-07: Usuários autorizados devem conseguir cancelar matrícula de um aluno no sistema
+
+
+#### Artefatos da funcionalidade
+
+- [alunos/cancelar_matricula/index.html](/codigo-fonte/src/pages/aluno/cancelar_matricula/index.html)
+- [alunos/cancelar_matricula/index.css](/codigo-fonte/src/pages/aluno/cancelar_matricula/index.css)
+- [alunos/cancelar_matricula/index.js](/codigo-fonte/src/pages/aluno/cancelar_matricula/index.js)
+
+
+#### Estrutura de Dados
+
+![estrutura de dados](/documentos/img/telas/estrutura_dados_cancelar_matricula.png)
+##### *Estrutura de dados de cancelamento de matrícula*
+
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Cancelamento matrícula" para ter acesso a página de cancelamento de matrícula de alunos.
+
+
+#### Responsável
+Marcelly Freitas

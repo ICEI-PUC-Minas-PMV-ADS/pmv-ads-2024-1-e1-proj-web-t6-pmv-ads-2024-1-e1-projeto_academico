@@ -56,6 +56,13 @@ const RouteModules = [
 		moduleJS: () => import('@/pages/aluno/frequencia/index.js'),
 	},
 	{ 
+		path: '/aluno/declaracao_matricula', 
+		layout: 'dashboard', 
+		permission: 'auth', 
+		moduleHTML: () => import('@/pages/aluno/declaracao_matricula/index.html?raw'), 
+		moduleJS: () => import('@/pages/aluno/declaracao_matricula/index.js'),
+	},
+	{ 
 		path: '/aluno/cancelar-matricula', 
 		layout: 'dashboard', 
 		permission: 'auth', 
