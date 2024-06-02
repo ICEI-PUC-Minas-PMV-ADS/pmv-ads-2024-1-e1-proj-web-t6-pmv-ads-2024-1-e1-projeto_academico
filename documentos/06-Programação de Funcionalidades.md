@@ -571,10 +571,10 @@ Kevin Lucas
 ### Tela Cancelamento Matrícula
 
 ![Cancelamento Matrícula](/documentos/img/telas/cancelamento_matricula.png)
-##### *Tela lista de alunos*
+##### *Tela cancelamento matrícula*
 
 
-#### Requisito atendido
+#### Requisitos atendidos
 
 - RF-03: Deve ser possível desativar a matrícula de um aluno no sistema
 - RF-07: Usuários autorizados devem conseguir cancelar matrícula de um aluno no sistema
