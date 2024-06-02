@@ -1,4 +1,3 @@
-import { useDashboardUtils } from "./useDashboardUtils";
 import { authenticationService } from "/src/services/authentication.service.js";
 
 export const useAuthentication = () => {
