@@ -90,9 +90,9 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
                     <li>Deve ser possível cadastrar somente após o preenchimento de todos os campos obrigatórios.</li>
                     <li>Após o preenchimento do formulário, deve ser possível clicar no botão 'Cadastrar' para finalizar o cadastro do aluno.</li>
                     <li>Após a finalização do cadastro, o usuário deve ser redirecionado para a lista de alunos com a mensagem de sucesso.</li>
-                    <li>Na lista de alunos, deve ser possível clicar no botão 'editar' (ícone de caneta) para realizar alterações no cadastro do aluno.</li>
-                    <li>Na lista de alunos, deve ser possível clicar no botão 'desativar' (ícone de lixeira) para realizar a desativação do aluno.</li>
-                    <li>Na lista de alunos, deve ser possível clicar no botão 'reativar' (ícone de refresh) para realizar a reativação do aluno.</li>
+                    <li>Na lista de alunos, deve ser possível clicar no botão 'editar' para realizar alterações no cadastro do aluno.</li>
+                    <li>Na lista de alunos, deve ser possível clicar no botão 'desativar' para realizar a desativação do aluno.</li>
+                    <li>Na lista de alunos, deve ser possível clicar no botão 'reativar' para realizar a reativação do aluno.</li>
                 </ol> 
             </td>
         </tr>
