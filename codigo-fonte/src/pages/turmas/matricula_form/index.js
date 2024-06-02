@@ -41,7 +41,7 @@ async function startRegistrationModule() {
     const { data: registrationCollection } = await registrationEntityService.getAll();
 
     const filteredCollection = [...studentCollection].filter((aluno) => {
-        const find = [...registrationCollection].find((matricula) => (matricula.aluno_id === aluno.id) && (matricula.turma_id == turmaID));
+        const find = [...registrationCollection].find((matricula) => (matricula.aluno_id === aluno.id) && (matricula.turma_id == turmaID) && (matricula.active));
 
         if (find) return false;
 
