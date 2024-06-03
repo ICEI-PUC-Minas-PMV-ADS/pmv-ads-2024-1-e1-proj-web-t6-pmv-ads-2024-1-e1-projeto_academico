@@ -10,7 +10,7 @@ export const authenticationService = {
             role: 'professor',
         };
         const aluno = {
-            name: 'Joana Souza',
+            name: 'Maria Benedita',
             email: 'aluno@email.com',
             image: 'https://img.freepik.com/fotos-premium/um-personagem-de-desenho-animado-do-avatar-do-jogo_667286-2738.jpg ',
             role: 'aluno',
