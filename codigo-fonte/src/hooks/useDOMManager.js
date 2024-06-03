@@ -130,7 +130,7 @@ export const useDOMManager = () => {
 
                 actionsNode.classList.add('actions');
                 actionsNode.classList.add('flex');
-                actionsNode.classList.add('justify-center');
+                actionsNode.classList.add('justify-end');
                 actionsNode.classList.add('gap-2');
 
                 li.appendChild(nameNode);
