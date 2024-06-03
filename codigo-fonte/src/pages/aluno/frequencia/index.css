@@ -76,10 +76,10 @@
     color: #FFF;
 }
 .consultar-frequencia .icon.icon-danger {
-    background-color: var(--color-danger);
+    background-color: var(--color-error);
     color: #FFF;
 }
-.consultar-frequencia .icon.icon-wraning {
-    background-color: var(--color-wraning);
+.consultar-frequencia .icon.icon-warning {
+    background-color: var(--color-warning);
     color: #FFF;
 }
