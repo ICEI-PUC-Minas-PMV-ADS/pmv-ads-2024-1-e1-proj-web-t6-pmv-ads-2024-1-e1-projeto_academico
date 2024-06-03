@@ -430,6 +430,57 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
     </tbody>
 </table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-010 - Testes Funcionalidades Crud de NOTA</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF- 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir notas de um Aluno)
+            </td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Usuários autorizados devem conseguir cadastrar, editar, visualizar e excluir as notas de um Aluno no sistema.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Realizar login com usuário de professor</li>
+                    <li>Acessar o menu "Lançar Notas".</li>
+                    <li>Deve ser possível pesquisar as Turmas Ativas.</li>
+                    <li>Ao clicar no botão de Lançar Notas para determinada turma, deve ser redirecionado para a tela de Lançamento de Notas.</li>
+                    <li>Verificar se é possível editar os valores dos campos "Prova", "Atividade" e "Observações".</li>
+                    <li>Verificar se os botões de "Cancelar" e "Salvar" estão funcionando.</li>
+                    <li>Verificar se os dados digitados nos campos da tabela permanecem salvos.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de Êxito</td>
+            <td>
+                <ol>
+                    <li>O menu Lançar Notas deve ser acessível. (Somente para usuário de Professores)</li>
+                    <li>Validação do campo de Pesquisar Turmas.</li>
+                    <li>Validação do botão de Lançar Notas.</li>
+                    <li>Validação dos campos "Prova", "Atividade" e "Observações".</li>
+                    <li>Validação dos botões de Salvar e Cancelar.</li>
+                    <li>Validação da informação salva na aba "Lançar Notas".</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaboração do caso de Teste</td>
+            <td>Kevin Lucas</td>
+        </tr>
+    </tbody>
+</table>
  
 <!-- > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
