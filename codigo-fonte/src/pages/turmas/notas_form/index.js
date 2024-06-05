@@ -20,14 +20,14 @@ export default {
                 data.push({ aluno, prova, atividade, observacoes });
             }
     
-           
             localStorage.setItem('dadosTabelaNotas', JSON.stringify(data));
-            window.reload()
-    
+            
+            blinkButton('botaosalvar', () => {
+                location.reload();
+            });
         }
         window.salvarInformacoes = salvarInformacoes;
-    
-        
+
         function carregarInformacoes() {
             const dataString = localStorage.getItem('dadosTabelaNotas');
     
@@ -35,10 +35,8 @@ export default {
                 const data = JSON.parse(dataString);
                 const table = document.getElementById('tabelamateria');
     
-                
                 table.getElementsByTagName('tbody')[0].innerHTML = '';
     
-                
                 data.forEach(item => {
                     const newRow = table.insertRow();
                     newRow.innerHTML = `<td contenteditable="true">${item.aluno}</td><td contenteditable="true">${item.prova}</td><td contenteditable="true">${item.atividade}</td><td contenteditable="true">${item.observacoes}</td>`;
@@ -46,14 +44,25 @@ export default {
             }
         }
     
-        
         carregarInformacoes();
       
         function cancelarEdicao() {
-            
-            location.reload();
+            blinkButton('botaocancelar', () => {
+                location.reload();
+            });
         }
         window.cancelarEdicao = cancelarEdicao;
+
+        function blinkButton(buttonId, callback) {
+            const button = document.getElementById(buttonId);
+            button.classList.add('blink');
+            setTimeout(() => {
+                button.classList.remove('blink');
+                if (callback) {
+                    callback();
+                }
+            }, 300);
+        }
     }
 }
 
