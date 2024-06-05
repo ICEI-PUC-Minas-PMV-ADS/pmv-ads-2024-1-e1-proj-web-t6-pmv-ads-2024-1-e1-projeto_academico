@@ -61,7 +61,7 @@ export default {
                 if (callback) {
                     callback();
                 }
-            }, 300); // 300ms é o tempo total da animação
+            }, 300);
         }
     }
 }

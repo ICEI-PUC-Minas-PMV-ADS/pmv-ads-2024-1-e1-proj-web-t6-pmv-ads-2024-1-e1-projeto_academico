@@ -333,5 +333,5 @@
 }
 
 .blink {
-    animation: blink 0.5s linear 3; /* Pisca 3 vezes */
+    animation: blink 0.5s linear 3; 
 }
