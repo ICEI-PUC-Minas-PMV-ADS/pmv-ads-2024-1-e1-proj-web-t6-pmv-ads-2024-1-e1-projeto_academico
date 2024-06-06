@@ -308,7 +308,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
                     <li>Acessar o menu de Lançamento de Frequência</li>
                     <li>Verificar se ao pesquisar as turmas, está aparecendo as turmas cadastradas.</li>
                     <li>Verificar se ao clicar no botão "Lançar Frequência", está sendo direcionado para a tela de Lançamento de Frequência.</li>
-                    <li>Verificar se o campo de Presença, Falta e Observação está habilitado para receber informações.</li>
+                    <li>Verificar se o campo de Presença, Falta e Justificativa estão habilitados para receber informações.</li>
                     <li>Verificar se os botões de "Cancelar" e "Salvar" estão funcionando.</li>
                     <li>Verificar se os dados informados da frequência do aluno estão ficando salvos.</li>
                 </ol> 
@@ -320,7 +320,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
                 <ol>
                     <li>Validação do campo de pesquisar turmas.</li>
                     <li>Validação do botão de Lançar Frequência.</li>
-                    <li>Validação do campo de Presença, Falta e Observação.</li>
+                    <li>Validação do campo de Presença, Falta e Justificativa.</li>
                     <li>Validação dos botões de Salvar e Cancelar.</li>
                     <li>Após o lançamento da frequência, a informação deverá ser salva e informada na aba de Consultar Frequência.</li>
                 </ol> 
