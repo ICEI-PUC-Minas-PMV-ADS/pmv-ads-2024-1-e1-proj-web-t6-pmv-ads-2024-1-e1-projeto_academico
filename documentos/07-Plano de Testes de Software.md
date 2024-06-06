@@ -481,6 +481,64 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
     </tbody>
 </table>
+
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-011 - Teste Funcionalidade Usuários autorizados devem conseguir cadastrar novas turmas no sistema</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF- 04	Usuários autorizados devem conseguir cadastrar novas turmas no sistema</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Deve ser possível cadastrar novas turmas/disciplinas no sistema.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Fazer login com usuário de professor</li>
+                    <li>Acessar o menu de Turmas.</li>
+                    <li>Acessar o item Cadastrar Turma.</li>
+                    <li>Clicar no botão "Cadastrar".</li>
+                    <li>Informar os dados referentes a turma, como, nome da turma, nome do professor responsável, dias de aulas e etc.</li>
+                    <li>Clicar no botão "Cadastrar Turmas".</li>
+                    <li>No botão "Lista de Turmas", irá aparecer as turmas ativas no sistema.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Apenas o usuário de professor deve ter acesso.</li>
+                    <li>O menu deve ser acessível e carregar corretamente.</li>
+                    <li>Validação do botão "Cadastrar". É preciso abrir a aba de informações ao ser clicado.</li>
+                    <li>Validação dos campos do formulário de cadastro de turma. É preciso aceitar as informações inseridas.</li>
+                    <li>Validar se os dias de aulas estão clicáveis.</li>
+                    <li>Validação do botão "Cadastrar Turma".</li>
+                    <li>Validação do botão "Lista de Turmas".</li>
+                    <li>Validação do botão "Cadastrar Turma".</li>
+                    <li>Validar se após realizar o cadastro da turma, a mesma irá aparecer na lista de turmas.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaboração do caso de Teste</td>
+            <td>Brena Ferreira</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
  
 <!-- > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
