@@ -584,7 +584,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
         </tr>
         <tr>
             <td>Responsável pela elaboração do caso de Teste</td>
-            <td>Brena Ferreira</td>
+            <td>Brena Ferreira </td>
         </tr>
     </tbody>
 </table>
