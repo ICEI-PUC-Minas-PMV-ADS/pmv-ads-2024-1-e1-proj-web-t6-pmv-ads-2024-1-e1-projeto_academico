@@ -503,7 +503,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
             <td>Passos</td>
             <td>
                 <ol>
-                    <li>Fazer login com usuário de professor</li>
+                    <li>Fazer login com usuário de professor.</li>
                     <li>Acessar o menu de Turmas.</li>
                     <li>Acessar o item Cadastrar Turma.</li>
                     <li>Clicar no botão "Cadastrar".</li>
@@ -537,6 +537,57 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 </table>
 
 
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-012 - Teste Funcionalidade Cadastrar/Matricular aluno em uma turma específica no sistema</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF- 06	Deve ser possível Cadastrar/Matricular aluno em uma turma específica no sistema</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Deve ser possível cadastrar e matricular um aluno em uma turma específica no sistema.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Fazer login com usuário de professor.</li>
+                    <li>Acessar o menu de Turmas.</li>
+                    <li>Acessar o item Matricular Aluno.</li>
+                    <li>É importante ressaltar que antes de realizar a matrícula do aluno em uma turma, o aluno e a turma desejada já precisam estar criados no sistema.</li>
+                    <li>Pesquisar a turma desejada que o aluno será inserido.</li>
+                    <li>Clicar no botão "Matricular na turma".</li>
+                    <li>Irá abrir a lista de aluno ativos, após isso, clicar no botão "Matricular" do aluno desejado.</li>
+                    <li>Após isso, o aluno estará inserido na turma.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>Apenas o usuário de professor deve ter acesso.</li>
+                    <li>O menu deve ser acessível e carregar corretamente.</li>
+                    <li>Validação do campo de pesquisa de turmas, é preciso aparecer o nome da turma ao ser pesquisada na barra de pesquisa.</li>
+                    <li>Validação do botão "Matricular na Turma".</li>
+                    <li>Validação se irá aparecer os alunos ativos no sistemas.</li>
+                    <li>Validação do botão "Matricular", na linha do nome do aluno.</li>
+                    <li>Validar se após realizar a matrícula do aluno na turma desejada, as informações foram atualizadas no ícone de "Lançar Frequência", que é onde estão as informações das turmas e alunos ativos.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaboração do caso de Teste</td>
+            <td>Brena Ferreira </td>
+        </tr>
+    </tbody>
+</table>
 
 
  
