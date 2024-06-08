@@ -129,3 +129,43 @@ Relatório com as evidências dos testes de software realizados na aplicação p
         </tr>
     </tbody>
 </table>
+
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>
+                <div>CT-008 - Teste Funcionalidade Cancelamento de Matrícula</div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-03</th>
+            <th>Deve ser possível desativar a matrícula de um aluno no sistema</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>
+                        Está sendo possível pesquisar o aluno pelo CPF, o campo de pesquisa está funcionando corretamente e está aparecendo a lista de turmas que o aluno está matriculado:
+                    </li>
+
+![Matricula](/documentos/img/telasBrena/cancelarMatricula.png)
+                    <li>O botão de Cancelar Matrícula está funcionando corretamente:</li>
+![Matricula](/documentos/img/telasBrena/desativarAluno.png)
+                    <li>Os campos dos formulários de Cadastro e Edição de aluno estão recebendo as informações corretamente:</li>
+![Matricula](/documentos/img/telasBrena/botaoDesativarMatricula.png)
+                    <li>O botão de Ativar Matrícula está funcionando corretamente:</li>
+![Crud frequencia](/documentos/img/telasBrena/botaoAtivarMatricula.png)
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Brena Ferreira</td>
+        </tr>
+    </tbody>
+</table>
