@@ -137,6 +137,7 @@ Relatório com as evidências dos testes de software realizados na aplicação p
             <th>Caso de Teste</th>
             <th>
                 <div>CT-008 - Teste Funcionalidade Cancelamento de Matrícula</div>
+                <div>CT-009 - Teste Funcionalidade Usuários autorizados devem conseguir cancelar matrícula de um aluno no sistema</div>
             </th>
         </tr>
     </thead>
@@ -144,6 +145,10 @@ Relatório com as evidências dos testes de software realizados na aplicação p
         <tr>
             <th>RF-03</th>
             <th>Deve ser possível desativar a matrícula de um aluno no sistema</th>
+        </tr>
+          <tr>
+            <th>RF-07</th>
+            <th>Usuários autorizados devem conseguir cancelar matrícula de um aluno no sistema</th>
         </tr>
         <tr>
             <td>Resultados obtidos</td>
@@ -154,10 +159,12 @@ Relatório com as evidências dos testes de software realizados na aplicação p
                     </li>
 
 ![Matricula](/documentos/img/telasBrena/cancelarMatricula.png)
-                    <li>O botão de Cancelar Matrícula está funcionando corretamente:</li>
+                    <li>O botão de Cancelar Matrícula está funcionando corretamente e ao realizar a ação, é informada uma mensagem de sucesso:</li>
 ![Matricula](/documentos/img/telasBrena/botaoDesativarMatricula.png)
-                    <li>O botão de Ativar Matrícula está funcionando corretamente:</li>
-![Crud frequencia](/documentos/img/telasBrena/botaoAtivarMatricula.png)
+                    <li>O botão de Ativar Matrícula está funcionando corretamente e ao realizar a ação, é informada uma mensagem de sucesso:</li>
+![Matricula](/documentos/img/telasBrena/botaoAtivarMatricula.png)
+                    <li>O login do aluno não tem acesso ao menu Cancelar Matricula. Logo, apenas usuários autorizados podem Ativar, Desativar e Cancelar a matrícula de um aluno.</li>
+![Matricula](/documentos/img/telasBrena/loginAluno.png)
                 </ol>  
             </td>
         </tr>
