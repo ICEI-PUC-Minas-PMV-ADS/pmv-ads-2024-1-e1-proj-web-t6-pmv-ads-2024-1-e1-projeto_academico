@@ -194,8 +194,11 @@ Relatório com as evidências dos testes de software realizados na aplicação p
                     <li>Ao acessar o sistema e inserir credenciais válidas (usuário e senha corretos), o login foi realizado com sucesso e o usuário foi redirecionado para a página inicial do sistema:
                         <br>
                         <img src="/documentos/img/telas/teste_tela_login_sucesso_aluno1.png" alt="Tela de Login Sucesso Aluno">
+                        <br>
                         <img src="/documentos/img/telas/teste_tela_login_sucesso_aluno2.png" alt="Tela de Login Sucesso Aluno">
+                        <br>
                         <img src="/documentos/img/telas/teste_tela_login_sucesso_professor1.png" alt="Tela de Login Sucesso Professor">
+                        <br>
                         <img src="/documentos/img/telas/teste_tela_login_sucesso_professor2.png" alt="Tela de Login Sucesso Professor">
                     </li>
                                        <li>Ao acessar o sistema e inserir um email/senha incorretos, uma mensagem de erro foi exibida e o login não foi permitido:
