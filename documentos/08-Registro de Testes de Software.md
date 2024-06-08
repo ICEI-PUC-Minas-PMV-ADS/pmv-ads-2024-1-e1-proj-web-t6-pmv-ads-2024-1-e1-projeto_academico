@@ -191,7 +191,7 @@ Relatório com as evidências dos testes de software realizados na aplicação p
             <td>Resultados obtidos</td>
             <td> 
                 <ol>
-                    <li>Ao acessar o sistema e inserir credenciais válidas (usuário e senha corretos), o login foi realizado com sucesso e o usuário foi redirecionado para a página inicial do sistema:
+                    <li>Ao acessar o sistema e inserir credenciais válidas (usuário e senha corretos), o login foi realizado com sucesso e o usuário foi redirecionado para a página inicial do sistema (De acordo com seus níveis de acessos):
                         <br>
                         <img src="/documentos/img/telas/teste_tela_login_sucesso_aluno1.PNG" alt="Tela de Login Sucesso Aluno">
                         <br>
