@@ -90,3 +90,41 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     </tbody>
 </table>
 
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>
+                <div>CT-002 - Testes Funcionalidades CRUD Aluno</div>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-02</th>
+            <th>CRUD de Dados de Alunos (Deve ser possível cadastrar, editar, visualizar e excluir um Aluno)</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>
+                        Ao acessar o sistema com usúario de professor e clicar no menu em matricular aluno foi possível pesquisar turmas e escolher a turma onde o aluno será matrículado:
+                    </li>
+
+![Crud frequencia](/documentos/img/telas/telasBrena/telaAlunos.png)
+                    <li>----------:</li>
+![Pesquisa Turma frequencia](/documentos/img/telas/teste_tela_lista_aluno_nao_matriculados_turma.png)
+                    <li>--------</li>
+![Pesquisa Turma frequencia](/documentos/img/telas/teste_tela_mensagem_aluno_matriculado.png)
+                    <li>-----------------------</li>
+![Pesquisa Turma frequencia](/documentos/img/telas/teste_login_aluno_nao_tem_permissao_matricular-aluno.png)
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Brena Ferreira</td>
+        </tr>
+    </tbody>
+</table>
