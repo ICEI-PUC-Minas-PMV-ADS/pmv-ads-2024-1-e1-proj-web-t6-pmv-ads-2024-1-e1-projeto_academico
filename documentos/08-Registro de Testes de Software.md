@@ -109,16 +109,17 @@ Relatório com as evidências dos testes de software realizados na aplicação p
             <td> 
                 <ol>
                     <li>
-                        Ao acessar o sistema com usúario de professor e clicar no menu em matricular aluno foi possível pesquisar turmas e escolher a turma onde o aluno será matrículado:
+                        Na tela inicial, está aparecendo a lista de alunos cadastrados e os botões de Editar, Desativar e Cadastrar estão funcionando corretamente:
                     </li>
 
 ![Crud frequencia](/documentos/img/telasBrena/telaAlunos.png)
-                    <li>----------:</li>
-![Pesquisa Turma frequencia](/documentos/img/telas/teste_tela_lista_aluno_nao_matriculados_turma.png)
-                    <li>--------</li>
-![Pesquisa Turma frequencia](/documentos/img/telas/teste_tela_mensagem_aluno_matriculado.png)
-                    <li>-----------------------</li>
-![Pesquisa Turma frequencia](/documentos/img/telas/teste_login_aluno_nao_tem_permissao_matricular-aluno.png)
+                    <li>Após desativar o cadastro do aluno, é possível visualizar na lista de alunos, o botão de reativar o aluno novamente:</li>
+![Crud frequencia](/documentos/img/telasBrena/desativarAluno.png)
+                    <li>Os campos dos formulários de Cadastro e Edição de aluno estão recebendo as informações corretamente:</li>
+![Crud frequencia](/documentos/img/telasBrena/cadastrarAluno.png)
+![Crud frequencia](/documentos/img/telasBrena/editarAluno.png)
+                    <li>Após cadastrar um novo aluno no sistema, é informada uma mensagem de sucesso e a lista de alunos é atualizada constando os dados do novo aluno:</li>
+![Crud frequencia](/documentos/img/telasBrena/alunoCadastrado.png)
                 </ol>  
             </td>
         </tr>
