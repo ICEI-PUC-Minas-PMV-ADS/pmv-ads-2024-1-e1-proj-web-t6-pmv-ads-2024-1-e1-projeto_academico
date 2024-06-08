@@ -155,8 +155,6 @@ Relatório com as evidências dos testes de software realizados na aplicação p
 
 ![Matricula](/documentos/img/telasBrena/cancelarMatricula.png)
                     <li>O botão de Cancelar Matrícula está funcionando corretamente:</li>
-![Matricula](/documentos/img/telasBrena/desativarAluno.png)
-                    <li>Os campos dos formulários de Cadastro e Edição de aluno estão recebendo as informações corretamente:</li>
 ![Matricula](/documentos/img/telasBrena/botaoDesativarMatricula.png)
                     <li>O botão de Ativar Matrícula está funcionando corretamente:</li>
 ![Crud frequencia](/documentos/img/telasBrena/botaoAtivarMatricula.png)
