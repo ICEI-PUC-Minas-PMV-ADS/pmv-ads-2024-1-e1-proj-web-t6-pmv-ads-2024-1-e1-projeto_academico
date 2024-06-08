@@ -112,7 +112,7 @@ Relatório com as evidências dos testes de software realizados na aplicação p
                         Ao acessar o sistema com usúario de professor e clicar no menu em matricular aluno foi possível pesquisar turmas e escolher a turma onde o aluno será matrículado:
                     </li>
 
-![Crud frequencia](/documentos/img/telas/telasBrena/telaAlunos.png)
+![Crud frequencia](/documentos/img/telasBrena/telaAlunos.png)
                     <li>----------:</li>
 ![Pesquisa Turma frequencia](/documentos/img/telas/teste_tela_lista_aluno_nao_matriculados_turma.png)
                     <li>--------</li>
