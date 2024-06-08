@@ -451,8 +451,6 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 
 Brena Ferreira
 
-<!-- Parte de Lançamento de Notas - Kevin Lucas:  -->
-
 
 ### Tela Lançamento de Frequência
 
@@ -495,6 +493,7 @@ RF 10 - CRUD de Frequência (Deve ser possível registrar, editar, visualizar e 
 
 Brena Ferreira
 
+<!-- Parte de Lançamento de Notas - Kevin Lucas:  -->
 
 ### Tela Lançamento/Consulta de Notas
 
@@ -507,7 +506,6 @@ Brena Ferreira
 RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir notas de um Aluno)
 
 
-
 #### Artefatos da funcionalidade
 
 - [notas_lista/index.html](/codigo-fonte/src/pages/turmas/notas_lista/index.html)                
@@ -518,19 +516,9 @@ RF - 11	CRUD de Notas (Deve ser possível lançar, editar, visualizar e excluir 
 - [notas_form/index.css](/codigo-fonte/src/pages/turmas/notas_form/index.css)
 - [notas_form/index.js](/codigo-fonte/src/pages/turmas/notas_form/index.js)
 
-- [notas_lista/index.html](/codigo-fonte/src/pages/turmas/notas_lista/index.html)                
-- [notas_lista/index.css](/codigo-fonte/src/pages/turmas/notas_lista/index.css)
-- [notas_lista/index.js](/codigo-fonte/src/pages/turmas/notas_lista/index.js)
-
-- [notas_form/index.html](/codigo-fonte/src/pages/turmas/notas_form/index.html)                
-- [notas_form/index.css](/codigo-fonte/src/pages/turmas/notas_form/index.css)
-- [notas_form/index.js](/codigo-fonte/src/pages/turmas/notas_form/index.js)
-
-
 
 #### Estrutura de Dados
 
-- Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
 - Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
 
 
@@ -608,3 +596,80 @@ Kevin Lucas
 
 #### Responsável
 Marcelly Freitas
+
+
+### Status do Aluno
+
+![tela status aluno](/documentos/img/statusdoaluno.png) 
+
+#### Requisito atendido
+
+RF- 13	Deve ser possível visualizar o status do aluno (Aprovado/Cursando/Reprovado)
+
+#### Artefatos da funcionalidade
+
+- [alunos/boletim/index.html](/codigo-fonte/src/pages/aluno/boletim/index.html)
+- [alunos/boletim/index.css](/codigo-fonte/src/pages/aluno/boletim/index.css)
+- [alunos/boletim/index.js](/codigo-fonte/src/pages/aluno/boletim/index.js)
+
+
+#### Estrutura de Dados
+
+- Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
+
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Consultar Boletim" para ter acesso a página com a as notas do boletim de um aluno.
+4. Na coluna "Situação" da tabela poderá ser visto o status de um determinado Aluno.
+
+
+#### Responsável
+
+Kevin Lucas
+
+### Sinalização de Emissão de Certificado
+
+![tela status aluno](/documentos/img/statusdoaluno.png) 
+
+#### Requisito atendido
+
+RF- 15	O sistema deve sinalizar quando um aluno está finalizando o curso para poder emitir o certificado
+
+#### Artefatos da funcionalidade
+
+- [alunos/boletim/index.html](/codigo-fonte/src/pages/aluno/boletim/index.html)
+- [alunos/boletim/index.css](/codigo-fonte/src/pages/aluno/boletim/index.css)
+- [alunos/boletim/index.js](/codigo-fonte/src/pages/aluno/boletim/index.js)
+
+
+#### Estrutura de Dados
+
+- Dados foram inseridos dentro do próprio arquivo HTML para verificação da implementação.
+
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Consultar Boletim" para ter acesso a página com a as notas do boletim de um aluno.
+5. Caso a situação de um aluno em determinada matéria esteja "Aprovado", a coluna de emissão de certificado terá um botão disponível para acessar a página de emissão de certificado.
+
+#### Responsável
+
+Kevin Lucas
+
