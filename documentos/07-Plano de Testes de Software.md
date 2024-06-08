@@ -589,7 +589,92 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
     </tbody>
 </table>
 
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-013 - Teste Funcionalidade Visualizar Status do Aluno</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-13 Deve ser possível visualizar o status do aluno (Aprovado/Cursando/Reprovado)</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar se o sistema apresenta corretamente o status do aluno (Aprovado/Cursando/Reprovado) de acordo com seu desempenho acadêmico.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Fazer o login com usuário de aluno.</li>
+                    <li>Acessar o Menu Consultar Boletim.</li>
+                    <li>Identificar a seção de situação do aluno.</li>
+                    <li>Verificar se o status do aluno está corretamente exibido como Aprovado, Cursando ou Reprovado.</li>            
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>O status do aluno deve ser apresentado corretamente.</li>
+                    <li>O status apresentado deve refletir o desempenho acadêmico do aluno.</li>
+                    <li>A informação do status deve ser clara e facilmente identificável pelo usuário.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaboração do caso de Teste</td>
+            <td>Kevin Lucas</td>
+        </tr>
+    </tbody>
+</table>
 
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-014 - Teste Funcionalidade Sinalizar Finalização de Curso para Emitir Certificado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Requisitos Associados</td>
+            <td>RF-15 O sistema deve sinalizar quando um aluno está finalizando o curso para poder emitir o certificado</td>
+        </tr>
+        <tr>
+            <td>Objetivo do Teste</td>
+            <td>Verificar se o sistema exibe corretamente quando um aluno está finalizando o curso, permitindo a emissão do certificado correspondente.</td>
+        </tr>
+        <tr>
+            <td>Passos</td>
+            <td>
+                <ol>
+                    <li>Fazer login com usuário de Aluno.</li>
+                    <li>Acessar o Menu Consultar Boletim.</li>
+                    <li>Verificar se há uma indicação para alunos que estão finalizando o curso.</li>
+                    <li>Verificar se é possível emitir o certificado para os alunos que estão finalizando o curso.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Critérios de êxito</td>
+            <td>
+                <ol>
+                    <li>A sinalização de finalização de curso deve ser clara e evidente.</li>
+                    <li>Deve ser possível emitir o certificado para os alunos que estão finalizando determinado curso.</li>
+                </ol> 
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela elaboração do caso de Teste</td>
+            <td>Kevin Lucas</td>
+        </tr>
+    </tbody>
+</table>
  
 <!-- > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)

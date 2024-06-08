@@ -174,3 +174,50 @@ Relatório com as evidências dos testes de software realizados na aplicação p
         </tr>
     </tbody>
 </table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-003 - Testes Funcionalidades Login</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-01</th>
+            <th>Tela de Login</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>Ao acessar o sistema e inserir credenciais válidas (usuário e senha corretos), o login foi realizado com sucesso e o usuário foi redirecionado para a página inicial do sistema (De acordo com seus níveis de acessos):
+                        <br>
+                        <img src="/documentos/img/telas/teste_tela_login_sucesso_aluno1.PNG" alt="Tela de Login Sucesso Aluno">
+                        <br>
+                        <img src="/documentos/img/telas/teste_tela_login_sucesso_aluno2.PNG" alt="Tela de Login Sucesso Aluno 2">
+                        <br>
+                        <img src="/documentos/img/telas/teste_tela_login_sucesso_professor1.png" alt="Tela de Login Sucesso Professor">
+                        <br>
+                        <img src="/documentos/img/telas/teste_tela_login_sucesso_professor2.png" alt="Tela de Login Sucesso Professor">
+                    </li>
+                                       <li>Ao acessar o sistema e inserir um email/senha incorretos, uma mensagem de erro foi exibida e o login não foi permitido:
+                        <br>
+                        <img src="/documentos/img/telas/teste_tela_login_falha1.PNG" alt="Tela de Login Falha">
+                        <br>
+                        <img src="/documentos/img/telas/teste_tela_login_falha2.PNG" alt="Tela de Login Falha 2">
+                    </li>
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Kevin Lucas</td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+

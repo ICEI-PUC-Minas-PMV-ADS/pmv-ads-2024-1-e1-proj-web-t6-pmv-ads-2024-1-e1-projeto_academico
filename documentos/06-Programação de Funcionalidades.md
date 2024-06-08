@@ -600,7 +600,7 @@ Marcelly Freitas
 
 ### Status do Aluno
 
-![tela status aluno](/documentos/img/telaConsultaBoletim.png)
+![tela status aluno](/documentos/img/statusdoaluno.PNG)
 
 #### Requisito atendido
 
@@ -638,7 +638,7 @@ Kevin Lucas
 
 ### Sinalização de Emissão de Certificado
 
-![tela status aluno](/documentos/img/telaConsultaBoletim.png)
+![tela status aluno](/documentos/img/statusdoaluno.PNG) 
 
 #### Requisito atendido
 
