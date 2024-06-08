@@ -203,9 +203,9 @@ Relatório com as evidências dos testes de software realizados na aplicação p
                     </li>
                                        <li>Ao acessar o sistema e inserir um email/senha incorretos, uma mensagem de erro foi exibida e o login não foi permitido:
                         <br>
-                        <img src="/documentos/img/telas/teste_tela_login_falha1.png" alt="Tela de Login Falha">
+                        <img src="/documentos/img/telas/teste_tela_login_falha1.PNG" alt="Tela de Login Falha">
                         <br>
-                        <img src="/documentos/img/telas\teste_tela_login_falha2.PNG" alt="Tela de Login Falha 2">
+                        <img src="/documentos/img/telas/teste_tela_login_falha2.PNG" alt="Tela de Login Falha 2">
                     </li>
                 </ol>  
             </td>
