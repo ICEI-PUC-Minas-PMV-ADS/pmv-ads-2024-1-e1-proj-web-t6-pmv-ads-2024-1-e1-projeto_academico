@@ -108,6 +108,7 @@ async function startStudentListModule() {
 
             let validacaoCPFNaoEncontrado = document.querySelector('.card_boletim_aluno');
             validacaoCPFNaoEncontrado.style.setProperty('font-weight','bold');
+            validacaoCPFNaoEncontrado.style.setProperty('color','red');
             validacaoCPFNaoEncontrado.textContent = `CPF informado não está cadastrado.`;
             console.log("CPF Não Encontrado")
         }

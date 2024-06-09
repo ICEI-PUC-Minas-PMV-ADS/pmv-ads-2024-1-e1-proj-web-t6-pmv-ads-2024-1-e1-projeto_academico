@@ -1,3 +1,57 @@
-/**
-Módulo certificado
-**/
+.emissaoCertificado {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding: 15px;
+    margin: 10px;
+}
+
+.certificado {
+    width: 100%;
+    padding: 3%;
+    border: 5px solid #0c098e;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.certificado h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0c098e;
+}
+
+.certificado h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0c098e;
+}
+
+.certificado h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #0c098e;
+}
+
+.certificado p {
+    font-size: 1em;
+    color: #0c098e;
+}
+
+.assinatura {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.assinatura p {
+    margin: 5px 0;
+}
+
+.data {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #0c098e;
+}

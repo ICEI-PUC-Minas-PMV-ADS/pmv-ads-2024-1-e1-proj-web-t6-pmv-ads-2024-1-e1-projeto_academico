@@ -1,22 +1,35 @@
 <div class="flex flex-col gap-6 cancelamento_matricula">
     <div class="title">
         <div>
-            <h1>Declaração de Matrícula</h1>
+            <h1>Certificado de Conclusão</h1>
         </div>
     </div>
 
-    <div class="flex flex-col gap-4">
-        <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
-
+   <div class="flex flex-col gap-4">
+        <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label> 
         <form class="registration-search-form">
-            <input data-mask="999.999.999-99" placeholder="xxx.xxx.xxx-xx" type="search" id="cpf" name="cpf" required>
+            <input data-mask="999.999.999-99" placeholder="xxx.xxx.xxx-xx" type="search" id="cpf" name="cpf" value="999.999.999-91" required>
 
             <button type="submit">
               <span class="iconify-inline" data-icon="ic:baseline-search"></span>
             </button>
         </form>
-    </div>
-
-    <div class="card declaracao_matricula_empty helper">
-        <h3>Utilize a pesquisa acima para encontrar aluno</h3>
+    </div> 
+    <div class="emissaoDeclaracao">
+        <div class="declaracao">
+            <img width="180px" src="/images/hatgraduation.svg" alt="" srcset="">
+            <h1>Declaração de Matrícula</h1>
+            <p>Declaramos, para os devidos fins, que o(a) aluno(a) abaixo mencionado(a)</p>
+            <h2>Nome do Aluno</h2>
+            <p>está regularmente matriculado(a) nesta instituição de ensino, no período</p>
+            <h5>Ano Letivo</h5>
+            <p>O mesmo encontra-se matriculado na turma de</p>
+            <h3>Nome da Turma</h3>
+            <div class="assinatura">
+                <p>Maria Cassia de S. Arruda</p>
+                <p>__________________________</p>
+                <p>Nome do Instrutor</p>
+            </div>
+            <p class="data">Data: 01 de Janeiro de 2024</p>
+        </div>
     </div>
