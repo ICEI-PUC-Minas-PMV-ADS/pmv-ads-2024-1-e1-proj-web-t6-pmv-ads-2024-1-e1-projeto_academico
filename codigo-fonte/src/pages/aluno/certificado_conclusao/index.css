@@ -1,10 +1,10 @@
 .emissaoCertificado {
     font-family: 'Arial', sans-serif;
-    display: flex;
     justify-content: center;
+    display: flex;
     align-items: center;
     background-color: #f3f4f6;
-    padding: 15px;
+    padding: 30px;
     margin: 10px;
 }
 
@@ -24,16 +24,31 @@
     color: #0c098e;
 }
 
-.certificado h2 {
+#nomeAluno1 {
     font-size: 1.5em;
     margin: 10px 0;
     color: #0c098e;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
 }
 
-.certificado h3 {
+#nomeTurma1 {
     font-size: 1.2em;
     margin: 10px 0;
     color: #0c098e;
+    align-items: center;
+    font-weight: bold;
+    justify-content: center;
+}
+
+#anoLetivo1 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #0c098e;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
 }
 
 .certificado p {

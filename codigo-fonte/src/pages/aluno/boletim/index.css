@@ -1,7 +1,10 @@
-
 #linha {
-    width: 2%;
+    width: 950px;
     border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+h2 {
     padding: 10px;
 }
 
@@ -38,12 +41,12 @@
     flex-wrap: wrap;
 }
 
-/* .card_boletim_aluno {
+#cardBoletimAluno {
     display: none;
-} */
+}
 
 .cardTitulo {
-    width: 30.9%;
+    width: 22%;
     display: inline-flex;
     justify-content: center;
     flex-direction: row;
@@ -59,7 +62,7 @@
 
 .cardConteudoTurmas {
 
-    width: 30.9%;
+    width: 22%;
     display: inline-flex;
     justify-content: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -80,13 +83,17 @@
     justify-content: center;
 }
 
-.outrasPaginas {
-    color: #9c9c9c;
-    padding: 2px;
-}
-
-#paginaAtual {
-    color: #0C098E;
+.emitirCertificado {
+    width: 22%;
+    display: inline-flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 10px;
+    margin-top: 1px;
+    border-top: 10px;
 }
 
 .search-btn {
@@ -103,4 +110,9 @@
     height: 22px;
     vertical-align: middle;
     background-color: transparent;
+}
+
+#certificadoIndisponível {
+    color:black;
+    background-color: #9c9c9c;
 }

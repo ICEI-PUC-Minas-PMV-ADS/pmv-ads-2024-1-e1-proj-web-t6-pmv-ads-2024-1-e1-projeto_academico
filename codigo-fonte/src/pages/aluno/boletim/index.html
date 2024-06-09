@@ -6,14 +6,14 @@
             <div>
                 <h1>Consulta de Boletim</h1>
             </div>
-        </div>
+        </div>  
 
         <div class="flex flex-col gap-4">
             <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
 
             <form class="registration-search-form" id="searchForm">
                 <input data-mask="999.999.999-99" placeholder="XXX.XXX.XXX-XX" type="search" id="cpf" name="cpf"
-                 required>
+                    required>
 
                 <button type="submit" id="searchButton">
                     <span class="iconify-inline" data-icon="ic:baseline-search"></span>
@@ -21,15 +21,14 @@
             </form>
         </div>
 
-        <div class="card consultar-boletim-empty helper">
+        <div class="card consultar-boletim-empty helper" id="bodyCard">
             <div class="card_boletim_aluno" id="cardBoletimAluno">
                 <h2>Boletim</h2>
                 <div id="nomeAluno">
                 </div>
                 <div id="anoLetivo">
-                    Ano Letivo: 2024
                 </div>
-                <br />
+                <br>
                 <div class="cardTitulo">
                     Turma
                 </div>
@@ -38,6 +37,9 @@
                 </div>
                 <div class="cardTitulo">
                     Situação
+                </div>
+                <div class="cardTitulo">
+                    Certificado
                 </div>
                 <br>
                 <!--Input do Nome da Turma 1-->
@@ -49,38 +51,63 @@
                 <!--Input da Situação do Aluno na Turma 1-->
                 <div class="cardConteudoTurmas" id="situacao1">
                 </div>
-                <br>
-                <!--Input do Nome da Turma 2-->
-                <div class="cardConteudoTurmas" id="turma2">
+                <!--Input do Certificado da Turma 1-->
+                <div class="emitirCertificado">
+                <div class="btnNotas">
+                    <button class="botaoLancarNotas"
+                        onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Emitir Certificado</button>
+                    </div>
                 </div>
-                <!--Input da Nota do Aluno na Turma 2-->
-                <div class="cardConteudoTurmas" id="nota2">
-                </div>
-                <!--Input da Situação do Aluno na Turma 2-->
-                <div class="cardConteudoTurmas" id="situacao2">
-                </div>
-                <br>
-                <!--Input do Nome da Turma 3-->
-                <div class="cardConteudoTurmas" id="turma3">
-                </div>
-                <!--Input da Nota do Aluno na Turma 3-->
-                <div class="cardConteudoTurmas" id="nota3">
-                </div>
-                <!--Input da Situação do Aluno na Turma 3-->
-                <div class="cardConteudoTurmas" id="situacao3">
-                </div>
-                <br>
-                <!--Input do Nome da Turma 4-->
-                <div class="cardConteudoTurmas" id="turma4">
-                </div>
-                <!--Input da Nota do Aluno na Turma 4-->
-                <div class="cardConteudoTurmas" id="nota4">
-                </div>
-                <!--Input da Situação do Aluno na Turma 4-->
-                <div class="cardConteudoTurmas" id="situacao4">
-                </div>
-                <br>
-            </div>
-        </div>
-    </div>
-</div>
+                    <!--Input do Nome da Turma 2-->
+                    <div class="cardConteudoTurmas" id="turma2">
+                    </div>
+                    <!--Input da Nota do Aluno na Turma 2-->
+                    <div class="cardConteudoTurmas" id="nota2">
+                    </div>
+                    <!--Input da Situação do Aluno na Turma 2-->
+                    <div class="cardConteudoTurmas" id="situacao2">
+                    </div>
+                <!--Input do Certificado da Turma 2-->
+                <div class="emitirCertificado">
+                    <div>
+                        <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
+                            </button>
+                        </div>
+                    </div>  
+                    <br>
+                            <!--Input do Nome da Turma 3-->
+                            <div class="cardConteudoTurmas" id="turma3">
+                            </div>
+                            <!--Input da Nota do Aluno na Turma 3-->
+                            <div class="cardConteudoTurmas" id="nota3">
+                            </div>
+                            <!--Input da Situação do Aluno na Turma 3-->
+                            <div class="cardConteudoTurmas" id="situacao3">
+                            </div>
+                            <!--Input do Certificado da Turma 3-->
+                            <div class="emitirCertificado">
+                                <div>
+                                    <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
+                                        </button>
+                                    </div>
+                                </div>
+                                    <!--Input do Nome da Turma 4-->
+                                    <div class="cardConteudoTurmas" id="turma4">
+                                    </div>
+                                    <!--Input da Nota do Aluno na Turma 4-->
+                                    <div class="cardConteudoTurmas" id="nota4">
+                                    </div>
+                                    <!--Input da Situação do Aluno na Turma 4-->
+                                    <div class="cardConteudoTurmas" id="situacao4">
+                                    </div>
+                                    <!--Input do Certificado da Turma 4-->
+                                    <div class="emitirCertificado">
+                                        <div>
+                                            <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
+                                                </button>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
