@@ -38,6 +38,11 @@
     flex-wrap: wrap;
 }
 
+/* .card_boletim_aluno {
+    display: none;
+}
+*/
+
 .cardTitulo {
     width: 30.9%;
     display: inline-flex;

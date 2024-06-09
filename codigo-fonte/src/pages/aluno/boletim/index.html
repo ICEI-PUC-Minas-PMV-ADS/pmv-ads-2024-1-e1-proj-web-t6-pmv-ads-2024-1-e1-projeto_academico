@@ -1,102 +1,86 @@
 <div class="page-wrapper boletim-page">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    <div class="flex justify-between gap-4 items-center">
-        <h1 class="text-primary">Consultar Boletim</h1>
-    </div>
-        
-    <label id="textoLabelInformeCPF">Informe o CPF ou Código de Matrícula do Aluno: *</label>
-    <div>    
-    <input type="search" class="cpfInput" name="cpf" maxlength="14" placeholder="CPF ou Matrícula do Aluno *">
-    <button class="search-btn" type="submit"><img src="https://s3-alpha-sig.figma.com/img/b282/0d51/04145da7707f32d6a7e68cac0acd6589?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pNVjqfOKMBtrboUbiagLh0w-a2uUOpIBK9E46fZ8oTA5VK0bQJPlHdMU9ExUuZoA26i3COkyY9wZ9VxBLce5CQf4b6MGaz7MMdrWXoXZJWSQIwEguChbcY4CqS9MMO8xRWSR-dByFowrk8kJyjpxJlcVaWgxSbtmloE3w2JeTEcigjzOGTMKQFSCWm9y2KY9VCkcUmhVgSG98DI4CwrdMlgTPXo1tyL0H-mYpNFGOJJh7PgNgXuz7TR~lVE8gYUQ9lEeO5z-PdVpZYNuJwuFndiowEnaATdV9DlueVDw2RFCznTAhtYXL7-Iy52SCf2WPjzP-SWxkl7Y9rmyRiW68g__"
-                alt="Ícone de Pesquisa" class="search-icon"></button>
-    </div>
-    <div id="linha"></div>
-    
-        <div class="card">
-            <h2>Boletim</h2>
-            <div id="nomeAluno">
-                Aluno: Carlos Barbosa da Costa Mendes
-            </div>
-            <div id="anoLetivo">
-                Ano Letivo: 2024
-            </div>
-            <br/>
-            <div class="cardTitulo">
-                Turma
-            </div>
-            <div class="cardTitulo">
-                Nota
-            </div>
-            <div class="cardTitulo">
-                Situação
-            </div>
-            <br>
-            <!--Input do Nome da Turma 1-->
-            <div class="cardConteudoTurmas">
-                Física Aplicada
-            </div>
-            <!--Input da Nota do Aluno na Turma 1-->
-            <div class="cardConteudoTurmas">
-                9,6
-            </div>
-            <!--Input da Situação do Aluno na Turma 1-->
-            <div class="cardConteudoTurmas">
-                Aprovado
-            </div>
-            <br>
-            <!--Input do Nome da Turma 2-->
-            <div class="cardConteudoTurmas">
-                Química Geral
-            </div>
-            <!--Input da Nota do Aluno na Turma 2-->
-            <div class="cardConteudoTurmas">
-                7,3
-            </div>
-            <!--Input da Situação do Aluno na Turma 2-->
-            <div class="cardConteudoTurmas">
-                Aprovado
-            </div>
-            <br>
-            <!--Input do Nome da Turma 3-->
-            <div class="cardConteudoTurmas">
-                Matemática Básica
-            </div>
-            <!--Input da Nota do Aluno na Turma 3-->
-            <div class="cardConteudoTurmas">
-                8,4
-            </div>
-            <!--Input da Situação do Aluno na Turma 3-->
-            <div class="cardConteudoTurmas">
-                Aprovado
-            </div>
-            <br>
-            <!--Input do Nome da Turma 4-->
-            <div class="cardConteudoTurmas">
-                Geografia
-            </div>
-            <!--Input da Nota do Aluno na Turma 4-->
-            <div class="cardConteudoTurmas">
-                5,4
-            </div>
-            <!--Input da Situação do Aluno na Turma 4-->
-            <div class="cardConteudoTurmas">
-                Reprovado
-            </div>
-            <br>
-        <div class="paginasBoletim">
-            <!--Marcador da Página Atual-->
-            <div class="outrasPaginas" id="paginaAtual">
-                1
-            </div>
-            <!--Marcadores das Outras Páginas Disponíveis-->
-            <div class="outrasPaginas">
-                2
-            </div>
-            <div class="outrasPaginas">
-                3
+    <div class="flex flex-col gap-6 cancelamento_matricula">
+        <div class="title">
+            <div>
+                <h1>Consulta de Boletim</h1>
             </div>
         </div>
+
+        <div class="flex flex-col gap-4">
+            <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
+
+            <form class="registration-search-form" id="searchForm">
+                <input data-mask="999.999.999-99" placeholder="XXX.XXX.XXX-XX" type="search" id="cpf" name="cpf"
+                 required>
+
+                <button type="submit" id="searchButton">
+                    <span class="iconify-inline" data-icon="ic:baseline-search"></span>
+                </button>
+            </form>
+        </div>
+
+        <div class="card consultar-boletim-empty helper">
+            <div class="card_boletim_aluno" id="cardBoletimAluno">
+                <h2>Boletim</h2>
+                <div id="nomeAluno">
+                </div>
+                <div id="anoLetivo">
+                    Ano Letivo: 2024
+                </div>
+                <br />
+                <div class="cardTitulo">
+                    Turma
+                </div>
+                <div class="cardTitulo">
+                    Nota
+                </div>
+                <div class="cardTitulo">
+                    Situação
+                </div>
+                <br>
+                <!--Input do Nome da Turma 1-->
+                <div class="cardConteudoTurmas" id="turma1">
+                </div>
+                <!--Input da Nota do Aluno na Turma 1-->
+                <div class="cardConteudoTurmas" id="nota1">
+                </div>
+                <!--Input da Situação do Aluno na Turma 1-->
+                <div class="cardConteudoTurmas" id="situacao1">
+                </div>
+                <br>
+                <!--Input do Nome da Turma 2-->
+                <div class="cardConteudoTurmas" id="turma2">
+                </div>
+                <!--Input da Nota do Aluno na Turma 2-->
+                <div class="cardConteudoTurmas" id="nota2">
+                </div>
+                <!--Input da Situação do Aluno na Turma 2-->
+                <div class="cardConteudoTurmas" id="situacao2">
+                </div>
+                <br>
+                <!--Input do Nome da Turma 3-->
+                <div class="cardConteudoTurmas" id="turma3">
+                </div>
+                <!--Input da Nota do Aluno na Turma 3-->
+                <div class="cardConteudoTurmas" id="nota3">
+                </div>
+                <!--Input da Situação do Aluno na Turma 3-->
+                <div class="cardConteudoTurmas" id="situacao3">
+                </div>
+                <br>
+                <!--Input do Nome da Turma 4-->
+                <div class="cardConteudoTurmas" id="turma4">
+                </div>
+                <!--Input da Nota do Aluno na Turma 4-->
+                <div class="cardConteudoTurmas" id="nota4">
+                </div>
+                <!--Input da Situação do Aluno na Turma 4-->
+                <div class="cardConteudoTurmas" id="situacao4">
+                </div>
+                <br>
+            </div>
         </div>
     </div>
 </div>
