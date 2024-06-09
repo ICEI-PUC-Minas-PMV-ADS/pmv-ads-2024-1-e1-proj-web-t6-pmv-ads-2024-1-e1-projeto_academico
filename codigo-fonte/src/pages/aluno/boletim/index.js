@@ -21,8 +21,13 @@ async function startStudentListModule() {
             },
             {
                 nome: "Física Aplicada",
+<<<<<<< HEAD
                 nota: 7.0,
                 situacao: "Aprovado"
+=======
+                nota: 6.0,
+                situacao: "Reprovado"
+>>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
             },
             {
                 nome: "Química Geral",
@@ -31,14 +36,27 @@ async function startStudentListModule() {
             },
             {
                 nome: "Geografia",
+<<<<<<< HEAD
                 nota: 8.4,
                 situacao: "Aprovado"
+=======
+                nota: 5.4,
+                situacao: "Reprovado"
+>>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
             }
         ]
     };
     
     console.log(aluno);
 
+<<<<<<< HEAD
+=======
+    document.getElementById('searchButton').addEventListener('click', function() {
+        let minhaDiv = document.getElementById('bodyCard');
+        minhaDiv.style.display = 'inline-block'; // Faz a div aparecer
+    });
+
+>>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
     document.getElementById('searchForm').addEventListener('submit', function (event) {
 
         event.preventDefault();
@@ -46,6 +64,10 @@ async function startStudentListModule() {
         let valorSearch = document.getElementById('cpf').value;
 
         if (valorSearch == aluno.cpf) {
+<<<<<<< HEAD
+=======
+            
+>>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
             let nomeAlunoHTML = `Aluno: ${aluno.nome}`
             nomeAluno.innerHTML = nomeAlunoHTML
 
@@ -108,6 +130,11 @@ async function startStudentListModule() {
 
             let validacaoCPFNaoEncontrado = document.querySelector('.card_boletim_aluno');
             validacaoCPFNaoEncontrado.style.setProperty('font-weight','bold');
+<<<<<<< HEAD
+=======
+            validacaoCPFNaoEncontrado.style.setProperty('color','red');
+            validacaoCPFNaoEncontrado.style.setProperty('text-align','center');
+>>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
             validacaoCPFNaoEncontrado.textContent = `CPF informado não está cadastrado.`;
             console.log("CPF Não Encontrado")
         }

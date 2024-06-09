@@ -1,9 +1,39 @@
-<div class="page-wrapper declaracao_matricula-page">
-    <div class="flex justify-between gap-4 items-center">
-        <h1 class="text-primary">Declaração de matrícula</h1>
+<div class="flex flex-col gap-6 cancelamento_matricula">
+    <div class="title">
+        <div>
+            <h1>Emitir Declaração de Matrícula</h1>
+        </div>
     </div>
 
-    <div>
-        BEM VINDO!
+    <div class="flex flex-col gap-4">
+        <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
+
+   <div class="flex flex-col gap-4">
+    <form class="registration-search-form" id="searchFormDeclaracao">
+        <input data-mask="999.999.999-99" placeholder="111.222.333-44" type="search" id="cpfDeclaracao" name="cpf"
+            required>
+
+        <button type="submit" id="searchButtonDeclaracao">
+            <span class="iconify-inline" data-icon="ic:baseline-search"></span>
+        </button>
+    </form>
     </div>
-</div>
+
+    <div class="emissaoDeclaracao" id="identificadorEmissaoDeclaracao">
+        <div class="declaracao">
+            <img width="180px" src="/images/hatgraduation.svg" alt="" srcset="">
+            <h1>Declaração de Matrícula</h1>
+            <p>Declaramos, para os devidos fins, que o(a) aluno(a)</p>
+            <div id="nomeAlunoDeclaracao"></div>
+            <p>está regularmente matriculado(a) nesta instituição de ensino e durante o ano letivo de</p>
+            <div id="anoLetivoDeclaracao"></div>
+            <p>o mesmo encontra-se matriculado na turma de</p>
+            <div id="turmaDeclaracao"></div>
+            <div class="assinatura">
+                <p>Maria Cassia de S. Arruda</p>
+                <p>__________________________</p>
+                <p>Nome do Instrutor</p>
+            </div>
+            <p class="data">Data: 01 de Janeiro de 2024</p>
+        </div>
+    </div>

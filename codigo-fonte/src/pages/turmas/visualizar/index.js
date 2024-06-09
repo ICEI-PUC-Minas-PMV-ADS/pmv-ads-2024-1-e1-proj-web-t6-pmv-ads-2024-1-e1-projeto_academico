@@ -26,43 +26,53 @@ async function startClassroomModule() {
 
             if (inputSearch) {
                 const query = inputSearch.value;
+
+                wrapper.innerHTML = '';
+                const loadingElement = document.createElement('div');
+                loadingElement.classList.add('loading');
+                loadingElement.innerHTML = 'Carregando...';
+                wrapper.append(loadingElement);
+
+                const { data: classRoomCollection } = await turmaEntityService.getAll();
+                let turmas = classRoomCollection
                 
                 if (query.length) {
-                    wrapper.innerHTML = '';
-                    const loadingElement = document.createElement('div');
-                    loadingElement.classList.add('loading');
-                    loadingElement.innerHTML = 'Carregando...';
-                    wrapper.append(loadingElement);
-
-                    const { data: classRoomCollection } = await turmaEntityService.getAll();
-
-                    const filtered = [...classRoomCollection].filter((turma) => {
+                    turmas = [...classRoomCollection].filter((turma) => {
                         return turma.nome.toLowerCase().includes(query.toLowerCase());
                     });
+                }
 
-                    if (!filtered.length) {
-                        wrapper.innerHTML = '';
-                        wrapper.append(title);
-                        alert('Não foram encontrados resultados para a pesquisa.');
-                    } else {
-                        const list = createAttendanceList(filtered);
-                        const rows = list.querySelectorAll('.actions');
-                        
-                        rows.forEach(elemento => {
-                            const buttonEdit = document.createElement('button');
-                            buttonEdit.classList.add('btn', 'btn-primary');
-                            buttonEdit.textContent = 'Editar';
+                if (!turmas.length) {
+                    wrapper.innerHTML = '';
+                    wrapper.append(title);
+                    alert('Não foram encontrados resultados para a pesquisa.');
+                } else {
+                    const list = createAttendanceList(turmas);
+                    const rows = list.querySelectorAll('.actions');
 
-                            const buttonInactive = document.createElement('button');
-                            buttonInactive.classList.add('btn', 'btn-danger');
-                            buttonInactive.textContent = 'Desativar';
-                            elemento.appendChild(buttonEdit);
-                            elemento.appendChild(buttonInactive);
+                    rows.forEach((elemento, index) => {
+                        const turma = turmas[index];
+                        const buttonEdit = document.createElement('button');
+                        buttonEdit.classList.add('btn', 'btn-primary');
+                        buttonEdit.textContent = 'Editar';
+
+                        const buttonInactive = document.createElement('button');
+                        buttonInactive.classList.add('btn', 'btn-danger');
+                        buttonInactive.textContent = 'Desativar';
+
+                        elemento.setAttribute('data-turma-id', turma.id);
+
+                        buttonEdit.addEventListener('click', (event) => {
+                            const turmaId = elemento.getAttribute('data-turma-id');
+                            navigateToRoute(event, `/turmas/editar/${turmaId}`);
                         });
 
-                        loadingElement.remove();    
-                        wrapper.appendChild(list);
-                    }
+                        elemento.appendChild(buttonEdit);
+                        elemento.appendChild(buttonInactive);
+                    });
+
+                    loadingElement.remove();
+                    wrapper.appendChild(list);
                 }
             }
         });

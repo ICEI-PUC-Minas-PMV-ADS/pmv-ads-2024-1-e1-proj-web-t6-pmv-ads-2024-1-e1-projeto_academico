@@ -1,1 +1,93 @@
-/**/
+.emissaoDeclaracao {
+    font-family: 'Arial', sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding: 20px;
+    margin: 10px;
+}
+
+#identificadorEmissaoDeclaracao {
+    display: none;
+}
+
+.declaracao {
+    width: 100%;
+    padding: 3%;
+    border: 5px solid #0c098e;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.declaracao h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #0c098e;
+}
+
+.declaracao h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0c098e;
+}
+
+.declaracao h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #0c098e;
+}
+
+.declaracao h5 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #0c098e;
+}
+
+.declaracao p {
+    font-size: 1em;
+    color: #0c098e;
+}
+
+.assinatura {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.assinatura p {
+    margin: 5px 0;
+}
+
+.data {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #0c098e;
+}
+
+#nomeAlunoDeclaracao {    
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0c098e;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+#turmaDeclaracao {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0c098e;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+
+#anoLetivoDeclaracao {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #0c098e;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}

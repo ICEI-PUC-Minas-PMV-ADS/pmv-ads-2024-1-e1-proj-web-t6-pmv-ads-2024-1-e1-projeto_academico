@@ -1,7 +1,40 @@
-<div class="page-wrapper">
-    <h1 class="text-primary">Certificado de Conclusão</h1>
-
-    <div>
-        BEM VINDO!
+<div class="flex flex-col gap-6 cancelamento_matricula">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <div class="title">
+        <div>
+            <h1>Certificado de Conclusão</h1>
+        </div>
     </div>
-</div>
+
+    <div class="flex flex-col gap-4">
+        <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
+
+        <form class="registration-search-form" id="searchForm">
+            <input data-mask="999.999.999-99" placeholder="111.222.333-44" type="search" id="cpf" name="cpf"
+                disabled>
+
+            <button type="submit" id="searchButton">
+                <span class="iconify-inline" data-icon="ic:baseline-search"></span>
+            </button>
+        </form>
+    </div>
+
+    <div class="emissaoCertificado" id="emissaoCertif">
+        <div class="certificado">
+            <img width="180px" src="/images/hatgraduation.svg" alt="" srcset="">
+            <h1>Certificado de Conclusão</h1>
+            <p>Este certificado é concedido a</p>
+            <div id="nomeAluno1"></div>
+            <p>por ter concluído a turma de</p>
+            <div id="nomeTurma1"></div>
+            <p>com sucesso em</p>
+            <div id="anoLetivo1"></div>
+            <div class="assinatura">
+                <p>Maria Cassia de S. Arruda</p>
+                <p>__________________________</p>
+                <p>Nome do Instrutor</p>
+            </div>
+            <p class="data">Data: 01 de Janeiro de 2024</p>
+        </div>
+    </div>
