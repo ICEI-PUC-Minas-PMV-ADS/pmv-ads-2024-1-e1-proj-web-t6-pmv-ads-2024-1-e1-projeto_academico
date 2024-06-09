@@ -217,6 +217,36 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     </tbody>
 </table>
 
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-015 - Testes Funcionalidades de Visualização de Notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-12</th>
+            <th>Alunos devem conseguir visualizar as notas obtidas em suas disciplinas</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>Ao acessar o sistema e fazer login como aluno, na aba "Consultar Boletim", foi possível visualizar a lista de disciplinas matriculadas e suas respectivas notas:
+                        <br>
+                        <img src="/documentos/img/statusdoaluno.PNG" alt="Tela de Visualização de Notas">
+                    </li>
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Kevin Lucas</td>
+        </tr>
+    </tbody>
+</table>
+
 
 
 
