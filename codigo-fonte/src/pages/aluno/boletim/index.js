@@ -40,8 +40,8 @@ async function startStudentListModule() {
     console.log(aluno);
 
     document.getElementById('searchButton').addEventListener('click', function() {
-        let minhaDiv = document.getElementById('cardBoletimAluno');
-        minhaDiv.style.display = 'block'; // Faz a div aparecer
+        let minhaDiv = document.getElementById('bodyCard');
+        minhaDiv.style.display = 'inline-block'; // Faz a div aparecer
     });
 
     document.getElementById('searchForm').addEventListener('submit', function (event) {
