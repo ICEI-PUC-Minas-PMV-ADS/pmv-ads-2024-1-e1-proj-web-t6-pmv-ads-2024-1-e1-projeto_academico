@@ -1,128 +1,85 @@
 <div class="page-wrapper boletim-page">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
-    <div class="flex justify-between gap-4 items-center">
-        <h1 class="text-primary">Consultar Boletim</h1>
-    </div>
-        
-    <label id="textoLabelInformeCPF">Informe o CPF ou Código de Matrícula do Aluno: *</label>
-    <div>    
-    <input type="search" class="cpfInput" name="cpf" maxlength="14" placeholder="CPF ou Matrícula do Aluno *">
-    <button class="search-btn" type="submit"><img src="https://s3-alpha-sig.figma.com/img/b282/0d51/04145da7707f32d6a7e68cac0acd6589?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eKI52sv2e6PXRdKIEFKAFkSG59ULFVVgvoCCI1vTwgW9FS2YOOq2hPhfGp~X7ip17aETwG6fRYruSOIa9KHMok0rcZ8M-8~tCowxAKD2wYoYrVm6XG6~mzXiIbtINCO4TCf2ono-F9SiG1VxgKG0Aw2FEaqXJRY4bbhQjzE349CRiSM9j5Of~uCXbVZ18cevnkkfynfZyAv3pL8IQn-zcN-N4DE6DObXFriunTmys39evmu1CefDFUNznSRkxiL74-e8ofbIbwL1dHzSCY~Q72N5sa25NiAbQpLb9BFDi7Jf3zTHwmQ3hl05Iv0az61Jbcy0kyFDlmAsq6-ToK6IOQ__"
-                alt="Ícone de Pesquisa" class="search-icon"></button>
-    </div>
-    <div id="linha"></div>
-    
-        <div class="card">
-            <h2>Boletim</h2>
-            <div id="nomeAluno">
-                Aluno: Carlos Barbosa da Costa Mendes
+    <div class="flex flex-col gap-6 cancelamento_matricula">
+        <div class="title">
+            <div>
+                <h1>Consulta de Boletim</h1>
             </div>
-            <div id="anoLetivo">
-                Ano Letivo: 2024
-            </div>
-            <br/>
-            <div class="cardTitulo">
-                Turma
-            </div>
-            <div class="cardTitulo">
-                Nota
-            </div>
-            <div class="cardTitulo">
-                Situação
-            </div>
-            <div class="cardTitulo">
-                Certificado
-            </div>
-            <br>
-            <!--Input do Nome da Turma 1-->
-            <div class="cardConteudoTurmas">
-                Física Aplicada
-            </div>
-            <!--Input da Nota do Aluno na Turma 1-->
-            <div class="cardConteudoTurmas">
-                9,6
-            </div>
-            <!--Input da Situação do Aluno na Turma 1-->
-            <div class="cardConteudoTurmas">
-                Aprovado
-            </div>
-            <!--Input do Certificado da Turma 1-->
-            <div class="cardConteudoTurmas">
-                <div class="btnNotas">
-                    <button class="botaoLancarNotas" onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Emitir Certificado</button>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
+
+            <form class="registration-search-form" id="searchForm">
+                <input data-mask="999.999.999-99" placeholder="XXX.XXX.XXX-XX" type="search" id="cpf" name="cpf"
+                 required>
+
+                <button type="submit" id="searchButton">
+                    <span class="iconify-inline" data-icon="ic:baseline-search"></span>
+                </button>
+            </form>
+        </div>
+
+        <div class="card consultar-boletim-empty helper">
+            <div class="card_boletim_aluno" id="cardBoletimAluno">
+                <h2>Boletim</h2>
+                <div id="nomeAluno">
                 </div>
-            </div>
-            <br>
-            <br>
-            <!--Input do Nome da Turma 2-->
-            <div class="cardConteudoTurmas">
-                Química Geral
-            </div>
-            <!--Input da Nota do Aluno na Turma 2-->
-            <div class="cardConteudoTurmas">
-                7,3
-            </div>
-            <!--Input da Situação do Aluno na Turma 2-->
-            <div class="cardConteudoTurmas">
-                Aprovado
-            </div>
-            <!--Input do Certificado da Turma 2-->
-            <div class="cardConteudoTurmas">
-                <div class="btnNotas">
-                    <button class="botaoLancarNotas" onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Emitir Certificado</button>
+                <div id="anoLetivo">
+                    Ano Letivo: 2024
                 </div>
-            </div>
-            <br>
-            <br>
-            <!--Input do Nome da Turma 3-->
-            <div class="cardConteudoTurmas">
-                Matemática Básica
-            </div>
-            <!--Input da Nota do Aluno na Turma 3-->
-            <div class="cardConteudoTurmas">
-                8,4
-            </div>
-            <!--Input da Situação do Aluno na Turma 3-->
-            <div class="cardConteudoTurmas">
-                Aprovado
-            </div>
-            <!--Input do Certificado da Turma 3-->
-            <div class="cardConteudoTurmas">
-                <div class="btnNotas">
-                    <button class="botaoLancarNotas" onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Emitir Certificado</button>
+                <br />
+                <div class="cardTitulo">
+                    Turma
                 </div>
-            </div>
-            <br>
-            <br>
-            <!--Input do Nome da Turma 4-->
-            <div class="cardConteudoTurmas">
-                Geografia
-            </div>
-            <!--Input da Nota do Aluno na Turma 4-->
-            <div class="cardConteudoTurmas">
-                5,4
-            </div>
-            <!--Input da Situação do Aluno na Turma 4-->
-            <div class="cardConteudoTurmas">
-                Reprovado
-            </div>
-            <!--Input do Certificado da Turma 4-->
-            <div class="cardConteudoTurmas">Não disponível
-            </div>
-            <br>
-            <div class="paginasBoletim">
-                <!--Marcador da Página Atual-->
-                <div class="outrasPaginas" id="paginaAtual">
-                    1
+                <div class="cardTitulo">
+                    Nota
                 </div>
-                <!--Marcadores das Outras Páginas Disponíveis-->
-                <div class="outrasPaginas">
-                    2
+                <div class="cardTitulo">
+                    Situação
                 </div>
-                <div class="outrasPaginas">
-                    3
+                <br>
+                <!--Input do Nome da Turma 1-->
+                <div class="cardConteudoTurmas" id="turma1">
                 </div>
+                <!--Input da Nota do Aluno na Turma 1-->
+                <div class="cardConteudoTurmas" id="nota1">
+                </div>
+                <!--Input da Situação do Aluno na Turma 1-->
+                <div class="cardConteudoTurmas" id="situacao1">
+                </div>
+                <br>
+                <!--Input do Nome da Turma 2-->
+                <div class="cardConteudoTurmas" id="turma2">
+                </div>
+                <!--Input da Nota do Aluno na Turma 2-->
+                <div class="cardConteudoTurmas" id="nota2">
+                </div>
+                <!--Input da Situação do Aluno na Turma 2-->
+                <div class="cardConteudoTurmas" id="situacao2">
+                </div>
+                <br>
+                <!--Input do Nome da Turma 3-->
+                <div class="cardConteudoTurmas" id="turma3">
+                </div>
+                <!--Input da Nota do Aluno na Turma 3-->
+                <div class="cardConteudoTurmas" id="nota3">
+                </div>
+                <!--Input da Situação do Aluno na Turma 3-->
+                <div class="cardConteudoTurmas" id="situacao3">
+                </div>
+                <br>
+                <!--Input do Nome da Turma 4-->
+                <div class="cardConteudoTurmas" id="turma4">
+                </div>
+                <!--Input da Nota do Aluno na Turma 4-->
+                <div class="cardConteudoTurmas" id="nota4">
+                </div>
+                <!--Input da Situação do Aluno na Turma 4-->
+                <div class="cardConteudoTurmas" id="situacao4">
+                </div>
+                <br>
             </div>
         </div>
     </div>
