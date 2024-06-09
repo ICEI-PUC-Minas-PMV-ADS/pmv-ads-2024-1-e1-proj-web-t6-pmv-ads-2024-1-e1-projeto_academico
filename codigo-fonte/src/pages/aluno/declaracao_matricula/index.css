@@ -1,11 +1,14 @@
 .emissaoDeclaracao {
     font-family: 'Arial', sans-serif;
-    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #f3f4f6;
     padding: 20px;
     margin: 10px;
+}
+
+#identificadorEmissaoDeclaracao {
+    display: none;
 }
 
 .declaracao {

@@ -51,6 +51,7 @@ async function startStudentListModule() {
         let valorSearch = document.getElementById('cpf').value;
 
         if (valorSearch == aluno.cpf) {
+            
             let nomeAlunoHTML = `Aluno: ${aluno.nome}`
             nomeAluno.innerHTML = nomeAlunoHTML
 
@@ -114,6 +115,7 @@ async function startStudentListModule() {
             let validacaoCPFNaoEncontrado = document.querySelector('.card_boletim_aluno');
             validacaoCPFNaoEncontrado.style.setProperty('font-weight','bold');
             validacaoCPFNaoEncontrado.style.setProperty('color','red');
+            validacaoCPFNaoEncontrado.style.setProperty('text-align','center');
             validacaoCPFNaoEncontrado.textContent = `CPF informado não está cadastrado.`;
             console.log("CPF Não Encontrado")
         }
