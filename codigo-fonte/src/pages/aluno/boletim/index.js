@@ -157,8 +157,12 @@ async function startStudentListModule() {
 >>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
 =======
             validacaoCPFNaoEncontrado.style.setProperty('color','red');
+<<<<<<< HEAD
             validacaoCPFNaoEncontrado.style.setProperty('text-align','center
 >>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
+=======
+            validacaoCPFNaoEncontrado.style.setProperty('text-align','center');
+>>>>>>> 0baeb1b0554d4c0d441615060af7265724ed123e
             validacaoCPFNaoEncontrado.textContent = `CPF informado não está cadastrado.`;
             console.log("CPF Não Encontrado")
         }
