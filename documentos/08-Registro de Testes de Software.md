@@ -256,8 +256,8 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     </thead>
     <tbody>
         <tr>
-            <th>RF-11</th>
-            <th>CRUD de Notas</th>
+            <th>RF-08 e RF-09</th>
+            <th>Emitir certificado de conclusão e Emitir certificado de matricula</th>
         </tr>
         <tr>
             <td>Resultados obtidos</td>
