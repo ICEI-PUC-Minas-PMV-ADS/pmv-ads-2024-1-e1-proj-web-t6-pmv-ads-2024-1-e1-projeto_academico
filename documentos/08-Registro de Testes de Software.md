@@ -256,7 +256,7 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     </thead>
     <tbody>
         <tr>
-            <th>RF-12</th>
+            <th>RF-11</th>
             <th>CRUD de Notas</th>
         </tr>
         <tr>
@@ -289,6 +289,52 @@ Relatório com as evidências dos testes de software realizados na aplicação p
         <tr>
             <td>Responsável pela execução do caso de Teste</td>
             <td>Caio Araujo</td>
+        </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-015 - Testes Funcionalidades CRUD Notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-05</th>
+            <th>CRUD de Turmas</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>Ao acessar o sistema com usuário de professor e em cadastrar turma ebuscar sem informar dados o sistema ira listar as turmas:
+                        <br>
+                        <img src="/documentos/img/telasfernando/listarturmas.png" alt="Emitir Declaração">
+                    </li>
+                    <li>Ao buscar por uma turma especifica:
+                        <br>
+                        <img src="/documentos/img/telasfernando/buscaporturma.png" alt="CPF Inválido">
+                    </li>
+                    <li>Se buscar por turma invalida:
+                        <br>
+                        <img src="/documentos/img/telasfernando/turmainvalida.png" alt="Consultar Boletim">
+                    </li>
+                    <li>Quando clicar em editar:
+                        <br>
+                        <img src="/documentos/img/telasfernando/editarturma.png" alt="CPF Inválido">
+                    </li>
+                    <li>Ao clicar no botao cadastrar turmas:
+                        <br>
+                        <img src="/documentos/img/telasfernando/cadastrarturmas.png" alt="CPF Válido">
+                    </li>
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Fernando Moura</td>
         </tr>
     </tbody>
 </table>
