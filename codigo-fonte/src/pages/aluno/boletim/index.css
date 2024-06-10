@@ -42,15 +42,24 @@ h2 {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+#bodyCard {
+    display: none;
+}
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
 /* .card_boletim_aluno {
     display: none;
 }
 */
+<<<<<<< HEAD
 =======
 #bodyCard {
     display: none;
 }
 >>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
+=======
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
 
 .cardTitulo {
     width: 22%;

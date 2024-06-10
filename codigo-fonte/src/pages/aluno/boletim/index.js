@@ -22,12 +22,17 @@ async function startStudentListModule() {
             {
                 nome: "Física Aplicada",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 nota: 7.0,
                 situacao: "Aprovado"
 =======
                 nota: 6.0,
                 situacao: "Reprovado"
 >>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
+=======
+                nota: 6.0,
+                situacao: "Reprovado"
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
             },
             {
                 nome: "Química Geral",
@@ -37,12 +42,17 @@ async function startStudentListModule() {
             {
                 nome: "Geografia",
 <<<<<<< HEAD
+<<<<<<< HEAD
                 nota: 8.4,
                 situacao: "Aprovado"
 =======
                 nota: 5.4,
                 situacao: "Reprovado"
 >>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
+=======
+                nota: 5.4,
+                situacao: "Reprovado"
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
             }
         ]
     };
@@ -50,13 +60,19 @@ async function startStudentListModule() {
     console.log(aluno);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
     document.getElementById('searchButton').addEventListener('click', function() {
         let minhaDiv = document.getElementById('bodyCard');
         minhaDiv.style.display = 'inline-block'; // Faz a div aparecer
     });
+<<<<<<< HEAD
 
 >>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
+=======
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
     document.getElementById('searchForm').addEventListener('submit', function (event) {
 
         event.preventDefault();
@@ -65,9 +81,12 @@ async function startStudentListModule() {
 
         if (valorSearch == aluno.cpf) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             
 >>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
+=======
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
             let nomeAlunoHTML = `Aluno: ${aluno.nome}`
             nomeAluno.innerHTML = nomeAlunoHTML
 
@@ -131,10 +150,15 @@ async function startStudentListModule() {
             let validacaoCPFNaoEncontrado = document.querySelector('.card_boletim_aluno');
             validacaoCPFNaoEncontrado.style.setProperty('font-weight','bold');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             validacaoCPFNaoEncontrado.style.setProperty('color','red');
             validacaoCPFNaoEncontrado.style.setProperty('text-align','center');
 >>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
+=======
+            validacaoCPFNaoEncontrado.style.setProperty('color','red');
+            validacaoCPFNaoEncontrado.style.setProperty('text-align','center
+>>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
             validacaoCPFNaoEncontrado.textContent = `CPF informado não está cadastrado.`;
             console.log("CPF Não Encontrado")
         }
