@@ -43,82 +43,47 @@ async function startStudentListModule() {
         let minhaDiv = document.getElementById('bodyCard');
         minhaDiv.style.display = 'inline-block'; // Faz a div aparecer
     });
-    document.getElementById('searchForm').addEventListener('submit', function (event) {
 
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
         event.preventDefault();
 
         let valorSearch = document.getElementById('cpf').value;
 
-        if (valorSearch == aluno.cpf) {
-            let nomeAlunoHTML = `Aluno: ${aluno.nome}`
-            nomeAluno.innerHTML = nomeAlunoHTML
+        if (valorSearch === aluno.cpf) {
+            let nomeAlunoHTML = `Aluno: ${aluno.nome}`;
+            document.getElementById('nomeAluno').innerHTML = nomeAlunoHTML;
 
-            let anoLetivoHTML = `Ano: ${aluno.anoLetivo}`
-            anoLetivo.innerHTML = anoLetivoHTML
+            let anoLetivoHTML = `Ano: ${aluno.anoLetivo}`;
+            document.getElementById('anoLetivo').innerHTML = anoLetivoHTML;
 
-            let turma1 = document.getElementById('turma1')
-            let turma2 = document.getElementById('turma2')
-            let turma3 = document.getElementById('turma3')
-            let turma4 = document.getElementById('turma4')
+            let turmaElements = ['turma1', 'turma2', 'turma3', 'turma4'];
+            let notaElements = ['nota1', 'nota2', 'nota3', 'nota4'];
+            let situacaoElements = ['situacao1', 'situacao2', 'situacao3', 'situacao4'];
 
-            let primeiraTurma = aluno.turmas[0];
-            let segundaTurma = aluno.turmas[1];
-            let terceiraTurma = aluno.turmas[2];
-            let quartaTurma = aluno.turmas[3];
+            for (let i = 0; i < aluno.turmas.length; i++) {
+                let turma = aluno.turmas[i];
 
-            let nomeTurma1 = document.createElement('div');
-            nomeTurma1.textContent = `${primeiraTurma.nome}`
-            let nomeTurma2 = document.createElement('div');
-            nomeTurma2.textContent = `${segundaTurma.nome}`
-            let nomeTurma3 = document.createElement('div');
-            nomeTurma3.textContent = `${terceiraTurma.nome}`
-            let nomeTurma4 = document.createElement('div');
-            nomeTurma4.textContent = `${quartaTurma.nome}`
+                let nomeTurmaDiv = document.createElement('div');
+                nomeTurmaDiv.textContent = turma.nome;
+                document.getElementById(turmaElements[i]).appendChild(nomeTurmaDiv);
 
-            let notaTurma1 = document.createElement('div');
-            notaTurma1.textContent = `${primeiraTurma.nota}`
-            let notaTurma2 = document.createElement('div');
-            notaTurma2.textContent = `${segundaTurma.nota}`
-            let notaTurma3 = document.createElement('div');
-            notaTurma3.textContent = `${terceiraTurma.nota}`
-            let notaTurma4 = document.createElement('div');
-            notaTurma4.textContent = `${quartaTurma.nota}`
+                let notaTurmaDiv = document.createElement('div');
+                notaTurmaDiv.textContent = turma.nota;
+                document.getElementById(notaElements[i]).appendChild(notaTurmaDiv);
 
-            let situacaoTurma1 = document.createElement('div');
-            situacaoTurma1.textContent = `${primeiraTurma.situacao}`
-            let situacaoTurma2 = document.createElement('div');
-            situacaoTurma2.textContent = `${segundaTurma.situacao}`
-            let situacaoTurma3 = document.createElement('div');
-            situacaoTurma3.textContent = `${terceiraTurma.situacao}`
-            let situacaoTurma4 = document.createElement('div');
-            situacaoTurma4.textContent = `${quartaTurma.situacao}`
-
-            turma1.appendChild(nomeTurma1);
-            turma2.appendChild(nomeTurma2);
-            turma3.appendChild(nomeTurma3);
-            turma4.appendChild(nomeTurma4);
-
-            nota1.appendChild(notaTurma1);
-            nota2.appendChild(notaTurma2);
-            nota3.appendChild(notaTurma3);
-            nota4.appendChild(notaTurma4);
-
-            situacao1.appendChild(situacaoTurma1);
-            situacao2.appendChild(situacaoTurma2);
-            situacao3.appendChild(situacaoTurma3);
-            situacao4.appendChild(situacaoTurma4);
-        }
-        else if (valorSearch !== aluno.cpf) {
-
+                let situacaoTurmaDiv = document.createElement('div');
+                situacaoTurmaDiv.textContent = turma.situacao;
+                document.getElementById(situacaoElements[i]).appendChild(situacaoTurmaDiv);
+            }
+        } else {
             let validacaoCPFNaoEncontrado = document.querySelector('.card_boletim_aluno');
-            validacaoCPFNaoEncontrado.style.setProperty('font-weight','bold');
-            validacaoCPFNaoEncontrado.style.setProperty('color','red');
-            validacaoCPFNaoEncontrado.style.setProperty('text-align','center');
+            validacaoCPFNaoEncontrado.style.setProperty('font-weight', 'bold');
+            validacaoCPFNaoEncontrado.style.setProperty('color', 'red');
+            validacaoCPFNaoEncontrado.style.setProperty('text-align', 'center');
             validacaoCPFNaoEncontrado.textContent = `CPF informado não está cadastrado.`;
-            console.log("CPF Não Encontrado")
+            console.log("CPF Não Encontrado");
         }
-    })
-
+    });
 }
 
 export default {
@@ -129,8 +94,8 @@ export default {
 
         startStudentListModule();
 
-        window.addEventListener('changepage', function (event) {
+        window.addEventListener('changepage', function(event) {
+            // Handle page change if necessary
         });
     }
-}
-
+};

@@ -41,6 +41,16 @@ h2 {
     flex-wrap: wrap;
 }
 
+
+#bodyCard {
+    display: none;
+}
+
+/* .card_boletim_aluno {
+    display: none;
+}
+*/
+
 #bodyCard {
     display: none;
 }
