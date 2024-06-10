@@ -1,3 +1,4 @@
+
 <div class="page-wrapper boletim-page">
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
@@ -6,7 +7,7 @@
             <div>
                 <h1>Consulta de Boletim</h1>
             </div>
-        </div>  
+        </div>
 
         <div class="flex flex-col gap-4">
             <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
@@ -22,46 +23,14 @@
             </form>
         </div>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div class="flex flex-col gap-4">
-            <label class="text-primary font-bold text-sm">Informe o CPF ou Código de Matrícula do Aluno</label>
-
-            <form class="registration-search-form" id="searchForm">
-                <input data-mask="999.999.999-99" placeholder="XXX.XXX.XXX-XX" type="search" id="cpf" name="cpf"
-                 required>
-
-                <button type="submit" id="searchButton">
-                    <span class="iconify-inline" data-icon="ic:baseline-search"></span>
-                </button>
-            </form>
-        </div>
-
-        <div class="card consultar-boletim-empty helper">
-=======
         <div class="card consultar-boletim-empty helper" id="bodyCard">
->>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
-=======
-        <div class="card consultar-boletim-empty helper" id="bodyCard">
->>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
             <div class="card_boletim_aluno" id="cardBoletimAluno">
                 <h2>Boletim</h2>
                 <div id="nomeAluno">
                 </div>
                 <div id="anoLetivo">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    Ano Letivo: 2024
-                </div>
-                <br />
-=======
                 </div>
                 <br>
->>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
-=======
-                </div>
-                <br>
->>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
                 <div class="cardTitulo">
                     Turma
                 </div>
@@ -71,18 +40,9 @@
                 <div class="cardTitulo">
                     Situação
                 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                 <div class="cardTitulo">
                     Certificado
                 </div>
->>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
-=======
-                <div class="cardTitulo">
-                    Certificado
-                </div>
->>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
                 <br>
                 <!--Input do Nome da Turma 1-->
                 <div class="cardConteudoTurmas" id="turma1">
@@ -93,9 +53,13 @@
                 <!--Input da Situação do Aluno na Turma 1-->
                 <div class="cardConteudoTurmas" id="situacao1">
                 </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                <br>
+                <!--Input do Certificado da Turma 1-->
+                <div class="emitirCertificado">
+                    <div class="btnNotas">
+                        <button class="botaoLancarNotas"
+                            onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Emitir Certificado</button>
+                    </div>
+                </div>
                 <!--Input do Nome da Turma 2-->
                 <div class="cardConteudoTurmas" id="turma2">
                 </div>
@@ -105,7 +69,13 @@
                 <!--Input da Situação do Aluno na Turma 2-->
                 <div class="cardConteudoTurmas" id="situacao2">
                 </div>
-                <br>
+                <!--Input do Certificado da Turma 2-->
+                <div class="emitirCertificado">
+                    <div>
+                        <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
+                        </button>
+                    </div>
+                </div>
                 <!--Input do Nome da Turma 3-->
                 <div class="cardConteudoTurmas" id="turma3">
                 </div>
@@ -115,7 +85,15 @@
                 <!--Input da Situação do Aluno na Turma 3-->
                 <div class="cardConteudoTurmas" id="situacao3">
                 </div>
-                <br>
+                <!--Input do Certificado da Turma 3-->
+                <div class="emitirCertificado">
+                    <div>
+                        <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
+
+
+                        </button>
+                    </div>
+                </div>
                 <!--Input do Nome da Turma 4-->
                 <div class="cardConteudoTurmas" id="turma4">
                 </div>
@@ -125,75 +103,14 @@
                 <!--Input da Situação do Aluno na Turma 4-->
                 <div class="cardConteudoTurmas" id="situacao4">
                 </div>
-                <br>
+                <!--Input do Certificado da Turma 4-->
+                <div class="emitirCertificado">
+                    <div>
+                        <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-=======
-=======
->>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
-                <!--Input do Certificado da Turma 1-->
-                <div class="emitirCertificado">
-                <div class="btnNotas">
-                    <button class="botaoLancarNotas"
-                        onclick="navigateToRoute(event, '/aluno/certificado-conclusao')">Emitir Certificado</button>
-                    </div>
-                </div>
-                    <!--Input do Nome da Turma 2-->
-                    <div class="cardConteudoTurmas" id="turma2">
-                    </div>
-                    <!--Input da Nota do Aluno na Turma 2-->
-                    <div class="cardConteudoTurmas" id="nota2">
-                    </div>
-                    <!--Input da Situação do Aluno na Turma 2-->
-                    <div class="cardConteudoTurmas" id="situacao2">
-                    </div>
-                <!--Input do Certificado da Turma 2-->
-                <div class="emitirCertificado">
-                    <div>
-                        <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
-                            </button>
-                        </div>
-                    </div>  
-                            <!--Input do Nome da Turma 3-->
-                            <div class="cardConteudoTurmas" id="turma3">
-                            </div>
-                            <!--Input da Nota do Aluno na Turma 3-->
-                            <div class="cardConteudoTurmas" id="nota3">
-                            </div>
-                            <!--Input da Situação do Aluno na Turma 3-->
-                            <div class="cardConteudoTurmas" id="situacao3">
-                            </div>
-                            <!--Input do Certificado da Turma 3-->
-                            <div class="emitirCertificado">
-                                <div>
-                                    <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
-                                        </button>
-                                    </div>
-                                </div>
-                                    <!--Input do Nome da Turma 4-->
-                                    <div class="cardConteudoTurmas" id="turma4">
-                                    </div>
-                                    <!--Input da Nota do Aluno na Turma 4-->
-                                    <div class="cardConteudoTurmas" id="nota4">
-                                    </div>
-                                    <!--Input da Situação do Aluno na Turma 4-->
-                                    <div class="cardConteudoTurmas" id="situacao4">
-                                    </div>
-                                    <!--Input do Certificado da Turma 4-->
-                                    <div class="emitirCertificado">
-                                        <div>
-                                            <button class="botaoLancarNotas" id="certificadoIndisponível">Não Disponível
-                                                </button>
-                                            </div>
-                                        </div>
-                                </div>
-                            </div>
-                        </div>
-<<<<<<< HEAD
-                    </div>
->>>>>>> 34fd6659bc27d4706ce9a59939c2778434ecd8c2
-=======
-                    </div>
->>>>>>> 5be75f3c0ebb36fdd2c4697c961a30487c63ce02
