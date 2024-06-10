@@ -344,6 +344,50 @@ Marcelly Freitas
 
 Fernando Vinicius Sousa Moura
 
+<!-- Parte da Emissão do Certificado de Conclusão - Fernando Moura:  -->
+
+### Tela de Emissão do Certificado de Conclusão
+
+![telaConsultaBoletim](/documentos/img/telaCertificadoConclusao.png)
+
+
+#### Requisito atendido
+
+- RF-09: Usuários autorizados devem poder emitir certificados ou diplomas para os alunos que concluíram com sucesso o curso.
+
+
+#### Artefatos da funcionalidade
+
+- [alunos/certificado_conclusao/index.html](/codigo-fonte/src/pages/aluno/certificado_conclusao/index.html)
+- [alunos/certificado_conclusao/index.css](/codigo-fonte/src/pages/aluno/certificado_conclusao/index.css)
+- [alunos/certificado_conclusao/index.js](/codigo-fonte/src/pages/aluno/certificado_conclusao/index.js)
+
+
+#### Estrutura de Dados
+
+- Dados foram inseridos através de varíavel no arquivo do Java Script vinculado ao HTML.
+
+![dadosConsultaBoletim](/documentos/img/estruturaDadosCertificadoConclusao.png)
+
+
+#### Instruções de acesso
+
+1. Para executar o sistema localmente, é necessário a instalação do [Node.js](https://nodejs.org).
+2. Após instalá-lo na sua máquina, execute o comando, na raiz do projeto:
+
+    ```
+    cd codigo-fonte && npm run dev
+    ```
+
+3. Abra um navegador da web e navegue até `http://localhost:8080` para visualizar o projeto em execução.
+4. Após fazer login no sistema, acesse a opção de menu à esquerda "Certificado de Conclusão" para ter acesso ao certificado de conclusão do aluno.
+5. Outra forma de acessar é através da tela "Consultar Boletim", onde as turmas concluídas disponibilizarão a opção "Emitir Certificado".
+
+
+#### Responsável
+
+Fernando Vinicius Sousa Moura
+
 <!-- Parte do CRUD de Turmas - Caio Araujo:  -->
 
 ### Telas de Cadastro, Inativação, Visualização de Turma e Matrícula
