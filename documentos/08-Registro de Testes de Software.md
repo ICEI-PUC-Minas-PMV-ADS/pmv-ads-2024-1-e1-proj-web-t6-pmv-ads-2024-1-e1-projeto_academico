@@ -247,7 +247,94 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     </tbody>
 </table>
 
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-014 - Testes Funcionalidades emissao de certificado de conclusão e declaração de matricula</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-08 e RF-09</th>
+            <th>Emitir certificado de conclusão e Emitir certificado de matricula</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>Ao acessar o sistema com usuário de professor e clicar em emitir declaração de matrícula:
+                        <br>
+                        <img src="/documentos/img/telascaio/professorEmitirDeclaracao.png" alt="Emitir Declaração">
+                    </li>
+                    <li>Ao buscar um CPF inválido:
+                        <br>
+                        <img src="/documentos/img/telascaio/emitirDeclaracaoMatriculacpfinvalido.png" alt="CPF Inválido">
+                    </li>
+                    <li>Ao acessar o sistema com usuário de aluno e clicar em consultar boletim:
+                        <br>
+                        <img src="/documentos/img/telascaio/boletimEmitirCertificado.png" alt="Consultar Boletim">
+                    </li>
+                    <li>Se informar um CPF inválido:
+                        <br>
+                        <img src="/documentos/img/telascaio/consultaboletimcpfinvalid.png" alt="CPF Inválido">
+                    </li>
+                    <li>Ao buscar um CPF válido:
+                        <br>
+                        <img src="/documentos/img/telascaio/certificadoConclusaoValido.png" alt="CPF Válido">
+                    </li>
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Caio Araujo</td>
+        </tr>
+    </tbody>
+</table>
 
-
-
-
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-015 - Testes Funcionalidades CRUD Notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-05</th>
+            <th>CRUD de Turmas</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>Ao acessar o sistema com usuário de professor e em cadastrar turma ebuscar sem informar dados o sistema ira listar as turmas:
+                        <br>
+                        <img src="/documentos/img/telasfernando/listarturmas.png" alt="Emitir Declaração">
+                    </li>
+                    <li>Ao buscar por uma turma especifica:
+                        <br>
+                        <img src="/documentos/img/telasfernando/buscaporturma.png" alt="CPF Inválido">
+                    </li>
+                    <li>Se buscar por turma invalida:
+                        <br>
+                        <img src="/documentos/img/telasfernando/turmainvalida.png" alt="Consultar Boletim">
+                    </li>
+                    <li>Quando clicar em editar:
+                        <br>
+                        <img src="/documentos/img/telasfernando/editarturma.png" alt="CPF Inválido">
+                    </li>
+                    <li>Ao clicar no botao cadastrar turmas:
+                        <br>
+                        <img src="/documentos/img/telasfernando/cadastrarturmas.png" alt="CPF Válido">
+                    </li>
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Fernando Moura</td>
+        </tr>
+    </tbody>
+</table>
