@@ -247,7 +247,46 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     </tbody>
 </table>
 
+<table>
+    <thead> 
+        <tr>
+            <th>Caso de Teste</th>
+            <th>CT-014 - Testes Funcionalidades CRUD notas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>RF-12</th>
+            <th>CRUD de notas</th>
+        </tr>
+        <tr>
+            <td>Resultados obtidos</td>
+            <td> 
+                <ol>
+                    <li>Ao acessar o sistema com usúario de professor e clicar em emitir declaracao de matricula</li>
 
+![Pesquisa Turma frequencia](/documentos/img/telascaio/professorEmitirDeclaracao.png)
+                    <li>Ao buscar um cpf invalido:</li>
+![Pesquisa Turma frequencia](/documentos/img/telascaio/emitirDeclaracaoMatriculacpfinvalido.png)
+                    <li>Ao acessar o sistema com usuario de aluno e clicar em consultar boletim</li>
+![Pesquisa Turma frequencia](/documentos/img/telascaio/boletimEmitirCertificado.png)
+
+<li>Se informar um cpf invalido</li>
+
+![Pesquisa Turma frequencia](/documentos/img/telascaio/consultaboletimcpfinvalid.png)
+                    <li>Ao buscar um cpf valido</li>
+![Pesquisa Turma frequencia](/documentos/img/telascaio/certificadoConclusaoValido.png)
+               
+                </ol>  
+            </td>
+        </tr>
+        <tr>
+        
+            <td>Responsável pela execução do caso de Teste</td>
+            <td>Caio Araujo</td>
+        </tr>
+    </tbody>
+</table>
 
 
 

@@ -1,0 +1,20 @@
+{
+  "name": "pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico",
+  "version": "1.0.0",
+  "description": "`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico#readme"
+}
