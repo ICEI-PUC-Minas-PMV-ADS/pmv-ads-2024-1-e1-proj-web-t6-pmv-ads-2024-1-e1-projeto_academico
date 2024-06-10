@@ -251,42 +251,44 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     <thead> 
         <tr>
             <th>Caso de Teste</th>
-            <th>CT-014 - Testes Funcionalidades CRUD notas</th>
+            <th>CT-014 - Testes Funcionalidades CRUD Notas</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <th>RF-12</th>
-            <th>CRUD de notas</th>
+            <th>CRUD de Notas</th>
         </tr>
         <tr>
             <td>Resultados obtidos</td>
             <td> 
                 <ol>
-                    <li>Ao acessar o sistema com usúario de professor e clicar em emitir declaracao de matricula</li>
-
-![Pesquisa Turma frequencia](/documentos/img/telascaio/professorEmitirDeclaracao.png)
-                    <li>Ao buscar um cpf invalido:</li>
-![Pesquisa Turma frequencia](/documentos/img/telascaio/emitirDeclaracaoMatriculacpfinvalido.png)
-                    <li>Ao acessar o sistema com usuario de aluno e clicar em consultar boletim</li>
-![Pesquisa Turma frequencia](/documentos/img/telascaio/boletimEmitirCertificado.png)
-
-<li>Se informar um cpf invalido</li>
-
-![Pesquisa Turma frequencia](/documentos/img/telascaio/consultaboletimcpfinvalid.png)
-                    <li>Ao buscar um cpf valido</li>
-![Pesquisa Turma frequencia](/documentos/img/telascaio/certificadoConclusaoValido.png)
-               
+                    <li>Ao acessar o sistema com usuário de professor e clicar em emitir declaração de matrícula:
+                        <br>
+                        <img src="/documentos/img/telascaio/professorEmitirDeclaracao.png" alt="Emitir Declaração">
+                    </li>
+                    <li>Ao buscar um CPF inválido:
+                        <br>
+                        <img src="/documentos/img/telascaio/emitirDeclaracaoMatriculacpfinvalido.png" alt="CPF Inválido">
+                    </li>
+                    <li>Ao acessar o sistema com usuário de aluno e clicar em consultar boletim:
+                        <br>
+                        <img src="/documentos/img/telascaio/boletimEmitirCertificado.png" alt="Consultar Boletim">
+                    </li>
+                    <li>Se informar um CPF inválido:
+                        <br>
+                        <img src="/documentos/img/telascaio/consultaboletimcpfinvalid.png" alt="CPF Inválido">
+                    </li>
+                    <li>Ao buscar um CPF válido:
+                        <br>
+                        <img src="/documentos/img/telascaio/certificadoConclusaoValido.png" alt="CPF Válido">
+                    </li>
                 </ol>  
             </td>
         </tr>
         <tr>
-        
             <td>Responsável pela execução do caso de Teste</td>
             <td>Caio Araujo</td>
         </tr>
     </tbody>
 </table>
-
-
-
