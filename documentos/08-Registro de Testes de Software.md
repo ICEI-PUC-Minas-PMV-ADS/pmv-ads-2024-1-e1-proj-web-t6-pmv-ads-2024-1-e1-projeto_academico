@@ -251,7 +251,7 @@ Relatório com as evidências dos testes de software realizados na aplicação p
     <thead> 
         <tr>
             <th>Caso de Teste</th>
-            <th>CT-014 - Testes Funcionalidades CRUD Notas</th>
+            <th>CT-014 - Testes Funcionalidades emissao de certificado de conclusão e declaração de matricula</th>
         </tr>
     </thead>
     <tbody>
