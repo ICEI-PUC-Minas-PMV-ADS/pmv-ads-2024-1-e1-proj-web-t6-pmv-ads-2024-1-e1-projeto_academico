@@ -87,7 +87,8 @@ export const useDashboardUtils = () => {
                 if (listNode) {
                     const iconNode = parent.querySelector('.dropdown-icon');
                     const totalHeight = Array.from((listNode.querySelectorAll('li') || [])).reduce((acc, el) => {
-                        const height = parseFloat(window.getComputedStyle(el).height);
+                        const innerHeight = window.getComputedStyle(el).height
+                        const height = parseFloat(innerHeight === 'auto' ? 0 : innerHeight);
                         return acc + height;
                     }, 0);
 
@@ -103,7 +104,7 @@ export const useDashboardUtils = () => {
             }
 
             parent.addEventListener('click', (event) => {
-                event.stopImmediatePropagation();
+                event.preventDefault();
 
                 isOpen = !isOpen;
 
