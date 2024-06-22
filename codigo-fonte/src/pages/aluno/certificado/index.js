@@ -10,9 +10,9 @@ async function startAttendanceModule() {
 
     const { createAttendanceList } = useDOMManager();
 
-    const form = document.querySelector('.boletim-page .boletim-search-form');
-    const wrapper = document.querySelector('.boletim-page .lista-wrapper');
-    const title = document.querySelector('.boletim-page .boletim-empty-title');
+    const form = document.querySelector('.certificado-page .certificado-search-form');
+    const wrapper = document.querySelector('.certificado-page .lista-wrapper');
+    const title = document.querySelector('.certificado-page .certificado-empty-title');
 
     if (form && wrapper) {
         form.addEventListener('submit', async (event) => {
@@ -54,7 +54,7 @@ async function startAttendanceModule() {
                             const buttonAction = document.createElement('button');
                             buttonAction.classList.add('btn')
                             buttonAction.classList.add('btn-primary')
-                            buttonAction.textContent = 'Visualizar Notas';
+                            buttonAction.textContent = 'Emitir Certificado';
                             elemento.appendChild(buttonAction);
                         });
 
@@ -67,7 +67,7 @@ async function startAttendanceModule() {
                                 const id = elemento.getAttribute('data-id');
                                 event.preventDefault();
 
-                                navigateToRoute(null, `/aluno/boletim/${id}`);
+                                navigateToRoute(null, `/aluno/certificado/${id}`);
                             });
                         });
 

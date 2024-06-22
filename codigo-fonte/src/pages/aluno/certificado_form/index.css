@@ -24,8 +24,8 @@
     color: #0c098e;
 }
 
-#nomeAluno1 {
-    font-size: 1.5em;
+#certificado-nome-aluno {
+    font-size: 1.2em;
     margin: 10px 0;
     color: #0c098e;
     font-weight: bold;
@@ -33,21 +33,24 @@
     justify-content: center;
 }
 
-#nomeTurma1 {
-    font-size: 1.2em;
+#certificado-nome-turma {
     margin: 10px 0;
     color: #0c098e;
     align-items: center;
-    font-weight: bold;
     justify-content: center;
 }
 
-#anoLetivo1 {
-    font-size: 1.2em;
+#certificado-professor {
+    margin: 10px 0;
+    color: #0c098e;
+    align-items: center;
+    justify-content: center;
+}
+
+#certificado-ano {  
     margin: 10px 0;
     color: #0c098e;
     text-align: center;
-    font-weight: bold;
     justify-content: center;
 }
 
@@ -69,4 +72,8 @@
     margin-top: 20px;
     font-size: 0.9em;
     color: #0c098e;
+}
+
+#noshow {
+    display: none;
 }
