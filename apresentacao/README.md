@@ -10,4 +10,4 @@
 
 ## Hospedagem
 
-Foi utilizada a plataforma Infinite Sphere como ambiente de hospedagem do site do projeto, que será mantido na URL: https://sge.infinitespheremd.me/login
+A hospedagem do site do projeto será mantida na URL: https://sge.infinitespheremd.me/login
