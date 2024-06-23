@@ -2,7 +2,7 @@
 
 ## Apresentação de Slides
 
-[Apresentação - Sistema de Gestão Acadêmica](apresentacao/Apresentação - Sistema de Gestão Escolar.pdf)
+[Apresentação - Sistema de Gestão Escolar.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico/blob/dev/apresentacao/Apresenta%C3%A7%C3%A3o%20-%20Sistema%20de%20Gest%C3%A3o%20Escolar.pdf)
 
 ## Vídeo de apresentação
 
@@ -10,4 +10,4 @@
 
 ## Hospedagem
 
-https://sge.infinitespheremd.me/login
+Foi utilizada a plataforma Infinite Sphere como ambiente de hospedagem do site do projeto, que será mantido na URL: https://sge.infinitespheremd.me/login
