@@ -1,99 +1,95 @@
-import { studentEntityService } from '/src/services/studentEntityService.service.js';
+import { turmaEntityService } from '@/services/turmaEntityService.service';
 import { useDOMManager } from '/src/hooks/useDOMManager.js';
-import { useDashboardUtils } from '@/hooks/useDashboardUtils';
+import { navigateToRoute } from '@/router';
 import './index.css';
 
 let started = false;
 
-async function startStudentListModule() {
+async function startAttendanceModule() {
     started = true;
 
-    let aluno = {
-        nome: "João Barbosa Dias",
-        cpf: "111.222.333-44",
-        matricula: "12345",
-        anoLetivo: 2024,
-        turmas: [
-            {
-                nome: "Matemática Básica",
-                nota: 8.5,
-                situacao: "Aprovado"
-            },
-            {
-                nome: "Física Aplicada",
-                nota: 6.0,
-                situacao: "Reprovado"
-            },
-            {
-                nome: "Química Geral",
-                nota: 4.5,
-                situacao: "Reprovado"
-            },
-            {
-                nome: "Geografia",
-                nota: 5.4,
-                situacao: "Reprovado"
+    const { createAttendanceList } = useDOMManager();
+
+    const form = document.querySelector('.declaracao-page .declaracao-search-form');
+    const wrapper = document.querySelector('.declaracao-page .lista-wrapper');
+    const title = document.querySelector('.declaracao-page .declaracao-empty-title');
+
+    if (form && wrapper) {
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            if (document.querySelector('.loading')) {
+                return false;
             }
-        ]
-    };
-    
-    console.log(aluno);
 
-    document.getElementById('searchButtonDeclaracao').addEventListener('click', function() {
-        let minhaDiv = document.getElementById('identificadorEmissaoDeclaracao');
-        minhaDiv.style.display = 'flex'; // Faz a div aparecer
-    });
+            const inputSearch = form.querySelector('input[type=search]');
 
-    document.getElementById('searchFormDeclaracao').addEventListener('submit', function (event) {
+            if (inputSearch) {
+                const query = inputSearch.value;
+                
+                if (query.length) {
+                    wrapper.innerHTML = '';
+                    const loadingElement = document.createElement('div');
+                    loadingElement.classList.add('loading');
+                    loadingElement.innerHTML = 'Carregando...';
+                    wrapper.append(loadingElement);
 
-        event.preventDefault();
+                    const { data: classRoomCollection } = await turmaEntityService.getAll();
+                    
 
-        let valorSearchDeclaracao = document.getElementById('cpfDeclaracao').value;
+                    const filtered = [...classRoomCollection].filter((_) => {
+                        return _.nome.toLowerCase().includes(query.toLowerCase());
+                    });
 
-        if (valorSearchDeclaracao == aluno.cpf) {
-            let nomeAlunoDeclaracaoHTML = `${aluno.nome}`
-            nomeAlunoDeclaracao.innerHTML = nomeAlunoDeclaracaoHTML
+                    if (!filtered.length) {
+                        wrapper.innerHTML = '';
+                        wrapper.append(title);
+                        alert('Não foram encontrados resultados para a pesquisa.');
+                    } else {
+                        const list = createAttendanceList(filtered);
 
-            let anoLetivoDeclaracaoHTML = `${aluno.anoLetivo}`
-            anoLetivoDeclaracao.innerHTML = anoLetivoDeclaracaoHTML
+                        const rows = list.querySelectorAll('.actions');
+                        
+                        rows.forEach(elemento => {
+                            const buttonAction = document.createElement('button');
+                            buttonAction.classList.add('btn')
+                            buttonAction.classList.add('btn-primary')
+                            buttonAction.textContent = 'Emitir Declaração';
+                            elemento.appendChild(buttonAction);
+                        });
 
-            let turmaDeclaracao = document.getElementById('turmaDeclaracao')
+                        const items = list.querySelectorAll('li');
 
-            let primeiraTurma = aluno.turmas[0];
+                        items.forEach((elemento) => {
+                            const buttonAction = elemento.querySelector('.actions');
 
-            let nomeTurma1 = document.createElement('div');
-            nomeTurma1.textContent = `${primeiraTurma.nome}`
+                            buttonAction.addEventListener('click', (event) => {
+                                const id = elemento.getAttribute('data-id');
+                                event.preventDefault();
 
-            let notaTurma1 = document.createElement('div');
-            notaTurma1.textContent = `${primeiraTurma.nota}`
+                                navigateToRoute(null, `/aluno/declaracao_matricula/${id}`);
+                            });
+                        });
 
-            let situacaoTurma1 = document.createElement('div');
-            situacaoTurma1.textContent = `${primeiraTurma.situacao}`
-
-            turmaDeclaracao.appendChild(nomeTurma1);
-        }
-        else if (valorSearchDeclaracao !== aluno.cpf) {
-
-            let validacaoCPFNaoEncontrado = document.querySelector('.emissaoDeclaracao');
-            validacaoCPFNaoEncontrado.style.setProperty('font-weight','bold');
-            validacaoCPFNaoEncontrado.style.setProperty('color','red');
-            validacaoCPFNaoEncontrado.textContent = `CPF informado não está cadastrado.`;
-            console.log("CPF Não Encontrado")
-        }
-    })
-
-}
-
-export default {
-    init() {
-        if (started) {
-            return;
-        }
-
-        startStudentListModule();
-
-        window.addEventListener('changepage', function (event) {
+                        loadingElement.remove();    
+                        wrapper.appendChild(list);
+                    }
+                }
+            }
         });
     }
 }
 
+export default {
+    init() {
+        startAttendanceModule();
+
+        window.addEventListener('changepage', function(event) {
+            if (started) {
+                return;
+            }
+
+            startAttendanceModule();
+        });
+    }
+}

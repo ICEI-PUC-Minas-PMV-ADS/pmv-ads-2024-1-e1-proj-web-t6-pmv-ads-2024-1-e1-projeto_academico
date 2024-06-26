@@ -1,0 +1,74 @@
+<div class="flex flex-col gap-6 certificado-form-page">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <div class="title">
+        <div>
+            <h1>Certificado de Conclusão</h1>
+        </div>
+    </div>
+
+    <div class="emissaoCertificado" id="emissaoCertif">
+        <div class="certificado">
+            <img width="180px" src="/images/hatgraduation.svg" alt="" srcset="">
+            <h1>Certificado de Conclusão</h1>
+            <p>Este certificado é concedido ao aluno</p>
+            <div id="certificado-nome-aluno"></div>
+            <p>por ter concluído a </p>
+            <div id="certificado-nome-turma"></div>
+            <p>com sucesso no</p>
+            <div id="certificado-ano"></div>
+            <br>
+            <p>__________________________</p>
+            <p>Nome do Instrutor</p>
+            <br>
+            <div id="certificado-professor">
+            </div>
+            <p id="certificado-data"></p>
+        </div>
+    </div>
+
+    <div class="page-wrapper grade-form-page" id="noshow">
+        <div class="flex justify-between gap-4 items-center">
+            <h1 class="text-primary">Visualizar Notas</h1>
+    
+            <button class="btn btn-primary" onclick="navigateToRoute(event, '/aluno/boletim')">Voltar</button>
+        </div>
+            
+        <div class="card loading-wrapper">
+            <div class="loading">Carregando...</div>
+        </div>
+            
+        <div class="hidden card form-wrapper">
+            <div class="nota-form-wrapper flex flex-col gap-4">
+                <div class="flex flex-col gap-4">
+                    <div id="nota-nome" class="nota-nome">
+                        Física Aplicada
+                    </div>
+            
+                    <div id="nota-ano">
+                        Ano Letivo: 2024
+                    </div>
+                    <div id="nota-responsavel">
+                        Professora: Maria Cassia
+                    </div>
+                </div>
+    
+                <div class="flex flex-col items-start">
+                    <div id="data">
+                    </div>
+                </div>
+    
+                <div class="form flex flex-col gap-4">
+                    <div class="header">
+                        <div class="row">
+                        </div>
+                    </div>
+    
+                    <div class="body flex flex-col gap-4">
+                        <div class="row">
+                        </div>
+                        
+                    </div>      
+            
+        </div>
+    </div>

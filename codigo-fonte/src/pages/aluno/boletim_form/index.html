@@ -1,8 +1,8 @@
 <div class="page-wrapper grade-form-page">
     <div class="flex justify-between gap-4 items-center">
-        <h1 class="text-primary">Lançar Notas</h1>
+        <h1 class="text-primary">Visualizar Notas</h1>
 
-        <button class="btn btn-primary" onclick="navigateToRoute(event, '/turmas/notas/lista')">Voltar</button>
+        <button class="btn btn-primary" onclick="navigateToRoute(event, '/aluno/boletim')">Voltar</button>
     </div>
         
     <div class="card loading-wrapper">
@@ -12,21 +12,20 @@
     <div class="hidden card form-wrapper">
         <div class="nota-form-wrapper flex flex-col gap-4">
             <div class="flex flex-col gap-4">
-                <div id="nota-nome" class="font-bold text-primary">
+                <div id="nota-nome" class="nota-nome">
                     Física Aplicada
                 </div>
         
-                <div id="nota-ano" class="font-bold">
+                <div id="nota-ano">
                     Ano Letivo: 2024
                 </div>
-                <div id="nota-responsavel" class="font-bold">
+                <div id="nota-responsavel">
                     Professora: Maria Cassia
                 </div>
             </div>
 
-            <div class="flex flex-col items-end">
-                <div id="data" class="font-bold">
-                    Data: 28/04/2024
+            <div class="flex flex-col items-start">
+                <div id="data">
                 </div>
             </div>
 
@@ -40,14 +39,7 @@
                     <div class="row">
                     </div>
                     
-                </div>
-
-                <div class="flex justify-end">
-                    <button class="btn btn-primary" type="submit">Lançar frequência</button>
-                </div>
-            </div>
-        </div>
-        
+                </div>      
         
     </div>
 </div>

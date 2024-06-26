@@ -1,62 +1,24 @@
-<div class="page-wrapper">
-    <div class="title">
-        <div>
-            <h1>Lançar Notas</h1>
-        </div>
-        <p class="titlepesquisarturmas">Pesquisar Turmas:</p>
-
-        <div class="barradepesquisa">
-            <input class="search-bar" type="search" name="q" placeholder="" id="searchInput">
-            <button class="search-btn" type="button" id="searchButton">
-                <img src="https://s3-alpha-sig.figma.com/img/b282/0d51/04145da7707f32d6a7e68cac0acd6589?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=eKI52sv2e6PXRdKIEFKAFkSG59ULFVVgvoCCI1vTwgW9FS2YOOq2hPhfGp~X7ip17aETwG6fRYruSOIa9KHMok0rcZ8M-8~tCowxAKD2wYoYrVm6XG6~mzXiIbtINCO4TCf2ono-F9SiG1VxgKG0Aw2FEaqXJRY4bbhQjzE349CRiSM9j5Of~uCXbVZ18cevnkkfynfZyAv3pL8IQn-zcN-N4DE6DObXFriunTmys39evmu1CefDFUNznSRkxiL74-e8ofbIbwL1dHzSCY~Q72N5sa25NiAbQpLb9BFDi7Jf3zTHwmQ3hl05Iv0az61Jbcy0kyFDlmAsq6-ToK6IOQ__" alt="Ícone de Pesquisa" class="search-icon">
-            </button>
-        </div>
-
+<div class="flex flex-col gap-6 grade-page">
+    <div class="flex justify-between items-center gap-4">
+        <h1 class="text-primary">Lançar Notas</h1>
     </div>
-    <hr class="linhadivisora"></hr>
-    <div class="classes" style="display: flex; flex-direction: column;">
-        <div class="titleClass">
-            <nav class="title2">Turmas Ativas</nav>
-        </div>
 
-        <table class="tableValues">
-            <tr class="linhaTabela">
-                <th class="cardConteudoMateria">Física Aplicada</th>
-                <th class="cardConteudoAno">Ano: 2016</th>
-                <th class="cardConteudoResponsavel">Responsável: Prof. Maria Cassia</th>
-                <th class="btnNotas"><button class="botaoLancarNotas" onclick="navigateToRoute(event, '/turmas/notas/form')">Lançar Notas</button></th>
-            </tr>
-            <tr class="linhaTabela">
-                <th class="cardConteudoMateria">Química Geral</th>
-                <th class="cardConteudoAno">Ano: 2024</th>
-                <th class="cardConteudoResponsavel">Responsável: Prof. Andrea Mara</th>
-                <th class="btnNotas"><button class="botaoLancarNotas" onclick="navigateToRoute(event, '/turmas/notas/form')">Lançar Notas</button></th>
-            </tr>
-            <tr class="linhaTabela">
-                <th class="cardConteudoMateria">História</th>
-                <th class="cardConteudoAno">Ano: 2023</th>
-                <th class="cardConteudoResponsavel">Responsável: Prof. Anderson Bel</th>
-                <th class="btnNotas"><button class="botaoLancarNotas" onclick="navigateToRoute(event, '/turmas/notas/form')">Lançar Notas</button></th>
-            </tr>
-            <tr class="linhaTabela">
-                <th class="cardConteudoMateria">Gramática</th>
-                <th class="cardConteudoAno">Ano: 2017</th>
-                <th class="cardConteudoResponsavel">Responsável: Prof. Antonio Vela</th>
-                <th class="btnNotas"><button class="botaoLancarNotas" onclick="navigateToRoute(event, '/turmas/notas/form')">Lançar Notas</button></th>
-            </tr>
-            <tr class="linhaTabela">
-                <th class="cardConteudoMateria">Geografia</th>
-                <th class="cardConteudoAno">Ano: 2024</th>
-                <th class="cardConteudoResponsavel">Responsável: Prof. Sonia Costa</th>
-                <th class="btnNotas"><button class="botaoLancarNotas" onclick="navigateToRoute(event, '/turmas/notas/form')">Lançar Notas</button></th>
-            </tr>
-        </table>
-        <footer>
-            <nav class="pagination">
-                <button id="pagina1">1</button>
-                <button id="pagina2">2</button>
-                <button id="pagina3">3</button>
-            </nav>
-        </footer>
+    <div class="flex flex-col gap-4">
+        <label class="text-primary font-bold text-sm">Pesquisar turmas disponíveis:</label>
+
+        <form class="grade-search-form">
+            <input type="search" placeholder="Pesquisar turma" id="search" name="search" required>
+            <button type="submit">
+                <span class="iconify-inline" data-icon="ic:baseline-search"></span>
+            </button>
+        </form>
+    </div>
+
+    <div class="card">
+        <div class="flex flex-col gap-4">
+            <div class="lista-wrapper">
+                <h4 class="grade-empty-title">Utilize os filtros acima para pesquisar uma turma</h4>
+            </div>
+        </div>
     </div>
 </div>

@@ -50,6 +50,13 @@ const RouteModules = [
         moduleJS: () => import('@/pages/aluno/boletim/index.js'),
     },
     {
+        path: '/aluno/boletim/:id', 
+        layout: 'dashboard', 
+        permission: 'auth', 
+        moduleHTML: () => import('@/pages/aluno/boletim_form/index.html?raw'), 
+        moduleJS: () => import('@/pages/aluno/boletim_form/index.js'),
+    },
+    {
         path: '/aluno/frequencia', 
         layout: 'dashboard', 
         permission: 'auth', 
@@ -62,6 +69,13 @@ const RouteModules = [
         permission: 'auth', 
         moduleHTML: () => import('@/pages/aluno/declaracao_matricula/index.html?raw'), 
         moduleJS: () => import('@/pages/aluno/declaracao_matricula/index.js'),
+    },
+    {
+        path: '/aluno/declaracao_matricula/:id', 
+        layout: 'dashboard', 
+        permission: 'auth', 
+        moduleHTML: () => import('@/pages/aluno/declaracao_matricula_form/index.html?raw'), 
+        moduleJS: () => import('@/pages/aluno/declaracao_matricula_form/index.js'),
     },
     {
         path: '/aluno/cancelar-matricula', 
@@ -78,11 +92,18 @@ const RouteModules = [
         moduleJS: () => import('@/pages/aluno/formandos/index.js'),
     },
     {
-        path: '/aluno/certificado-conclusao', 
+        path: '/aluno/certificado', 
         layout: 'dashboard', 
         permission: 'auth', 
-        moduleHTML: () => import('@/pages/aluno/certificado_conclusao/index.html?raw'), 
-        moduleJS: () => import('@/pages/aluno/certificado_conclusao/index.js'),
+        moduleHTML: () => import('@/pages/aluno/certificado/index.html?raw'), 
+        moduleJS: () => import('@/pages/aluno/certificado/index.js'),
+    },
+    {
+        path: '/aluno/certificado/:id', 
+        layout: 'dashboard', 
+        permission: 'auth', 
+        moduleHTML: () => import('@/pages/aluno/certificado_form/index.html?raw'), 
+        moduleJS: () => import('@/pages/aluno/certificado_form/index.js'),
     },
     {
         path: '/turmas/ativar_inativar', 
@@ -148,7 +169,7 @@ const RouteModules = [
         moduleJS: () => import('@/pages/turmas/notas_lista/index.js'),
     },
     {
-        path: '/turmas/notas/form', 
+        path: '/turmas/notas/:id', 
         layout: 'dashboard', 
         permission: 'auth', 
         moduleHTML: () => import('@/pages/turmas/notas_form/index.html?raw'), 

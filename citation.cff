@@ -1,0 +1,24 @@
+message: Please cite this software using these metadata.
+title: Sistema de Gestão Escolar
+authors:
+  - family-names: Aparecida Ferreira
+    given-names: Brena
+  - family-names: De Souza Araujo
+    given-names: Caio
+  - family-names: Vinicius Sousa Moura
+    given-names: Fernando
+  - family-names: Lucas Andrade dos Santos
+    given-names: Kevin
+  - family-names: Thais Freitas Neves
+    given-names: Marcelly
+  - name-suffix: Professor
+    affiliation: PUC Minas
+    family-names: De Assis Alves da Silva
+    given-names: Simone 
+keywords:
+  - Gestão
+  - Escolar
+  - Acadêmica
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico
+version: 1.0.0
+date-released: 2024-06-23
