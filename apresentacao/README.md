@@ -1,32 +1,13 @@
 # Apresentação do Projeto
 
-## Conjunto de Slides
+## Apresentação de Slides
 
-A apresentação do projeto consiste na geração de um conjunto de slides em um arquivo no formato ppt, pptx ou pdf, contemplando os seguintes itens:
-
-> - Contexto (Problema, Público-alvo)
-> - Requisitos
-> - Solução Implementada (funcionalidades de software)
-> - Conclusão da elaboração do projeto (pontos positivos, desafios, aprendizado).
-
-[Adicione pdf de apresentação.]
-
-> **Links Úteis**:
-> - [A regra 10-20-30 para apresentações de sucesso](https://revistapegn.globo.com/Noticias/noticia/2014/07/regra-10-20-30-para-apresentacoes-de-sucesso.html)
-> - [Top Tips for Effective Presentations](https://www.skillsyouneed.com/present/presentation-tips.html)
-> - [How to make a great presentation](https://www.ted.com/playlists/574/how_to_make_a_great_presentation)
+[Apresentação - Sistema de Gestão Escolar.pdf](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico/blob/main/apresentacao/Apresenta%C3%A7%C3%A3o%20-%20Sistema%20de%20Gest%C3%A3o%20Escolar.pdf)
 
 ## Vídeo de apresentação
 
-A equipe também deverá gravar um vídeo de, no máximo, três minutos, com a apresentação da solução. Vocês deverão abrir a aplicação hospedada e apresentar o seu funcionamento.  Poderão ser utilizados quaisquer recursos na montagem do vídeo, mas não se esqueçam de mostrar as funcionalidades da aplicação. Seguem as especificações técnicas que devem ser obedecidas na geração do vídeo:
-
-> - tamanho do arquivo limitado a 90Mb
-> - taxa de FPS limitada a 30 quadros por segundo
-> - resolução HD (720p) ou Full HD (1080p)
-> - formato mp4.
-
-[Adicione vídeo de apresentação.]
+[Vídeo de Apresentação SGA](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e1-proj-web-t6-pmv-ads-2024-1-e1-projeto_academico/blob/main/apresentacao/Sistema%20de%20Gest%C3%A3o%20Acad%C3%AAmica%20-%20ADS%20-%20Turma%206%20-%20Grupo%202%20-%20Eixo%201%20(HD).mp4)
 
 ## Hospedagem
 
-[Adicione o endereço eletrônico público onde o site encontra-se hospedado.]
+A hospedagem do site do projeto será mantida na URL: https://sge.infinitespheremd.me/login
