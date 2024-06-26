@@ -1,0 +1,150 @@
+.boletim-form-page  .lista-wrapper {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+} 
+.boletim-form-page  .lista-mae {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: max-content;
+    min-width: 100%;
+} 
+
+.boletim-form-page  .lista-filho {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    row-gap: 16px;
+    padding: 16px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.boletim-form-page  .outrasPaginas {
+    width: max-content;
+    color: #9c9c9c;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.boletim-form-page .form .row {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.boletim-form-page .form .header .row div {
+    background-color: #0C098E;
+    color: #FFF;
+}
+.boletim-form-page .form .body .row div {
+    background-color: #DEDEDE;
+    color: #333;
+}
+.boletim-form-page .form .row div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+}
+
+.boletim-form-page .form .body label {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.boletim-form-page input[type="radio"]:checked + label {
+    background-color: #0C098E;
+    color: #fff;
+    border-color: #0C098E;
+}
+
+#nota-trabalho {
+    width: 22%;
+    display: inline-block;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    border-top: 10px;
+}
+
+#nota-prova {
+    width: 22%;
+    display: inline-block;
+        justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #D9D9D9;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    border-top: 10px;
+}
+
+#nota-trabalho-label {
+    width: 22%;
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0C098E;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-top: 10px;
+}
+
+#nota-prova-label {
+
+    width: 22%;
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0C098E;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    border-top: 10px;
+}
+
+#texto-principal-form {
+    margin: 10px;
+    font-weight: bolder ;
+    color: #0C098E;
+}
+
+#nota-ano {
+    font-weight: bolder;
+}
+
+#nota-responsavel {
+    font-weight: bolder;
+}
+
+#data {
+    font-weight: bolder;
+}
+
+#nota-nome {
+    font-weight: bolder;
+}
